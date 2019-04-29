@@ -134,10 +134,13 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
-            /*  FCMPlugin.onTokenRefresh(function(token){
+            alert("ENTER");
+           FCMPlugin.onTokenRefresh(function(token){
+               alert("token");
+               alert(token);
            localStorage.setItem("token", token);
        });
-       if (typeof FCMPlugin != 'undefined') {
+       /*if (typeof FCMPlugin != 'undefined') {
            FCMPlugin.getToken(function (token) {
                localStorage.setItem("token", token);
            });

@@ -14,12 +14,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="139" column="26" lean-forward="false" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+              <folding>
+                <marker date="1556537058778" expanded="true" signature="4873:5210" ph="/*...*/" />
+                <marker date="1556537058778" expanded="true" signature="5024:5032" ph="{...}" />
+                <marker date="1556537058778" expanded="true" signature="5081:5208" ph="{...}" />
+                <marker date="1556537058778" expanded="true" signature="5130:5197" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +47,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -120,12 +135,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556534371146</updated>
-      <workItem from="1556534373447" duration="2178000" />
+      <workItem from="1556534373447" duration="2622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2178000" />
+    <option name="totallyTimeSpent" value="2622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -162,23 +177,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="135" column="31" lean-forward="false" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
-          <folding>
-            <marker date="1556535942000" expanded="true" signature="4941:4949" ph="{...}" />
-            <marker date="1556535942000" expanded="true" signature="4996:5123" ph="{...}" />
-            <marker date="1556535942000" expanded="true" signature="5045:5112" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="139" column="26" lean-forward="false" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+          <folding>
+            <marker date="1556537058778" expanded="true" signature="4873:5210" ph="/*...*/" />
+            <marker date="1556537058778" expanded="true" signature="5024:5032" ph="{...}" />
+            <marker date="1556537058778" expanded="true" signature="5081:5208" ph="{...}" />
+            <marker date="1556537058778" expanded="true" signature="5130:5197" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
