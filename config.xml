@@ -33,7 +33,6 @@
     <allow-intent href="geo:*" />
     <plugin name="cordova-plugin-splashscreen" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <gap:plugin name="cordova-plugin-local-notification" source="npm" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="5000" />
     <preference name="SplashMaintainAspectRatio" value="true|false" />
@@ -107,5 +106,4 @@
         <param name="ANDROID_SUPPORT_VERSION" value="26.+" />
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
-    <plugin name="de.appplant.cordova.plugin.local-notification" spec="~0.8.5" />
 </widget>
