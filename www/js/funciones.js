@@ -34,6 +34,9 @@ var app = {
     onDeviceReady: function() {
 
         app.receivedEvent('deviceready');
+        FCMPlugin.getToken(function(token){
+            alert(token);
+        });
 
 
 
@@ -88,28 +91,6 @@ var app = {
             document.getElementById('dynamic-sel').appendChild(option);
 
         }
-
-
-        FCMPlugin.onTokenRefresh(function(token){
-            console.log( token );
-        });
-        FCMPlugin.onNotification(
-            function(data){
-                if(data.wasTapped){
-                    //Notification was received on device tray and tapped by the user.
-                    alert( JSON.stringify(data) );
-                }else{
-                    //Notification was received in foreground. Maybe the user needs to be notified.
-                    alert( JSON.stringify(data) );
-                }
-            },
-            function(msg){
-                console.log('onNotification callback successfully registered: ' + msg);
-            },
-            function(err){
-                console.log('Error registering onNotification callback: ' + err);
-            }
-        );
 
     }
 
