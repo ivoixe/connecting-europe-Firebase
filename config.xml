@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.connectingEurope.app" version="1.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="phonegap-version" value="cli-7.1.0" />
-    <name>Connecting Europe TEST</name>
+    <name>Connecting Europe</name>
     <description>Sistema de localización y fichado</description>
     <author email="ivonne@prismacm.com" href="http://phonegap.com">IVONNE</author>
     <content src="index.html" />
@@ -33,6 +33,7 @@
     <allow-intent href="geo:*" />
     <plugin name="cordova-plugin-splashscreen" />
     <preference name="AutoHideSplashScreen" value="true" />
+    <gap:plugin name="cordova-plugin-local-notification" source="npm" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="5000" />
     <preference name="SplashMaintainAspectRatio" value="true|false" />
@@ -106,4 +107,5 @@
         <param name="ANDROID_SUPPORT_VERSION" value="26.+" />
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+    <plugin name="cordova-plugin-local-notification" spec="https://github.com/katzer/cordova-plugin-local-notifications.git" />
 </widget>

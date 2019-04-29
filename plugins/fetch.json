@@ -147,18 +147,10 @@
     "is_top_level": false,
     "variables": {}
   },
-  "de.appplant.cordova.plugin.local-notification": {
+  "cordova-plugin-local-notification": {
     "source": {
       "type": "registry",
-      "id": "de.appplant.cordova.plugin.local-notification"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-fcm": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-fcm"
+      "id": "https://github.com/katzer/cordova-plugin-local-notifications.git"
     },
     "is_top_level": true,
     "variables": {}
