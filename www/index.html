@@ -148,7 +148,6 @@
                setTimeout(function() {
                 navigator.splashscreen.hide();
                 alert("APP-INITIALIZE");
-                app.initialize();
             }, 2000);
            }
         }
@@ -156,39 +155,6 @@
         }
         function errorCallback(error) {
         }
-
-        var app = {
-            initialize: function() {
-                document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-            },
-            onDeviceReady: function() {
-                this.receivedEvent('deviceready');
-            },
-            receivedEvent: function(id) {
-                FCMPlugin.onTokenRefresh(function(token){
-                    alert( token );
-                });
-                FCMPlugin.onNotification(
-                    function(data){
-                        if(data.wasTapped){
-                            //Notification was received on device tray and tapped by the user.
-                            alert( JSON.stringify(data) );
-                        }else{
-                            //Notification was received in foreground. Maybe the user needs to be notified.
-                            alert( JSON.stringify(data) );
-                        }
-                    },
-                    function(msg){
-                        console.log('onNotification callback successfully registered: ' + msg);
-                    },
-                    function(err){
-                        console.log('Error registering onNotification callback: ' + err);
-                    }
-                );
-
-                console.log('Received Event: ' + id);
-            }
-        };
 
     </script>
     <style>
