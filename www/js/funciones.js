@@ -91,7 +91,7 @@ var app = {
 
 
         FCMPlugin.onTokenRefresh(function(token){
-            alert( token );
+            console.log( token );
         });
         FCMPlugin.onNotification(
             function(data){
