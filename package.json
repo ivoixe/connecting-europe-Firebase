@@ -24,10 +24,12 @@
       },
       "cordova-plugin-request-location-accuracy": {},
       "cordova.plugins.diagnostic": {},
-      "cordova-plugin-inappbrowser": {}
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-fcm": {}
     }
   },
   "dependencies": {
+    "cordova-plugin-fcm": "^2.1.2",
     "de.appplant.cordova.plugin.local-notification": "file:plugins/de.appplant.cordova.plugin.local-notification"
   }
 }
