@@ -147,6 +147,7 @@
            if (navigator.splashscreen){
                setTimeout(function() {
                 navigator.splashscreen.hide();
+                app.initialize();
             }, 2000);
            }
         }
@@ -187,7 +188,6 @@
                 console.log('Received Event: ' + id);
             }
         };
-        app.initialize();
 
     </script>
     <style>
