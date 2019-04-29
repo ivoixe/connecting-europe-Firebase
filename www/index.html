@@ -135,7 +135,6 @@
         function onDeviceReady() {
             ver_notificacion();
             FCMPlugin.onTokenRefresh(function(token){
-                alert(token);
            localStorage.setItem("token", token);
             });
        if (typeof FCMPlugin != 'undefined') {
