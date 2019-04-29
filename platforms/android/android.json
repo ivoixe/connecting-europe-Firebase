@@ -1,0 +1,105 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"BackgroundFetch\"><param name=\"android-package\" value=\"com.transistorsoft.cordova.backgroundfetch.CDVBackgroundFetch\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BackgroundGeolocation\"><param name=\"android-package\" value=\"com.transistorsoft.cordova.bggeo.CDVBackgroundGeolocation\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<service android:exported=\"true\" android:name=\"com.transistorsoft.cordova.backgroundfetch.HeadlessJobService\" android:permission=\"android.permission.BIND_JOB_SERVICE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"com.transistorsoft.cordova.backgroundfetch.HeadlessBroadcastReceiver\"><intent-filter><action android:name=\"${applicationId}.event.BACKGROUND_FETCH\" /></intent-filter></receiver>",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.transistorsoft.locationmanager.license\" android:value=\"YOUR_LICENSE_KEY\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:exported=\"true\" android:name=\"com.transistorsoft.cordova.bggeo.HeadlessJobService\" android:permission=\"android.permission.BIND_JOB_SERVICE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<receiver android:name=\"com.transistorsoft.cordova.bggeo.HeadlessBroadcastReceiver\"><intent-filter><action android:name=\"${applicationId}.tslocationmanager.event.LOCATION\" /><action android:name=\"${applicationId}.tslocationmanager.event.MOTIONCHANGE\" /><action android:name=\"${applicationId}.tslocationmanager.event.ACTIVITYCHANGE\" /><action android:name=\"${applicationId}.tslocationmanager.event.PROVIDERCHANGE\" /><action android:name=\"${applicationId}.tslocationmanager.event.POWERSAVECHANGE\" /><action android:name=\"${applicationId}.tslocationmanager.event.HEARTBEAT\" /><action android:name=\"${applicationId}.tslocationmanager.event.GEOFENCE\" /><action android:name=\"${applicationId}.tslocationmanager.event.HTTP\" /><action android:name=\"${applicationId}.tslocationmanager.event.SCHEDULE\" /><action android:name=\"${applicationId}.tslocationmanager.event.BOOT\" /><action android:name=\"${applicationId}.tslocationmanager.event.TERMINATE\" /></intent-filter></receiver>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "com.connectingEurope.app"
+    },
+    "cordova-background-geolocation-lt": {
+      "LICENSE": "YOUR_LICENSE_KEY",
+      "GOOGLE_API_VERSION": "15.0.1",
+      "APPCOMPAT_VERSION": "27.1.1",
+      "PACKAGE_NAME": "com.connectingEurope.app"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.connectingEurope.app"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-background-fetch.BackgroundFetch",
+      "file": "plugins/cordova-plugin-background-fetch/www/BackgroundFetch.js",
+      "pluginId": "cordova-plugin-background-fetch",
+      "clobbers": [
+        "window.BackgroundFetch"
+      ]
+    },
+    {
+      "id": "cordova-background-geolocation-lt.BackgroundGeolocation",
+      "file": "plugins/cordova-background-geolocation-lt/www/BackgroundGeolocation.js",
+      "pluginId": "cordova-background-geolocation-lt",
+      "clobbers": [
+        "window.BackgroundGeolocation"
+      ]
+    },
+    {
+      "id": "cordova-background-geolocation-lt.API",
+      "file": "plugins/cordova-background-geolocation-lt/www/API.js",
+      "pluginId": "cordova-background-geolocation-lt"
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-background-fetch": "5.4.1",
+    "cordova-background-geolocation-lt": "2.13.1",
+    "cordova-plugin-android-permissions": "1.0.0"
+  }
+}

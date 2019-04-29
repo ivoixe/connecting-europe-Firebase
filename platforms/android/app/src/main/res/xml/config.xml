@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.connectingEurope.app" version="1.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Connecting Europe TEST</name>
+    <description>Sistema de localización y fichado</description>
+    <author email="ivonne@prismacm.com" href="http://phonegap.com">IVONNE</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <gap:plugin name="cordova-plugin-local-notification" source="npm" />
+    <resource-file src="google-services.json" target="google-services.json" />
+    <allow-intent href="market:*" />
+    <icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
+    <icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
+    <icon qualifier="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
+    <icon qualifier="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
+    <icon qualifier="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
+    <icon qualifier="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
+    <splash density="hdpi" src="res/drawable-xhdpi/screen.png" />
+    <splash density="ldpi" src="res/drawable-ldpi/screen.png" />
+    <splash density="mdpi" src="res/drawable-mdpi/screen.png" />
+    <splash density="xhdpi" src="res/drawable-xhdpi/screen.png" />
+    <splash density="xxhdpi" src="res/drawable-xhdpi/screen.png" />
+    <splash density="xxxhdpi" src="res/drawable-xhdpi/screen.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="false" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashMaintainAspectRatio" value="true|false" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <preference name="SplashScreen" value="screen" />
+    <feature name="BackgroundFetch">
+        <param name="android-package" value="com.transistorsoft.cordova.backgroundfetch.CDVBackgroundFetch" />
+    </feature>
+    <feature name="BackgroundGeolocation">
+        <param name="android-package" value="com.transistorsoft.cordova.bggeo.CDVBackgroundGeolocation" />
+    </feature>
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+</widget>
