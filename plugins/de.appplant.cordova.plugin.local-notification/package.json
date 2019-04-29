@@ -1,0 +1,85 @@
+{
+  "name": "de.appplant.cordova.plugin.local-notification",
+  "cordova_name": "Cordova LocalNotification Plugin",
+  "version": "0.8.5",
+  "description": "Schedules and queries for local notifications",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katzer/cordova-plugin-local-notifications.git#ios10"
+  },
+  "keywords": [
+    "appplant",
+    "notification",
+    "local notification",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "platforms": [
+    "ios",
+    "android",
+    "windows"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    },
+    {
+      "name": "cordova-plugman",
+      "version": ">=4.3.0"
+    },
+    {
+      "name": "cordova-windows",
+      "version": ">=4.2.0"
+    }
+  ],
+  "dependencies": {
+    "cordova-plugin-device": "*",
+    "cordova-plugin-app-event": ">=1.1.0"
+  },
+  "author": {
+    "name": "Sebastián Katzer"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/katzer/cordova-plugin-local-notifications/issues"
+  },
+  "homepage": "https://github.com/katzer/cordova-plugin-local-notifications#readme",
+  "gitHead": "fdf8470de329421370ef81c9efa12caab995c309",
+  "_id": "de.appplant.cordova.plugin.local-notification@0.8.5",
+  "_shasum": "e0c6a86ea52ac4f41dba67521d91a58a9a42a3bd",
+  "_from": "de.appplant.cordova.plugin.local-notification@latest",
+  "_npmVersion": "4.2.0",
+  "_nodeVersion": "6.10.2",
+  "_npmUser": {
+    "name": "katzer",
+    "email": "katzer@appplant.de"
+  },
+  "dist": {
+    "shasum": "e0c6a86ea52ac4f41dba67521d91a58a9a42a3bd",
+    "tarball": "https://registry.npmjs.org/de.appplant.cordova.plugin.local-notification/-/de.appplant.cordova.plugin.local-notification-0.8.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "katzer",
+      "email": "katzer@appplant.de"
+    },
+    {
+      "name": "knittel",
+      "email": "knittel@appplant.de"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/de.appplant.cordova.plugin.local-notification-0.8.5.tgz_1495452870638_0.06248779804445803"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/de.appplant.cordova.plugin.local-notification/-/de.appplant.cordova.plugin.local-notification-0.8.5.tgz",
+  "readme": "ERROR: No README data found!"
+}
