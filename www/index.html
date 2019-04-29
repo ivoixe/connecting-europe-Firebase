@@ -134,15 +134,15 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
-		alert( token );
-            /*FCMPlugin.onTokenRefresh(function(token){
+            FCMPlugin.onTokenRefresh(function(token){
+                alert(token);
            localStorage.setItem("token", token);
             });
        if (typeof FCMPlugin != 'undefined') {
            FCMPlugin.getToken(function (token) {
                localStorage.setItem("token", token);
            });
-       }*/
+       }
             // window.plugins.sim.getSimInfo(successCallback, errorCallback);
 	   navigator.splashscreen.show();
            if (navigator.splashscreen){
