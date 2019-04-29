@@ -34,9 +34,10 @@ var app = {
     onDeviceReady: function() {
 
         app.receivedEvent('deviceready');
-
+        alert("START-FUNCTION");
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
+            alert("token");
             alert(token);
         }, function(error) {
             alert("error");
