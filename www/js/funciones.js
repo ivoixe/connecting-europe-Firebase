@@ -37,9 +37,9 @@ var app = {
 
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
-            console.log(token);
+            alert(token);
         }, function(error) {
-            console.error(error);
+            alert("error");
         });
 
 
