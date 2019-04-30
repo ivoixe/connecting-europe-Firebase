@@ -155,22 +155,6 @@
         function errorCallback(error) {
         }
 
-        document.addEventListener("deviceready", function() {
-            if (cordova.backgroundapp.resumeType == 'launch') {
-                renderUi();
-            }
-        }, false);
-        document.addEventListener("resume", function() {
-            if (cordova.backgroundapp.resumeType == 'normal-launch') {
-                renderUi();
-            } else if (cordova.backgroundapp.resumeType == 'programmatic-launch') {
-                // You launched programatically (through cordova.backgroundapp.show() perhaps)
-                // so you should have already called renderUi() from where you called .show().
-            }
-        }, false);
-
-        cordova.backgroundapp.show();
-
 
     </script>
     <style>

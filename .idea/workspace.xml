@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21539">
-              <caret line="1270" column="24" lean-forward="false" selection-start-line="1270" selection-start-column="8" selection-end-line="1270" selection-end-column="24" />
+            <state relative-caret-position="-41">
+              <caret line="1671" column="25" lean-forward="false" selection-start-line="1671" selection-start-column="9" selection-end-line="1671" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="171" column="37" lean-forward="false" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
+            <state relative-caret-position="289">
+              <caret line="135" column="28" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="28" />
               <folding>
                 <element signature="e#2317#2397#0" expanded="false" />
               </folding>
@@ -77,9 +77,9 @@
       <find>device</find>
       <find>onDeviceReady</find>
       <find>fcm</find>
-      <find>ver_notificacion</find>
       <find>FCMPlugin</find>
       <find>document.addEventListener(&quot;deviceready&quot;</find>
+      <find>ver_notificacion</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,12 +208,12 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="12243000" />
+      <workItem from="1556611996773" duration="12603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31296000" />
+    <option name="totallyTimeSpent" value="31656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -445,21 +445,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21539">
-          <caret line="1270" column="24" lean-forward="false" selection-start-line="1270" selection-start-column="8" selection-end-line="1270" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="171" column="37" lean-forward="false" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="135" column="28" lean-forward="false" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="28" />
           <folding>
             <element signature="e#2317#2397#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="1671" column="25" lean-forward="false" selection-start-line="1671" selection-start-column="9" selection-end-line="1671" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
