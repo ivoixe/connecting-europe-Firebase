@@ -4,7 +4,9 @@ var app = {
     // Application Constructor
 
     initialize: function() {
+
         this.bindEvents();
+
     },
 
     // Bind Event Listeners
@@ -86,6 +88,13 @@ var app = {
             document.getElementById('dynamic-sel').appendChild(option);
 
         }
+
+
+
+
+
+
+
     }
 
 };
@@ -1661,6 +1670,7 @@ function cargar_info_alojamiento(){
 }
 
 function ver_notificacion(){
+
     var horario_descargado = JSON.parse(localStorage.getItem("horarios"));
     var   dtTodap = new Date();
     var localNotificationsArray =[];
