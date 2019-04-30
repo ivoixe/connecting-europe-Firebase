@@ -39,10 +39,10 @@
         "cordova-plugin-android-permissions": {
             "PACKAGE_NAME": "com.connectingEurope.app"
         },
-        "cordova-plugin-device": {
+        "cordova-plugin-badge": {
             "PACKAGE_NAME": "com.connectingEurope.app"
         },
-        "cordova-plugin-badge": {
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.connectingEurope.app"
         }
     }
