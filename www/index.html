@@ -151,14 +151,6 @@
            }
 
 
-
-        }
-        function successCallback(result) {
-        }
-        function errorCallback(error) {
-        }
-
-        document.addEventListener('deviceready', function() {
             alert('deviceready. resumeType=' + cordova.backgroundapp.resumeType);
             initCallbacks();
             // Don't bother drawing UI when running in the background.
@@ -167,7 +159,12 @@
             } else { // resumeType == ''
                 alert('Running in the background!');
             }
-        });
+        }
+        function successCallback(result) {
+        }
+        function errorCallback(error) {
+        }
+
         document.addEventListener('resume', function() {
             alert('resume event. resumeType=' + cordova.backgroundapp.resumeType);
             if (cordova.backgroundapp.resumeType == 'normal-launch') {
