@@ -73,6 +73,16 @@
                 .then(
                     menu.close.bind(menu)
                 );
+
+            alert("TOKEN");
+            window.FirebasePlugin.getToken(function(token) {
+                // save this server-side and use it to push notifications to this device
+                alert("token");
+                console.log(token);
+            }, function(error) {
+                alert("error");
+            });
+
         };
         ons.ready(function() {
             var user =  localStorage.getItem("username");
@@ -133,7 +143,7 @@
 
 	    
         function onDeviceReady() {
-            ver_notificacion();
+            //ver_notificacion();
             /*  FCMPlugin.onTokenRefresh(function(token){
            localStorage.setItem("token", token);
        });

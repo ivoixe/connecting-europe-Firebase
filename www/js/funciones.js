@@ -34,16 +34,7 @@ var app = {
     onDeviceReady: function() {
 
         app.receivedEvent('deviceready');
-        alert("START-FUNCTION");
-        window.FirebasePlugin.getToken(function(token) {
-            // save this server-side and use it to push notifications to this device
-            alert("token");
-            alert(token);
-        }, function(error) {
-            alert("error");
-        });
-
-
+        
     },
 
     // Update DOM on a Received Event
@@ -1692,7 +1683,7 @@ function ver_notificacion(){
         });
     }
 
-    cordova.plugins.notification.local.hasPermission(function (granted){
+    /*cordova.plugins.notification.local.hasPermission(function (granted){
         //obtenemos los horarios
         if( granted == false ) {
 
@@ -1757,7 +1748,7 @@ function ver_notificacion(){
 
 
 
-    });
+    });*/
 
 
 
