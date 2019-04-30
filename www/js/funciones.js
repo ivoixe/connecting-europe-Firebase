@@ -1686,7 +1686,7 @@ function ver_notificacion(){
                     at: dtTodap
                 },
                 text: "Hora de fichar" + item.horario_entrada,
-                priority:1,
+                priority:'high',
                 foreground: true,
                 badge:1,
                 every: "minute",

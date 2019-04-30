@@ -14,6 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="1688" column="30" lean-forward="false" selection-start-line="1688" selection-start-column="30" selection-end-line="1688" selection-end-column="30" />
+              <folding>
+                <marker date="1556632268585" expanded="true" signature="26274:26347" ph="{...}" />
+                <marker date="1556632268585" expanded="true" signature="26401:26556" ph="{...}" />
+                <marker date="1556632268585" expanded="true" signature="26457:26538" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -24,21 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BootLauncher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/src/android/BootLauncher.java">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -48,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getPrio</find>
       <find>n getTriggerDate</find>
       <find>import android.os.UserManager;</find>
       <find>EXTRA_ID</find>
@@ -61,7 +64,6 @@
       <find>startOnBoot</find>
       <find>reb</find>
       <find>portada</find>
-      <find>ver</find>
       <find>token</find>
       <find>ver_datos</find>
       <find>ver_datas</find>
@@ -78,6 +80,8 @@
       <find>document.addEventListener(&quot;deviceready&quot;</find>
       <find>ver_notificacion</find>
       <find>FCMPlugin</find>
+      <find>verç</find>
+      <find>ver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,10 +97,10 @@
         <option value="$PROJECT_DIR$/plugins/cordova-support-google-services/build.gradle" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/google-services.json" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
-        <option value="$PROJECT_DIR$/www/js/funciones.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/plugin.xml" />
+        <option value="$PROJECT_DIR$/www/js/funciones.js" />
       </list>
     </option>
   </component>
@@ -207,12 +211,12 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="15691000" />
+      <workItem from="1556611996773" duration="16454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34744000" />
+    <option name="totallyTimeSpent" value="35507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -420,14 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -446,22 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="1273" column="14" lean-forward="false" selection-start-line="1273" selection-start-column="14" selection-end-line="1273" selection-end-column="14" />
-          <folding>
-            <marker date="1556628632898" expanded="true" signature="26274:26347" ph="{...}" />
-            <marker date="1556628632898" expanded="true" signature="26401:26556" ph="{...}" />
-            <marker date="1556628632898" expanded="true" signature="26457:26538" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="46" />
+        <state relative-caret-position="34">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -474,11 +458,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="693">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="1688" column="30" lean-forward="false" selection-start-line="1688" selection-start-column="30" selection-end-line="1688" selection-end-column="30" />
+          <folding>
+            <marker date="1556632268585" expanded="true" signature="26274:26347" ph="{...}" />
+            <marker date="1556632268585" expanded="true" signature="26401:26556" ph="{...}" />
+            <marker date="1556632268585" expanded="true" signature="26457:26538" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
