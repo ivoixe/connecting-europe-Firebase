@@ -39,6 +39,14 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-plugin-background-mode": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-background-mode"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
   "cordova-background-geolocation-lt": {
     "source": {
       "type": "registry",
@@ -94,7 +102,7 @@
   "cordova-plugin-badge": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-badge"
+      "id": "cordova-plugin-badge@>=0.8.5"
     },
     "is_top_level": false,
     "variables": {}
@@ -139,10 +147,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-autostart": {
+  "cordova-plugin-firebase": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-autostart@latest"
+      "id": "cordova-plugin-firebase"
     },
     "is_top_level": true,
     "variables": {}
