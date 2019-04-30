@@ -149,14 +149,14 @@
                 navigator.splashscreen.hide();
             }, 2000);
            }
+
+            cordova.plugins.autoStart.enable();
+
         }
         function successCallback(result) {
         }
         function errorCallback(error) {
         }
-
-        cordova.plugins.autoStart.enable();
-
     </script>
     <style>
         .hidden{
