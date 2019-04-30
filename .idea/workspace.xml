@@ -17,8 +17,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="32" />
+            <state relative-caret-position="693">
+              <caret line="109" column="46" lean-forward="false" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -72,10 +72,10 @@
         <option value="$PROJECT_DIR$/google-services.json" />
         <option value="$PROJECT_DIR$/plugins/cordova-support-google-services/build.gradle" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/google-services.json" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/funciones.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -91,7 +91,7 @@
     <handled-path value="$PROJECT_DIR$/plugins/phonegap-plugin-push/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -186,15 +186,15 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="15027000" />
+      <workItem from="1556611996773" duration="15445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34080000" />
+    <option name="totallyTimeSpent" value="34498000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-98" width="1296" height="1010" extended-state="7" />
+    <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.355178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -439,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="32" />
+        <state relative-caret-position="693">
+          <caret line="109" column="46" lean-forward="false" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="46" />
           <folding />
         </state>
       </provider>
