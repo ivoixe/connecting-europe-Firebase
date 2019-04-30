@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) ivonne . All rights reserved.
+-->
+
+<head xmlns="">
+    <title>Geolocalización </title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U",
+            authDomain: "connecting-e5377.firebaseapp.com",
+            databaseURL: "https://connecting-e5377.firebaseio.com",
+            projectId: "connecting-e5377",
+            storageBucket: "connecting-e5377.appspot.com",
+            messagingSenderId: "953842536904"
+        };
+        var app=  firebase.initializeApp(config);
+        var aut= app.auth();
+        const messaging = firebase.messaging();
+        messaging.requestPermission()
+            .then(function(){
+                //  alert(messaging.getToken());
+                return messaging.getToken();
+            })
+            .then(function (token){
+                localStorage.setItem("token", token);
+            })
+            .catch(function(err){
+                console.log('no hay permiso');
+            })
+    </script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
+    <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="js/onsenui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/angular.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6cz9NsGdNE_K-eXAsZedHCNEaZRku63s"></script>
+
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+    <link  href="css/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="js/funciones.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        document.addEventListener('init', function(event) {
+           // recargarHorarios();
+
+                datos_portada();
+
+        }, false);
+
+
+        window.fn = {}
+        fn.Login = function(){
+            document.getElementById('menu').replacePage('login.html');
+        }
+        window.fn.open = function() {
+            var menu = document.getElementById('menu');
+            menu.open();
+        };
+        window.fn.load = function(page) {
+            var content = document.getElementById('content');
+            var menu = document.getElementById('menu');
+
+             var valido =  localStorage.getItem("valido");
+
+
+        
+            content.load(page)
+                .then(
+                    menu.close.bind(menu)
+                );
+        };
+        ons.ready(function() {
+            var user =  localStorage.getItem("username");
+            var pass_user =  localStorage.getItem("password");
+
+            /*
+            var user =  localStorage.getItem("username");
+            var pass_user =  localStorage.getItem("password");
+
+
+            if(!user && !pass_user ){
+                window.fn.load('login.html');
+            }else{
+                var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true }); // esta me mira una vez
+                var ahora = new Date();
+                var datetime = ahora.getDate() + "/"
+                    + (ahora.getMonth()+1)  + "/"
+                    + ahora.getFullYear() + "  "
+                    + ahora.getHours() + ":"
+                    + ahora.getMinutes() + ":"
+                    + ahora.getSeconds();
+
+                /*************limpia *************/
+              /*  navigator.geolocation.clearWatch(watchID);
+            }*/
+
+
+            /********************************/
+            ons.disableDeviceBackButtonHandler();
+            document.addEventListener("backbutton", function(){
+
+                if(content.page == "home.html"){
+                    //e.preventDefault();
+                    window.navigator.app.exitApp();
+                }else {
+                    if(!user && !pass_user){
+                        window.navigator.app.exitApp();
+                    }else{
+
+                        window.fn.load('home.html');
+                    }
+
+                }
+
+            }, false);
+
+
+
+
+            if(!user && !pass_user ){
+
+                window.fn.load('login.html');
+
+            }
+
+
+        });
+
+	    
+        function onDeviceReady() {
+            ver_notificacion();
+            /*  FCMPlugin.onTokenRefresh(function(token){
+           localStorage.setItem("token", token);
+       });
+       if (typeof FCMPlugin != 'undefined') {
+           FCMPlugin.getToken(function (token) {
+               localStorage.setItem("token", token);
+           });
+       }*/
+            // window.plugins.sim.getSimInfo(successCallback, errorCallback);
+	   navigator.splashscreen.show();
+           if (navigator.splashscreen){
+               setTimeout(function() {
+                navigator.splashscreen.hide();
+            }, 2000);
+           }
+        }
+        function successCallback(result) {
+        }
+        function errorCallback(error) {
+        }
+    </script>
+    <style>
+        .hidden{
+            display:none;
+        }
+        .datos-telefono{
+            float: left;
+            width: 100%;
+            overflow: scroll;
+        }
+    </style>
+
+</head>
+<body>
+<ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+        <ons-page >
+            <ons-list>
+                <ons-list-item onclick="fn.load('home.html')" tappable>
+                    Home
+                </ons-list-item>
+                <ons-list-item onclick="fn.load('informacion.html'); cargar_info_estancia();" tappable>
+                    Información sobre tu estancia
+                </ons-list-item>
+                <ons-list-item onclick="fn.load('sobreDestino.html');cargar_info_destino()" tappable>
+                    Sobre tu destino
+                </ons-list-item>
+                <ons-list-item onclick="fn.load('alojamiento.html');cargar_info_alojamiento();" tappable>
+                    Cómo llegar a tu alojamiento
+                </ons-list-item>
+                <ons-list-item onclick="fn.load('empresa.html');cargar_info_empresa();" tappable>
+                    Cómo llegar a tu empresa
+                </ons-list-item>
+                <!--
+            <ons-list-item onclick="fn.load('horarios.html')" tappable>
+                Contenido de Interés
+            </ons-list-item>
+           -->
+            <ons-list-item onclick="fn.load('configuracion.html')" tappable>
+                Configuración
+            </ons-list-item>
+
+            </ons-list>
+        </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+</ons-splitter>
+
+<ons-template id="login.html">
+    <ons-page id="login">
+        <ons-col>
+            <p>
+                <ons-input id="username_f" modifier="underbar" required placeholder="Usuario" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="password_f" modifier="underbar" required type="password" placeholder="Password" float></ons-input>
+            </p>
+            <p style="margin-top: 30px;text-align:center">
+                <ons-button id="save_f"   onclick="save_data_first()" >guardar datos</ons-button>
+            </p>
+        </ons-col>
+    </ons-page>
+</ons-template>
+
+<template id="home.html" >
+    <ons-page id="home">
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+
+           
+        </ons-toolbar>
+        <ons-row >
+            <ons-col class="logo">
+                <img src="img/logo.png">
+            </ons-col>
+        </ons-row>
+        <ons-row class="recuadro" >
+
+            <ons-row >
+                <ons-col >
+                    <h2>Control de la actividad</h2>
+
+                </ons-col>
+            </ons-row>
+            <ons-col >
+                <div class="fecha">
+                    <p><i class="fa fa-calendar"></i><span class="fecha_portada"></span></p>
+
+                </div>
+                <div class="horario">
+                    <i class="fa fa-clock"></i><strong></strong>
+                </div>
+            </ons-col>
+            <ons-col  >
+                <ons-button class="ver_historial" onclick="fn.load('horas.html');recargarHorarios()"><i class="fas fa-history"></i>Ver historial</ons-button>
+            </ons-col>
+            <ons-row class="content-entrar-boton"> 
+                <ons-col class="text-center">
+                    <ons-button class="entrar" onclick="fn.load('mapa-fichado.html');carga_fichado();"><i class="fal fa-door-open"></i><i class="fal fa-caret-right"></i>Registrar entrada</ons-button>
+                </ons-col>
+            </ons-row>
+        </ons-row>
+        <ons-row >
+            <ons-col  class="text-center"   onclick="fn.load('informacion.html');cargar_info_estancia();"  align="center">
+                <div class="content-imagen">
+                    <img class="img-responsive img-circle" src="img/estancia-menu.png">
+                </div>
+                <span class="menu">Información sobre tu estancia</span>
+            </ons-col>
+            <ons-col class="text-center" onclick="fn.load('sobreDestino.html');cargar_info_destino()" align="center" style="align-self: auto;">
+                <div class="content-imagen">
+                    <img class="img-responsive img-circle" src="img/destino-menu.png">
+                </div>
+                <span class="menu">Sobre tu<br/> destino</span>
+            </ons-col>
+        </ons-row>
+        <ons-row >
+            <ons-col  class="text-center"  onclick="fn.load('alojamiento.html');cargar_info_alojamiento()" align="center">
+                <div class="content-imagen">
+                    <img class="img-responsive img-circle" src="img/casa-menu.png">
+                </div>
+                <span class="menu">Cómo llegar a tu alojamiento</span>
+            </ons-col>
+            <ons-col  class="text-center"  onclick="fn.load('empresa.html');cargar_info_empresa()" align="center">
+                <div class="content-imagen">
+                    <img class="img-responsive img-circle" src="img/empresa-menu.png">
+                </div>
+                <span class="menu">Cómo llegar a tu empresa</span>
+            </ons-col>
+        </ons-row>
+    </ons-page>
+</template>
+
+<template id="mapa-fichado.html">
+    <ons-page>
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion" >
+                Registro de entrada
+            </div>
+        </ons-toolbar>
+        <p>Lugar del registro de entrada</p>
+        <div  id="map-canvas">
+        </div>
+     
+    </ons-page>
+</template>
+
+<template id="horas.html">
+    <ons-page id="horas"  class="whitePage" >
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion" >
+                Historial
+            </div>
+        </ons-toolbar>
+
+        <div data-role="content">
+
+            <ons-row>
+                <ons-col >
+                    <ons-list id="lista_horarios"></ons-list>
+                </ons-col>
+            </ons-row>
+        </div>
+    </ons-page>
+</template>
+<template id="informacion.html">
+    <ons-page id="info-destino" class="whitePage">
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion">
+                Información sobre tu estancia
+            </div>
+        </ons-toolbar>
+        <ons-row align="center">
+            <ons-col align="center">
+                <div class="tituloViaje">
+                    Viaje a : <span></span>
+                </div>
+            </ons-col>
+        </ons-row>
+        <ons-list>
+            <ons-list-item class="llegada azul">
+                <div class="iconoItem">
+                    <i class="fas fa-plane-arrival"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Llegada a destino:</li>
+                        <li class="destino_llegada"></li>
+                        <li class="fechas_llegada"></li>
+                    </ul>
+                </div>
+            </ons-list-item>
+            <ons-list-item class="datosColaborador naranja">
+                <div class="iconoItem">
+                    <i class="fas fa-user-headset"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Datos del colaborador de C.E:</li>
+                        <li class="colaborador_nombre"></li>
+                        <li class="colaborador_email"><a href=""></a> | <span class="colaborador_tel"></span></li>
+                    </ul>
+                </div>
+            </ons-list-item>
+            <ons-list-item class="direccionApartamento azul">
+			 <div class="left">
+                <div class="iconoItem">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="textItem">
+                    <ul>  
+                        <li class="titulo">Dirección del apartamento:</li>
+                    </ul>
+					<div  id="estancias">
+					</div>
+					
+                </div>
+				</div>
+            </ons-list-item>
+            <ons-list-item class="direccionEmpresa naranja">
+                <div class="iconoItem">
+                    <i class="fas fa-industry-alt"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Dirección de la empresa de prácticas:</li>
+                        <li class="empresa_nombre"></li>
+                        <li class="empresa_direccion"></li>
+                       
+                    </ul>
+                </div>
+            </ons-list-item>
+            <ons-list-item class="encargadoEmpresa azul">
+                <div class="iconoItem">
+                    <i class="fas fa-user-hard-hat"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Tu encargado en la empresa:</li>
+                        <li class="empresa_responsable"></li>
+                        <li class="responsable_mentor_mail"><a href=""></a> | <span class="res_tel"></span></li>
+                    </ul>
+                </div>
+            </ons-list-item>
+            <ons-list-item class="horarioTrabajo naranja">
+                <div class="iconoItem">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Horario de trabajo:</li>
+                        <li class="periodo_practicas">Periodo laboral: <span class="periodo"></span></li>
+                        <li class="hidden"></li>
+                    </ul>
+                </div>
+            </ons-list-item>
+            <ons-list-item class="salida azul">
+                <div class="iconoItem">
+                    <i class="fas fa-plane-departure"></i>
+                </div>
+                <div class="textItem">
+                    <ul>
+                        <li class="titulo">Salida:</li>
+                        <li class="vuelta_desde"></li>
+                        <li class="vuelta_fecha"> <span class="fecha_vuelta"><span class="hora_vuelta"></span></li>
+                    </ul>
+                </div>
+            </ons-list-item>
+        </ons-list>
+    </ons-page>
+
+
+</template>
+<template id="empresa.html">
+    <ons-page class="whitePage">
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion">
+            
+                Cómo llegar a tu empresa
+            </div>
+        </ons-toolbar>
+        <ons-row>
+            <ons-col id="empresa">
+              <script type="text/javascript" src="https://www.google.com/maps/dir/?api=1"></script>
+              <ons-row class="maps-google-ver">
+                   <div id="ver_en_maps"><i class="fas fa-map-marked"></i>Ver en google maps</div>
+                </ons-row>
+
+            </ons-col>
+        </ons-row>
+
+    </ons-page>
+
+</template>
+<template id="alojamiento.html">
+    <ons-page class="whitePage">
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion">
+
+                <script type="text/javascript" src="https://www.google.com/maps/dir/?api=1"></script>
+
+                Cómo llegar a tu alojamiento
+            </div>
+        </ons-toolbar>
+        <ons-row>
+            <ons-col id="alojamiento">
+
+            </ons-col>
+        </ons-row>
+
+
+    </ons-page>
+</template>
+<template id="sobreDestino.html">
+    <ons-page id="destino" class="whitePage">
+        <ons-toolbar class="blanco">
+            <div class="left">
+                <ons-toolbar-button onclick="fn.open()">
+                    <ons-icon icon="md-menu"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center tituloSeccion">
+                Sobre tu destino
+            </div>
+        </ons-toolbar>
+        <ons-row align="center">
+            <ons-col align="center">
+                <div class="tituloViaje">
+
+                </div>
+            </ons-col>
+        </ons-row>
+        <ons-card>
+            <img src="" alt="" style="width: 100%">
+            <ons-row>
+            <div class="descripcion">
+
+            </div> 
+            </ons-row>
+            <ons-list>
+                <ons-list-item class="bus azul">
+                    <div class="iconoItem">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="textItem">
+                        <ul>
+                            <li class="titulo">Estación central de autobús:</li>
+                            <li class="estacion_bus"><a target="_blank" href=""></a></li>
+                        </ul>
+                    </div>
+                </ons-list-item>
+                <ons-list-item class="tren naranja">
+                    <div class="iconoItem">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div class="textItem">
+                        <ul>
+                            <li class="titulo">Estación central de tren:</li>
+                            <li class="estacion_tren"><a target="_blank" href=""></a></li>
+                        </ul>
+                    </div>
+                </ons-list-item>
+                <ons-list-item class=" azul">
+                    <div class="iconoItem">
+                        <i class="fas fa-phone-square"></i>
+                    </div>
+                    <div class="textItem">
+                        <ul>
+                            <li class="titulo">Teléfonos útiles:</li>
+                        </ul>
+                       
+                    </div>
+                </ons-list-item>
+
+            </ons-list>
+                         <ons-row>
+                            <ons-col class="telefonos"></ons-col>
+                        </ons-row>
+        </ons-card>
+    </ons-page>
+
+</template>
+<template id="configuracion.html">
+<ons-page>
+    <ons-toolbar class="blanco">
+        <div class="left">
+            <ons-toolbar-button onclick="fn.open()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+            Configuración
+        </div>
+    </ons-toolbar>
+    <div style="text-align: center; margin-top: 30px;">
+        <p>
+            <ons-input id="username" modifier="underbar" placeholder="Usuario" float></ons-input>
+        </p>
+        <p>
+            <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+            <ons-input id="token" modifier="underbar"  placeholder="token" float></ons-input>
+        </p>
+        <p style="margin-top: 30px;">
+            <ons-button id="save"   onclick="save()" >guardar datos</ons-button>
+        </p>
+        <ons-button  onclick="ver_datos()" id="ver_datas">Ver datos</ons-button >
+        <ons-button  onclick="limpiar()" id="limpiar">Borrar datos guardados</ons-button >
+        <p class="token_prov"></p>
+    </div>
+</ons-page>
+</template>
+<template id="tab2.html">
+    <ons-page id="Tab2">
+        <p style="text-align: center;">
+            This is the second page.
+        </p>
+    </ons-page>
+</template>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    function limpiar(){
+        localStorage.clear();
+    }
+</script>
