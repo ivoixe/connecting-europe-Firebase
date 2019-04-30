@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="384">
+              <caret line="1280" column="17" lean-forward="false" selection-start-line="1280" selection-start-column="17" selection-end-line="1280" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -27,19 +27,19 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="135" column="14" lean-forward="false" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
               <folding>
-                <marker date="1556617236587" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-                <marker date="1556617236587" expanded="true" signature="788:897" ph="{...}" />
-                <marker date="1556617236587" expanded="true" signature="933:1002" ph="{...}" />
-                <marker date="1556617236587" expanded="true" signature="1036:1098" ph="{...}" />
+                <marker date="1556617595456" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+                <marker date="1556617595456" expanded="true" signature="788:897" ph="{...}" />
+                <marker date="1556617595456" expanded="true" signature="933:1002" ph="{...}" />
+                <marker date="1556617595456" expanded="true" signature="1036:1098" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="693">
@@ -77,8 +77,8 @@
       <find>ver_notifi</find>
       <find>document.addEventListener('deviceready',</find>
       <find>app.in</find>
-      <find>ver_notificacion</find>
       <find>b</find>
+      <find>ver_notificacion</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,9 +93,9 @@
         <option value="$PROJECT_DIR$/google-services.json" />
         <option value="$PROJECT_DIR$/plugins/cordova-support-google-services/build.gradle" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-firebase/src/android/google-services.json" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/funciones.js" />
-        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -107,6 +107,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/platforms/browser/cordova/node_modules" />
     <handled-path value="$PROJECT_DIR$/plugins/cordova.plugins.diagnostic/node_modules" />
     <handled-path value="$PROJECT_DIR$/plugins/phonegap-plugin-push/node_modules" />
   </component>
@@ -206,12 +207,12 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="4160000" />
+      <workItem from="1556611996773" duration="4453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23213000" />
+    <option name="totallyTimeSpent" value="23506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -261,10 +262,10 @@
         <state relative-caret-position="10268">
           <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
           <folding>
-            <marker date="1556617236587" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556617236587" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556617595456" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -306,10 +307,10 @@
         <state relative-caret-position="10268">
           <caret line="604" column="7" lean-forward="false" selection-start-line="604" selection-start-column="7" selection-end-line="604" selection-end-column="7" />
           <folding>
-            <marker date="1556617236587" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556617236587" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556617595456" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -425,31 +426,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="135" column="14" lean-forward="false" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
           <folding>
-            <marker date="1556617236587" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556617236587" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556617236587" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556617595456" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556617595456" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="1280" column="17" lean-forward="false" selection-start-line="1280" selection-start-column="17" selection-end-line="1280" selection-end-column="17" />
           <folding />
         </state>
       </provider>
