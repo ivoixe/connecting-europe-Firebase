@@ -45,6 +45,8 @@ var app = {
 
     receivedEvent: function(id) {
 
+        cordova.plugins.backgroundMode.enable();
+
         var parentElement = document.getElementById(id);
 
         var listeningElement = parentElement.querySelector('.listening');

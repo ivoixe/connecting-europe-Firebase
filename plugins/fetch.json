@@ -42,7 +42,7 @@
   "cordova-plugin-background-mode": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-background-mode"
+      "id": "cordova-plugin-background-mode@~0.7.1"
     },
     "is_top_level": true,
     "variables": {}
