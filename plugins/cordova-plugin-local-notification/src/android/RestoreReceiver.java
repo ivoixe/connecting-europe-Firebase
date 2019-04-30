@@ -55,7 +55,7 @@ public class RestoreReceiver extends AbstractRestoreReceiver {
         if (!after && toast.isHighPrio()) {
             toast.show();
         } else {
-            toast.clear();
+            /*toast.clear();*/
         }
 
         Context ctx = toast.getContext();
