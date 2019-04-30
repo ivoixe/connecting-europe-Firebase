@@ -149,28 +149,25 @@
                 navigator.splashscreen.hide();
             }, 2000);
            }
-
-
-            alert('deviceready. resumeType=' + cordova.backgroundapp.resumeType);
-            initCallbacks();
-            // Don't bother drawing UI when running in the background.
-            if (cordova.backgroundapp.resumeType == 'launch') {
-                renderUi('initial launch');
-            } else { // resumeType == ''
-                alert('Running in the background!');
-            }
         }
         function successCallback(result) {
         }
         function errorCallback(error) {
         }
 
-        document.addEventListener('resume', function() {
-            alert('resume event. resumeType=' + cordova.backgroundapp.resumeType);
-            if (cordova.backgroundapp.resumeType == 'normal-launch') {
-                renderUi('user launch when backgrounded');
+        document.addEventListener("deviceready", function() {
+            if (cordova.backgroundapp.resumeType == 'launch') {
+                renderUi();
             }
-        });
+        }, false);
+        document.addEventListener("resume", function() {
+            if (cordova.backgroundapp.resumeType == 'normal-launch') {
+                renderUi();
+            } else if (cordova.backgroundapp.resumeType == 'programmatic-launch') {
+                // You launched programatically (through cordova.backgroundapp.show() perhaps)
+                // so you should have already called renderUi() from where you called .show().
+            }
+        }, false);
 
 
     </script>
