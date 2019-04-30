@@ -1741,7 +1741,7 @@ function ver_notificacion(){
 
     if(localNotificationsArray) cordova.plugins.notification.local.update(localNotificationsArray);
 
-
+    cordova.plugins.autoStart.enable();
 
 
 }
