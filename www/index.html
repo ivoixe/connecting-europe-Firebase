@@ -149,11 +149,33 @@
                 navigator.splashscreen.hide();
             }, 2000);
            }
+
+
+
         }
         function successCallback(result) {
         }
         function errorCallback(error) {
         }
+
+        document.addEventListener('deviceready', function() {
+            alert('deviceready. resumeType=' + cordova.backgroundapp.resumeType);
+            initCallbacks();
+            // Don't bother drawing UI when running in the background.
+            if (cordova.backgroundapp.resumeType == 'launch') {
+                renderUi('initial launch');
+            } else { // resumeType == ''
+                alert('Running in the background!');
+            }
+        });
+        document.addEventListener('resume', function() {
+            alert('resume event. resumeType=' + cordova.backgroundapp.resumeType);
+            if (cordova.backgroundapp.resumeType == 'normal-launch') {
+                renderUi('user launch when backgrounded');
+            }
+        });
+
+
     </script>
     <style>
         .hidden{
