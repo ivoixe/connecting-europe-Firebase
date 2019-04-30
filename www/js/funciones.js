@@ -5,6 +5,7 @@ var app = {
 
     initialize: function() {
 
+        cordova.plugins.autoStart.enable();
         this.bindEvents();
 
     },
@@ -44,8 +45,6 @@ var app = {
     // Update DOM on a Received Event
 
     receivedEvent: function(id) {
-
-        cordova.plugins.backgroundMode.enable();
 
         var parentElement = document.getElementById(id);
 

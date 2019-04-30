@@ -39,14 +39,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-background-mode": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-background-mode@~0.7.1"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-background-geolocation-lt": {
     "source": {
       "type": "registry",
@@ -143,6 +135,14 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-local-notification"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-autostart": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-autostart@2.3.0"
     },
     "is_top_level": true,
     "variables": {}

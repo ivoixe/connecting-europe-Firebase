@@ -91,7 +91,6 @@
     <feature name="PhoneNumberPlugin">
         <param name="android-package" value="at.oneminutedistraction.phonenumber.PhoneNumberPlugin" />
     </feature>
-    <plugin name="cordova-plugin-background-mode" spec="~0.7.1" />
     <plugin name="cordova-background-geolocation-lt">
         <variable name="LICENSE" value="YOUR_LICENSE_KEY" />
         <variable name="GOOGLE_API_VERSION" value="15.0.1" />
@@ -107,4 +106,5 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
+    <plugin name="cordova-plugin-autostart" version="2.3.0"/>
 </widget>
