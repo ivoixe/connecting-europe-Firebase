@@ -1683,7 +1683,7 @@ function ver_notificacion(){
         });
     }
 
-    /*cordova.plugins.notification.local.hasPermission(function (granted){
+    cordova.plugins.notification.local.hasPermission(function (granted){
         //obtenemos los horarios
         if( granted == false ) {
 
@@ -1748,7 +1748,7 @@ function ver_notificacion(){
 
 
 
-    });*/
+    });
 
 
 

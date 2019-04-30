@@ -17,14 +17,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="-936">
               <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -34,21 +34,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="1673" column="31" lean-forward="false" selection-start-line="1673" selection-start-column="31" selection-end-line="1673" selection-end-column="31" />
+            <state relative-caret-position="489">
+              <caret line="1750" column="7" lean-forward="true" selection-start-line="1750" selection-start-column="7" selection-end-line="1750" selection-end-column="7" />
               <folding>
-                <marker date="1556552368602" expanded="true" signature="36782:38228" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="36848:37296" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="37015:37284" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="37100:37170" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="37176:37270" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="37302:38219" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="37936:37987" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="38006:38109" ph="{...}" />
-                <marker date="1556552368602" expanded="true" signature="38120:38202" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="36713:38228" ph="/*...*/" />
+                <marker date="1556610283830" expanded="true" signature="36780:38226" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="36846:37294" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="37013:37282" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="37098:37168" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="37174:37268" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="37300:38217" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="37934:37985" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="38004:38107" ph="{...}" />
+                <marker date="1556610283830" expanded="true" signature="38118:38200" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -73,9 +74,9 @@
       <list>
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/node_modules/cordova-support-google-services/build.gradle" />
-        <option value="$PROJECT_DIR$/www/js/funciones.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/www/js/funciones.js" />
       </list>
     </option>
   </component>
@@ -144,12 +145,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556547146895</updated>
       <workItem from="1556547148289" duration="5363000" />
-      <workItem from="1556609011848" duration="1224000" />
+      <workItem from="1556609011848" duration="1256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6587000" />
+    <option name="totallyTimeSpent" value="6619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -201,37 +202,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="1673" column="31" lean-forward="false" selection-start-line="1673" selection-start-column="31" selection-end-line="1673" selection-end-column="31" />
-          <folding>
-            <marker date="1556552368602" expanded="true" signature="36782:38228" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="36848:37296" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="37015:37284" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="37100:37170" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="37176:37270" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="37302:38219" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="37936:37987" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="38006:38109" ph="{...}" />
-            <marker date="1556552368602" expanded="true" signature="38120:38202" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="1750" column="7" lean-forward="true" selection-start-line="1750" selection-start-column="7" selection-end-line="1750" selection-end-column="7" />
+          <folding>
+            <marker date="1556610283830" expanded="true" signature="36713:38228" ph="/*...*/" />
+            <marker date="1556610283830" expanded="true" signature="36780:38226" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="36846:37294" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="37013:37282" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="37098:37168" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="37174:37268" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="37300:38217" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="37934:37985" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="38004:38107" ph="{...}" />
+            <marker date="1556610283830" expanded="true" signature="38118:38200" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
