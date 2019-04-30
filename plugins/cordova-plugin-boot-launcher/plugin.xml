@@ -6,7 +6,7 @@
     <description>Cordova Plugin to automatically start the Cordova app when the device is booted.</description>
     <keywords>cordova, boot, launch, startup, homescreen, automatic</keywords>
     <engines>
-        <engine name="cordova" version=">=3.0.0" />
+        <engine name="cordova" version=">=4.0.0" />
     </engines>
     <platform name="android">
         <config-file target="config.xml" parent="/*">
