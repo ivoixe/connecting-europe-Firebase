@@ -1688,7 +1688,6 @@ function ver_notificacion(){
                 text: "Hora de fichar" + item.horario_entrada,
                 priority:1,
                 foreground: true,
-                ongoing: true,
                 badge:1,
                 every: "minute",
                 wakeup: true,

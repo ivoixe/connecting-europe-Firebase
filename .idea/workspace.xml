@@ -14,7 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RestoreReceiver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="1690" column="0" lean-forward="false" selection-start-line="1690" selection-start-column="0" selection-end-line="1690" selection-end-column="0" />
+              <folding>
+                <marker date="1556637533006" expanded="true" signature="26274:26347" ph="{...}" />
+                <marker date="1556637533006" expanded="true" signature="26401:26556" ph="{...}" />
+                <marker date="1556637533006" expanded="true" signature="26457:26538" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestoreReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-local-notification/src/android/RestoreReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -75,8 +89,8 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-boot-launcher/plugin.xml" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/www/js/funciones.js" />
         <option value="$PROJECT_DIR$/plugins/cordova-plugin-local-notification/src/android/RestoreReceiver.java" />
+        <option value="$PROJECT_DIR$/www/js/funciones.js" />
       </list>
     </option>
   </component>
@@ -186,12 +200,12 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="20529000" />
+      <workItem from="1556611996773" duration="20555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39582000" />
+    <option name="totallyTimeSpent" value="39608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -458,23 +472,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="1688" column="27" lean-forward="true" selection-start-line="1688" selection-start-column="16" selection-end-line="1688" selection-end-column="27" />
-          <folding>
-            <marker date="1556637307267" expanded="true" signature="26274:26347" ph="{...}" />
-            <marker date="1556637307267" expanded="true" signature="26401:26556" ph="{...}" />
-            <marker date="1556637307267" expanded="true" signature="26457:26538" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-local-notification/src/android/RestoreReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/funciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="1690" column="0" lean-forward="false" selection-start-line="1690" selection-start-column="0" selection-end-line="1690" selection-end-column="0" />
+          <folding>
+            <marker date="1556637533006" expanded="true" signature="26274:26347" ph="{...}" />
+            <marker date="1556637533006" expanded="true" signature="26401:26556" ph="{...}" />
+            <marker date="1556637533006" expanded="true" signature="26457:26538" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
