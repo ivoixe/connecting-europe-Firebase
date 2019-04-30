@@ -58,7 +58,7 @@ abstract public class AbstractRestoreReceiver extends BroadcastReceiver {
     public void onReceive (Context context, Intent intent) {
         String action = intent.getAction();
 
-        if (SDK_INT >= 24) {
+        if (SDK_INT >= 12) {
           UserManager um = (UserManager) context.getSystemService(UserManager.class);
           if (um == null || um.isUserUnlocked() == false) return;
         }
