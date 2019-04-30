@@ -30,12 +30,12 @@
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="639">
-              <caret line="157" column="43" lean-forward="false" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+              <caret line="157" column="10" lean-forward="false" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
               <folding>
-                <marker date="1556616664000" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-                <marker date="1556616664000" expanded="true" signature="788:897" ph="{...}" />
-                <marker date="1556616664000" expanded="true" signature="933:1002" ph="{...}" />
-                <marker date="1556616664000" expanded="true" signature="1036:1098" ph="{...}" />
+                <marker date="1556616880653" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+                <marker date="1556616880653" expanded="true" signature="788:897" ph="{...}" />
+                <marker date="1556616880653" expanded="true" signature="933:1002" ph="{...}" />
+                <marker date="1556616880653" expanded="true" signature="1036:1098" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -207,12 +207,12 @@
       <workItem from="1556529221941" duration="14374000" />
       <workItem from="1556605589629" duration="4599000" />
       <workItem from="1556611910948" duration="80000" />
-      <workItem from="1556611996773" duration="3434000" />
+      <workItem from="1556611996773" duration="3647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22487000" />
+    <option name="totallyTimeSpent" value="22700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-98" width="1296" height="1010" extended-state="6" />
@@ -264,10 +264,10 @@
         <state relative-caret-position="10268">
           <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
           <folding>
-            <marker date="1556616664000" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556616664000" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556616880653" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -311,10 +311,10 @@
         <state relative-caret-position="10268">
           <caret line="604" column="7" lean-forward="false" selection-start-line="604" selection-start-column="7" selection-end-line="604" selection-end-column="7" />
           <folding>
-            <marker date="1556616664000" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556616664000" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556616880653" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -451,12 +451,12 @@
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="639">
-          <caret line="157" column="43" lean-forward="false" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
+          <caret line="157" column="10" lean-forward="false" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
           <folding>
-            <marker date="1556616664000" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
-            <marker date="1556616664000" expanded="true" signature="788:897" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="933:1002" ph="{...}" />
-            <marker date="1556616664000" expanded="true" signature="1036:1098" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="243:593" ph="{&quot;apiKey&quot;: &quot;AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U&quot;...}" />
+            <marker date="1556616880653" expanded="true" signature="788:897" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="933:1002" ph="{...}" />
+            <marker date="1556616880653" expanded="true" signature="1036:1098" ph="{...}" />
           </folding>
         </state>
       </provider>
