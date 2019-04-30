@@ -147,10 +147,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-background-app": {
+  "cordova-plugin-firebase": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-background-app"
+      "id": "cordova-plugin-firebase"
     },
     "is_top_level": true,
     "variables": {}
