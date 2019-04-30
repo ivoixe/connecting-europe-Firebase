@@ -74,15 +74,6 @@
                     menu.close.bind(menu)
                 );
 
-            alert("TOKEN");
-            window.FirebasePlugin.getToken(function(token) {
-                // save this server-side and use it to push notifications to this device
-                alert("token");
-                console.log(token);
-            }, function(error) {
-                alert("error");
-            });
-
         };
         ons.ready(function() {
             var user =  localStorage.getItem("username");
