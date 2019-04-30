@@ -23,6 +23,10 @@
 
 package de.appplant.cordova.plugin.localnotification;
 
+import android.content.Context;
+import android.util.Log;
+
+import java.util.Date;
 
 import de.appplant.cordova.plugin.notification.Builder;
 import de.appplant.cordova.plugin.notification.Manager;
@@ -40,25 +44,24 @@ public class RestoreReceiver extends AbstractRestoreReceiver {
     /**
      * Called when a local notification need to be restored.
      *
-     * @param notification
-     *      Wrapper around the local notification
+     * @param request Set of notification options.
+     * @param toast   Wrapper around the local notification.
      */
-	
     @Override
-    public void onRestore (Notification notification) {
-        if (notification.isScheduled()) {
-            notification.schedule();
     public void onRestore (Request request, Notification toast) {
-        Manager mgr = Manager.getInstance(toast.getContext());
+        Date date     = request.getTriggerDate();
+        boolean after = date != null && date.after(new Date());
 
-        if (toast.isHighPrio()) {
+        if (!after && toast.isHighPrio()) {
             toast.show();
         } else {
-           
             toast.clear();
         }
 
-        if (toast.isRepeating()) {
+        Context ctx = toast.getContext();
+        Manager mgr = Manager.getInstance(ctx);
+
+        if (after || toast.isRepeating()) {
             mgr.schedule(request, TriggerReceiver.class);
         }
     }
@@ -66,13 +69,12 @@ public class RestoreReceiver extends AbstractRestoreReceiver {
     /**
      * Build notification specified by options.
      *
-     * @param builder
-     *      Notification builder
+     * @param builder Notification builder.
      */
     @Override
     public Notification buildNotification (Builder builder) {
         return builder
-				.setClickActivity(ClickReceiver.class)
+                .setClickActivity(ClickReceiver.class)
                 .setClearReceiver(ClearReceiver.class)
                 .build();
     }

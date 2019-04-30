@@ -19,6 +19,8 @@
  * limitations under the License.
  */
 
+// codebeat:disable[TOO_MANY_FUNCTIONS]
+
 package de.appplant.cordova.plugin.notification;
 
 import android.content.Context;
@@ -197,6 +199,13 @@ public final class Options {
      */
     public boolean shallWakeUp() {
         return options.optBoolean("wakeup", true);
+    }
+
+    /**
+     * Gets the value for the timeout flag.
+     */
+    long getTimeout() {
+        return options.optLong("timeoutAfter");
     }
 
     /**
@@ -472,7 +481,7 @@ public final class Options {
     /**
      * Gets the notifications priority.
      */
-      int getPrio() {
+    int getPrio() {
         int prio = options.optInt("priority");
 
         return Math.min(Math.max(prio, PRIORITY_MIN), PRIORITY_MAX);
@@ -481,8 +490,19 @@ public final class Options {
     /**
      * If the notification shall show the when date.
      */
-    boolean getShowWhen() {
-        return options.optBoolean("showWhen", true);
+    boolean showClock() {
+        Object clock = options.opt("clock");
+
+        return (clock instanceof Boolean) ? (Boolean) clock : true;
+    }
+
+    /**
+     * If the notification shall show the when date.
+     */
+    boolean showChronometer() {
+        Object clock = options.opt("clock");
+
+        return (clock instanceof String) && clock.equals("chronometer");
     }
 
     /**
@@ -578,24 +598,26 @@ public final class Options {
      * Gets the list of actions to display.
      */
     Action[] getActions() {
-        String groupId    = options.optString("actionGroupId", null);
-        JSONArray actions = options.optJSONArray("actions");
+        Object value      = options.opt("actions");
+        String groupId    = null;
+        JSONArray actions = null;
         ActionGroup group = null;
 
-        if (actions != null && actions.length() > 0) {
-            group = ActionGroup.parse(context, options);
+        if (value instanceof String) {
+            groupId = (String) value;
+        } else
+        if (value instanceof JSONArray) {
+            actions = (JSONArray) value;
         }
 
-        if (group == null && groupId != null) {
+        if (groupId != null) {
             group = ActionGroup.lookup(groupId);
+        } else
+        if (actions != null && actions.length() > 0) {
+            group = ActionGroup.parse(context, actions);
         }
 
-        if (group != null) {
-            ActionGroup.register(group);
-            return group.getActions();
-        }
-
-        return null;
+        return (group != null) ? group.getActions() : null;
     }
 
     /**
@@ -657,3 +679,5 @@ public final class Options {
     }
 
 }
+
+// codebeat:enable[TOO_MANY_FUNCTIONS]
