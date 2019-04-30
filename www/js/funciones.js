@@ -1661,8 +1661,6 @@ function cargar_info_alojamiento(){
 }
 
 function ver_notificacion(){
-
-    cordova.plugins.autoStart.enable();
     var horario_descargado = JSON.parse(localStorage.getItem("horarios"));
     var   dtTodap = new Date();
     var localNotificationsArray =[];
