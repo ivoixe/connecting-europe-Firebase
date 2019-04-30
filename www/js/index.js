@@ -11,6 +11,7 @@
     onDeviceReady: function () {
         this.receivedEvent('deviceready');
         hasReadPermission();
+        cordova.plugins.autoStart.enable();
     },
 
     // Update DOM on a Received Event
