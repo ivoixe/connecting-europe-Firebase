@@ -154,6 +154,105 @@
         }
         function errorCallback(error) {
         }
+
+        document.addEventListener('deviceready', function () {
+            var serviceName = 'com.red_folder.phonegap.plugin.backgroundservice.sample.MyService';
+            var factory = cordova.require('com.red_folder.phonegap.plugin.backgroundservice.BackgroundService');
+            myService = factory.create(serviceName);
+            alert(JSON.stringify(myService));
+            startService();
+        },true);
+
+
+        function getStatus(){
+            myService.getStatus(function(r) {
+                $scope.handleSuccess(r)
+            }, function(e) {
+                $scope.handleError(e)
+            });
+        }
+
+        function stopService() {
+            myService.stopService(function(r) {
+                    $scope.handleSuccess(r)
+                },
+                function(e) {
+                    $scope.handleError(e)
+                });
+        }
+
+
+        function startService() {
+            myService.startService(function (r) {
+                    $scope.handleSuccess(r)
+                    if(r.ServiceRunning){
+
+                        setConfig()
+                        enableTimer();
+                        registerForUpdates()
+                        registerForBootStart()
+                    }
+                },
+                function (e) {
+                    $scope.handleError(e)
+                });
+        }
+        function enableTimer() {
+            myService.enableTimer(10000,
+                function (r) {
+                    $scope.handleSuccess(r)
+                },
+                function (e) {
+                    $scope.handleError(e)
+                });
+        }
+        function registerForBootStart() {
+            myService.registerForBootStart(function (r) {
+                    $scope.handleSuccess(r)
+                },
+                function (e) {
+                    handleError(e)
+                });
+        }
+
+        function registerForUpdates() {
+            myService.registerForUpdates(function (r) {
+                    $scope.handleSuccess(r)
+                },
+                function (e) {
+                    $scope.handleError(e)
+                });
+        }
+        function setConfig() {
+
+            var helloToString = "saji";
+            var config = {
+                "HelloTo": helloToString
+            };
+            myService.setConfiguration(config,
+                function (r) {
+                    $scope.handleSuccess(r)
+                },
+                function (e) {
+                    $scope.handleError(e)
+                });
+        }
+
+
+        $scope.handleSuccess = function (data) {
+
+            alert("sucess" + JSON.stringify(data));
+            th.data = data;
+
+        }
+        $scope.handleError = function (data) {
+
+            alert("error" + JSON.stringify(data))
+            th.data = data;
+
+        }
+
+
     </script>
     <style>
         .hidden{
