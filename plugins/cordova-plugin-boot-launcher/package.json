@@ -1,0 +1,66 @@
+{
+  "_from": "cordova-plugin-boot-launcher",
+  "_id": "cordova-plugin-boot-launcher@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Jxp9Aa1EkoZVhH9hhOS4u+Z35eg=",
+  "_location": "/cordova-plugin-boot-launcher",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-boot-launcher",
+    "name": "cordova-plugin-boot-launcher",
+    "escapedName": "cordova-plugin-boot-launcher",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-boot-launcher/-/cordova-plugin-boot-launcher-0.2.0.tgz",
+  "_shasum": "271a7d01ad44928655847f6184e4b8bbe677e5e8",
+  "_spec": "cordova-plugin-boot-launcher",
+  "_where": "D:\\Almacen-EGO\\Trabajos-EGO\\connecting-europe-Firebase\\plugins",
+  "author": {
+    "name": "Lee Crossley",
+    "email": "leee@hotmail.co.uk",
+    "url": "http://ilee.co.uk/"
+  },
+  "bugs": {
+    "url": "https://github.com/leecrossley/cordova-plugin-boot-launcher/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-boot-launcher",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin to automatically start the Cordova app when the device is booted.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/leecrossley/cordova-plugin-boot-launcher#readme",
+  "keywords": [
+    "cordova",
+    "boot",
+    "launch",
+    "startup",
+    "homescreen",
+    "automatic",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-boot-launcher",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecrossley/cordova-plugin-boot-launcher.git"
+  },
+  "version": "0.2.0"
+}
