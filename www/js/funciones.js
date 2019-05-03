@@ -1691,8 +1691,7 @@ function ver_notificacion(){
                 badge:1,
                 every: "minute",
                 wakeup: true,
-                vibrate: true,
-                ongoing: true
+                vibrate: true
             });
         });
     }
