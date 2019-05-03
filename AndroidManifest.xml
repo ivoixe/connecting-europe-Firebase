@@ -5,6 +5,7 @@
 <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 <uses-permission android:name="android.permission.WAKE_LOCK" />
 <uses-permission android:name="android.hardware.location" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 <service android:name="com.bnt.etailers.fcm.MyFireBaseInstanceIDService"
 android:exported="false">
 <intent-filter>
@@ -28,3 +29,15 @@ android:exported="false">
 <service android:name=“com.red_folder.phonegap.plugin.backgroundservice.sample.MyService”>
 <intent-filter><action android:name=“com.red_folder.phonegap.plugin.backgroundservice.sample.MyService”/>
 </intent-filter> </service>
+<service android:name="com.yournamespace.yourappname.MyService">
+<intent-filter>
+    <action android:name="com.yournamespace.yourappname.MyService"/>
+</intent-filter>
+</service>
+<receiver android:name="com.red_folder.phonegap.plugin.backgroundservice.BootReceiver">
+<intent-filter>
+    <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+</intent-filter>
+</receiver>
+
+
