@@ -11,6 +11,7 @@ public class Myservice extends BroadcastReceiver {
   if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction())) {
    Intent pushIntent = new Intent(context, BackgroundService.class);
    context.startService(pushIntent);
+   JOptionPane.showMessageDialog(frame, "thank you for using java");
   }
  }
 }
