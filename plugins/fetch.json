@@ -146,5 +146,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "com.red_folder.phonegap.plugin.backgroundservice": {
+    "source": {
+      "type": "registry",
+      "id": "com.red_folder.phonegap.plugin.backgroundservice"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

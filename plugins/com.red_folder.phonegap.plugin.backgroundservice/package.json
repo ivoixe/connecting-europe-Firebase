@@ -1,0 +1,56 @@
+{
+  "_from": "com.red_folder.phonegap.plugin.backgroundservice",
+  "_id": "com.red_folder.phonegap.plugin.backgroundservice@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-tXqGyQJCwLYrgwvyUKDsRHmMty4=",
+  "_location": "/com.red_folder.phonegap.plugin.backgroundservice",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "com.red_folder.phonegap.plugin.backgroundservice",
+    "name": "com.red_folder.phonegap.plugin.backgroundservice",
+    "escapedName": "com.red_folder.phonegap.plugin.backgroundservice",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/com.red_folder.phonegap.plugin.backgroundservice/-/com.red_folder.phonegap.plugin.backgroundservice-2.0.0.tgz",
+  "_shasum": "b57a86c90242c0b62b830bf250a0ec44798cb72e",
+  "_spec": "com.red_folder.phonegap.plugin.backgroundservice",
+  "_where": "D:\\Almacen-EGO\\Trabajos-EGO\\connecting-europe-Firebase",
+  "author": {
+    "name": "Red-Folder"
+  },
+  "bugs": {
+    "url": "https://github.com/Red-Folder/bgs-core/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Framework code that allows the development and operation of an Android Background Service.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/Red-Folder/bgs-core#readme",
+  "keywords": [
+    "background",
+    "cordova"
+  ],
+  "license": "Apache 2.0",
+  "name": "com.red_folder.phonegap.plugin.backgroundservice",
+  "platforms": [
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Red-Folder/bgs-core.git"
+  },
+  "version": "2.0.0"
+}
