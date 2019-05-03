@@ -22,5 +22,6 @@ $RECYCLE.BIN/
 # Operating System Files
 # =========================
 
-# Windows shortcuts
-.*
+platforms/
+
+.idea/workspace.xml
