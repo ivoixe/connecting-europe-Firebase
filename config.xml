@@ -107,5 +107,5 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
-    <gap:plugin name="cordova-plugin-boot-launcher" spec="0.2.0" source="npm"/>
+    <plugin name="cordova-plugin-background-service" spec="1.3.5" />
 </widget>
