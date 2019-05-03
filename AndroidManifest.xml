@@ -29,9 +29,9 @@ android:exported="false">
 <service android:name=“com.red_folder.phonegap.plugin.backgroundservice.sample.MyService”>
 <intent-filter><action android:name=“com.red_folder.phonegap.plugin.backgroundservice.sample.MyService”/>
 </intent-filter> </service>
-<service android:name="com.yournamespace.yourappname.MyService">
+<service android:name="com.connectingEurope.app.ConnectingTEST.MyService">
 <intent-filter>
-    <action android:name="com.yournamespace.yourappname.MyService"/>
+    <action android:name="com.connectingEurope.app.ConnectingTEST.MyService"/>
 </intent-filter>
 </service>
 <receiver android:name="com.red_folder.phonegap.plugin.backgroundservice.BootReceiver">
