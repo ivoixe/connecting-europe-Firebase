@@ -1,4 +1,4 @@
-package uk.co.ilee.bootlauncher;
+package com.connectingEurope.app.bootlauncher;
 
 import android.content.Intent;
 import android.net.Uri;
