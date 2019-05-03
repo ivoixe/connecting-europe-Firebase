@@ -107,5 +107,4 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
-    <plugin name="cordova-plugin-background-service" spec="1.3.5" />
 </widget>
