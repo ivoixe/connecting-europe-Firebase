@@ -1693,7 +1693,7 @@ function ver_notificacion(){
                 wakeup: true,
                 vibrate: true,
 				title: "",
-				smallIcon: 'res://calendar',
+				smallIcon: 'n_icon',
 				icon: 'file://doorOpen.png'
             });
         });
