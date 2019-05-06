@@ -47,6 +47,12 @@
         <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+		<resource-file density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" target="app/src/main/res/drawable-ldpi/icon2.png" />
+       <resource-file density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" target="app/src/main/res/drawable-mdpi/icon2.png" />
+       <resource-file density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" target="app/src/main/res/drawable-hdpi/icon2.png" />
+       <resource-file density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" target="app/src/main/res/drawable-xhdpi/icon2.png" />
+       <resource-file density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" target="app/src/main/res/drawable-xxhdpi/icon2.png" />
+       <resource-file density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" target="app/src/main/res/drawable-xxxhdpi/icon2.png" />
         <splash density="hdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="ldpi" src="res/drawable-ldpi/screen.png" />
         <splash density="mdpi" src="res/drawable-mdpi/screen.png" />
