@@ -1693,7 +1693,7 @@ function ver_notificacion(){
                 wakeup: true,
                 vibrate: true,
 				title: "",
-				smallIcon: 'file://icon.png',
+				smallIcon: 'res://drawable/small.png',
 				icon: 'file://icon.png'
             });
         });
