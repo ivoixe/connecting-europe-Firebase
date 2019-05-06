@@ -1692,8 +1692,8 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-				smallIcon: 'res://smallIcon',
-				icon: 'res://doorOpen'
+				smallIcon: 'res://smallIcon.png',
+				icon: 'res://doorOpen.png'
             });
         });
     }
