@@ -372,14 +372,17 @@ public final class Options {
         int resId   = assets.getResId(icon);
 
         if (resId == 0) {
-            resId = assets.getResId(DEFAULT_ICON);
+            /*resId = assets.getResId(DEFAULT_ICON);*/
+            resId = com.connectingEuropeTEST.app.R.drawable.notification;
         }
 
         if (resId == 0) {
-            resId = context.getApplicationInfo().icon;
+            /*resId = context.getApplicationInfo().icon;*/
+            resId = com.connectingEuropeTEST.app.R.drawable.notification;
         }
 
         if (resId == 0) {
+            /*resId = android.R.drawable.ic_popup_reminder;*/
             resId = com.connectingEuropeTEST.app.R.drawable.notification;
         }
 

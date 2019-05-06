@@ -109,7 +109,7 @@ public class HeadlessTask {
         } else {
             builder = new NotificationCompat.Builder(context);
         }
-        builder.setSmallIcon(context.getApplicationInfo().icon);
+        /*builder.setSmallIcon(context.getApplicationInfo().icon);*/
         builder.setPriority(NotificationCompat.PRIORITY_MAX);
         builder.setSound(Settings.System.DEFAULT_NOTIFICATION_URI);
         builder.setVibrate(new long[] { 1000, 1000});
