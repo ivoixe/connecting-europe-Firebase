@@ -1685,15 +1685,15 @@ function ver_notificacion(){
                 trigger:{
                     at: dtTodap
                 },
-                text: "Hora de fichar: " + item.horario_entrada,
+                text: "Hora de fichar:          " + item.horario_entrada,
                 priority:1,
                 foreground: true,
                 badge:1,
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-				smallIcon: "../res/icon/android/smallIcon.png",
-				icon: "../res/icon/android/doorOpen.png"
+				smallIcon: "../../res/icon/android/smallIcon.png",
+				icon: "../../res/icon/android/doorOpen.png"
             });
         });
     }
