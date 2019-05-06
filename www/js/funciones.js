@@ -1693,8 +1693,8 @@ function ver_notificacion(){
                 wakeup: true,
                 vibrate: true,
 				title: "",
-				smallIcon: 'n_icon',
-				icon: 'file://doorOpen.png'
+				smallIcon: 'file://icon.png',
+				icon: 'file://icon.png'
             });
         });
     }
