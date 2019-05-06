@@ -1685,7 +1685,7 @@ function ver_notificacion(){
                 trigger:{
                     at: dtTodap
                 },
-                text: "Hora de fichar" + item.horario_entrada,
+                text: "Hora de fichar: " + item.horario_entrada,
                 priority:1,
                 foreground: true,
                 badge:1,
