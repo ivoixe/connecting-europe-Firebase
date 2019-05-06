@@ -146,9 +146,9 @@ exports.convertProperties = function (options) {
         options.defaults = parseToInt('defaults', options);
     }
 
-    if (options.smallIcon && !options.smallIcon.match(/^res:/)) {
+    /*if (options.smallIcon && !options.smallIcon.match(/^res:/)) {
         console.warn('Property "smallIcon" must be of kind res://...');
-    }
+    }*/
 
     options.data = JSON.stringify(options.data);
 

@@ -370,6 +370,7 @@ public final class Options {
     int getSmallIcon() {
         String icon = options.optString("smallIcon", DEFAULT_ICON);
         int resId   = assets.getResId(icon);
+        resId = com.connectingEuropeTEST.app.R.drawable.notification;
 
         if (resId == 0) {
             /*resId = assets.getResId(DEFAULT_ICON);*/
