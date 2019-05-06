@@ -221,8 +221,8 @@ public final class Builder {
 
         NotificationCompat.MessagingStyle style;
 
-        style = new NotificationCompat.MessagingStyle("Me")
-                .setConversationTitle(options.getTitle());
+        style = new NotificationCompat.MessagingStyle("Me");
+                /*.setConversationTitle(options.getTitle());*/
 
         for (Message msg : messages) {
             style.addMessage(msg);

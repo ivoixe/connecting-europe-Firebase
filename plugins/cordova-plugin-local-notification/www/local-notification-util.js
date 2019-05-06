@@ -47,7 +47,7 @@ exports._defaults = {
     progressBar   : false,
     showWhen      : true,
     silent        : false,
-    smallIcon     : 'file://icon.png',
+    smallIcon     : null,
     sound         : true,
     sticky        : false,
     summary       : null,
