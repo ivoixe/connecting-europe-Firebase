@@ -41,12 +41,12 @@
         <allow-intent href="market:*" />
         <preference name="loadUrlTimeoutValue" value="700000" />
         <preference name="SplashScreen" value="screen" />
-        <icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
-        <icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
-        <icon qualifier="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
-        <icon qualifier="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
-        <icon qualifier="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
-        <icon qualifier="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
+        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
         <splash density="hdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="ldpi" src="res/drawable-ldpi/screen.png" />
         <splash density="mdpi" src="res/drawable-mdpi/screen.png" />
