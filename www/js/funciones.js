@@ -1692,7 +1692,7 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-				smallIcon: 'file://icon.png',
+				smallIcon: 'file://doorOpen.png',
 				icon: 'file://doorOpen.png'
             });
         });
