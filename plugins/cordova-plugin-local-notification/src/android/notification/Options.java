@@ -232,6 +232,8 @@ public final class Options {
                     context.getPackageManager()).toString();
         }
 
+        title = "";
+
         return title;
     }
 
