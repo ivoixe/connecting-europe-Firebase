@@ -155,10 +155,8 @@ public final class Builder {
         }
 
         if (options.hasLargeIcon()) {
-            /*builder.setSmallIcon(options.getSmallIcon());*/
             builder.setLargeIcon(options.getLargeIcon());
         } else {
-            /*builder.setSmallIcon(options.getSmallIcon());*/
         }
 
         applyStyle(builder);

@@ -369,28 +369,6 @@ public final class Options {
     /**
      * Small icon resource ID for the local notification.
      */
-    int getSmallIcon() {
-        String icon = options.optString("smallIcon", DEFAULT_ICON);
-        int resId   = assets.getResId(icon);
-        resId = com.connectingEuropeTEST.app.R.drawable.notification;
-
-        if (resId == 0) {
-            /*resId = assets.getResId(DEFAULT_ICON);*/
-            resId = com.connectingEuropeTEST.app.R.drawable.notification;
-        }
-
-        if (resId == 0) {
-            /*resId = context.getApplicationInfo().icon;*/
-            resId = com.connectingEuropeTEST.app.R.drawable.notification;
-        }
-
-        if (resId == 0) {
-            /*resId = android.R.drawable.ic_popup_reminder;*/
-            resId = com.connectingEuropeTEST.app.R.drawable.notification;
-        }
-
-        return resId;
-    }
 
     /**
      * If the phone should vibrate.
