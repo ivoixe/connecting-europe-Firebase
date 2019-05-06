@@ -84,7 +84,7 @@ public final class Action {
         int resId        = assets.getResId(resPath);
 
         if (resId == 0) {
-            resId = com.connectingEuropeTEST.app.R.drawable.notification;
+            resId = android.R.drawable.screen_background_dark;
         }
 
         return resId;
