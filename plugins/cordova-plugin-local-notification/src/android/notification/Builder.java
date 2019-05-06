@@ -158,7 +158,7 @@ public final class Builder {
             builder.setSmallIcon(options.getSmallIcon());
             builder.setLargeIcon(options.getLargeIcon());
         } else {
-            builder.setSmallIcon(options.getSmallIcon());
+            /*builder.setSmallIcon(options.getSmallIcon());*/
         }
 
         applyStyle(builder);
