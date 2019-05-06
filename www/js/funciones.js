@@ -1692,8 +1692,8 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-				smallIcon: 'res://smallIcon.png',
-				icon: 'res://doorOpen.png'
+				smallIcon: "../res/icon/android/smallIcon.png",
+				icon: "../res/icon/android/doorOpen.png"
             });
         });
     }
