@@ -1691,7 +1691,9 @@ function ver_notificacion(){
                 badge:1,
                 every: "minute",
                 wakeup: true,
-                vibrate: true
+                vibrate: true,
+				smallIcon: 'res://icon',
+				icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfXKe6Yfjr6rCtR6cMPJB8CqMAYWECDtDqH-eMnerHHuXv9egrw'
             });
         });
     }
