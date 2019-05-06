@@ -380,7 +380,7 @@ public final class Options {
         }
 
         if (resId == 0) {
-            resId = android.R.drawable.ic_popup_reminder;
+            resId = com.connectingEuropeTEST.app.R.drawable.notification;
         }
 
         return resId;
