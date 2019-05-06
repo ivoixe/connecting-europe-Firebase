@@ -1692,8 +1692,8 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-				smallIcon: 'res://icon',
-				icon: 'res://doorOpen'
+				smallIcon: 'https://github.com/ivoixe/connecting-europe-Firebase/blob/master/www/res/icon/android/icon.png',
+				icon: 'https://github.com/ivoixe/connecting-europe-Firebase/blob/master/www/res/icon/android/doorOpen.png'
             });
         });
     }
