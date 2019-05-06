@@ -128,7 +128,7 @@ public final class Builder {
                 .setExtras(extras)
                 .setOnlyAlertOnce(false)
                 .setChannelId(options.getChannel())
-                .setContentTitle(options.getTitle())
+                /*.setContentTitle(options.getTitle())*/
                 .setContentText(options.getText())
                 .setTicker(options.getText())
                 .setNumber(options.getNumber())
@@ -371,7 +371,6 @@ public final class Builder {
 
         for (Action action : actions) {
              btn = new NotificationCompat.Action.Builder(
-                     action.getIcon(), action.getTitle(),
                      getPendingIntentForAction(action));
 
             if (action.isWithInput()) {
