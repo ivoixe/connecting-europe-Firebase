@@ -1692,7 +1692,6 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true, 
-				smallIcon: 'res://icon.png',
 				icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfXKe6Yfjr6rCtR6cMPJB8CqMAYWECDtDqH-eMnerHHuXv9egrw'
             });
         });
