@@ -174,6 +174,7 @@ function onSuccess(position) {
     var element = document.getElementById('geolocation');
     //alert('posicion'+position);
     //datos_portada();
+    alert(element);
     initialize(position.coords.latitude,position.coords.longitude);
     guardarPosicion(position.coords.latitude,position.coords.longitude);
     return position;
@@ -182,7 +183,7 @@ function onSuccess(position) {
 
 function onError(error) {
 
-    //navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 }
 
