@@ -22,6 +22,11 @@ $RECYCLE.BIN/
 # Operating System Files
 # =========================
 
-.idea/workspace.xml
+.idea/
 
 servidor/
+
+platforms/
+
+node_modules/
+
