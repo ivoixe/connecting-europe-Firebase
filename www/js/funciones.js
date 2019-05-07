@@ -196,6 +196,8 @@ function initialize(lat,log) {
 
     //alert(lat+log);
 
+    alert("Enter Initialize");
+
     var geocoder;
 
     var infowindow = new google.maps.InfoWindow();
