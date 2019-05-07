@@ -194,7 +194,7 @@ function initialize(lat,log) {
         https://developers.google.com/maps/documentation/javascript/geocoding?hl=es#GeocodingResponses
     */
 
-    alert(lat+log);
+    //alert(lat+log);
 
     var geocoder;
 
@@ -215,6 +215,8 @@ function initialize(lat,log) {
 
 
     map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions );
+
+    alert(map);
 
     $('#map-canvas').css( 'height','500px');
 
@@ -243,6 +245,10 @@ function initialize(lat,log) {
     geocoder = new google.maps.Geocoder();
 
     geocoder.geocode({"latLng": latlng}, function(results, status){
+
+        alert(status);
+        alert(google.maps.GeocoderStatus.OK);
+        alert(results[0]);
 
         if (status == google.maps.GeocoderStatus.OK)
 
