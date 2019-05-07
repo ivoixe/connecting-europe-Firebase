@@ -134,6 +134,14 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
+            $( document ).on( 'click','.entrar', function() {
+                content.load('mapa-fichado.html')
+                    .then(
+                        carga_fichado();
+                    );
+            }
+
+
             /*  FCMPlugin.onTokenRefresh(function(token){
            localStorage.setItem("token", token);
        });
@@ -256,7 +264,7 @@
             </ons-col>
             <ons-row class="content-entrar-boton"> 
                 <ons-col class="text-center">
-                    <ons-button class="entrar" onclick="fn.load('mapa-fichado.html');carga_fichado();"><i class="fal fa-door-open"></i><i class="fal fa-caret-right"></i>Registrar entrada</ons-button>
+                    <ons-button class="entrar"><i class="fal fa-door-open"></i><i class="fal fa-caret-right"></i>Registrar entrada</ons-button>
                 </ons-col>
             </ons-row>
         </ons-row>
