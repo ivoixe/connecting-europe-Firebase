@@ -196,6 +196,11 @@ function initialize(lat,log) {
         https://developers.google.com/maps/documentation/javascript/geocoding?hl=es#GeocodingResponses
     */
 
+    if (initialize == "ok"){
+        break;
+    }
+
+    var initialize = "ok";
     //alert(lat+log);
 
     alert("Enter Initialize");
