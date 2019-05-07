@@ -1692,9 +1692,9 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-                /*icon: "res://ic_popup_reminder",
-                smallIcon:"res://ic_popup_reminder"*/
-                icon: "file://icon.png",
+                /*icon: "res://ic_popup_reminder",//default Bell
+                smallIcon:"res://ic_popup_reminder"*///default Bell
+                icon: "file://doorOpen.png",
                 smallIcon:"res://ic_stat_onesignal_default"
 				});
         });
