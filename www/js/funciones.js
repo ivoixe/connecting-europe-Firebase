@@ -196,13 +196,13 @@ function initialize(lat,log) {
         https://developers.google.com/maps/documentation/javascript/geocoding?hl=es#GeocodingResponses
     */
 
-    var initialize = "empty";
+    var initializeVariable = "empty";
 
-    if (initialize == "ok"){
+    if (initializeVariable == "ok"){
         break;
     }
 
-    initialize = "ok";
+    initializeVariable = "ok";
 
     //alert(lat+log);
 
