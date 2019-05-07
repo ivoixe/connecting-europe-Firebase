@@ -1695,7 +1695,7 @@ function ver_notificacion(){
                 /*icon: "res://ic_popup_reminder",
                 smallIcon:"res://ic_popup_reminder"*/
                 icon: "file://icon.png",
-                //smallIcon:"res://ic_stat_onesignal_default"
+                smallIcon:"res://ic_stat_onesignal_default"
 				});
         });
     }
