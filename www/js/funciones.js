@@ -1692,8 +1692,8 @@ function ver_notificacion(){
                 every: "minute",
                 wakeup: true,
                 vibrate: true,
-                icon: "res://my_notification_icon",
-                smallIcon:"res://my_notification_icon"
+                icon: "res://ic_popup_reminder",
+                smallIcon:"res://ic_popup_reminder"
 				});
         });
     }
