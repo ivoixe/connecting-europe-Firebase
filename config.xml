@@ -53,12 +53,12 @@
         <splash density="xhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxxhdpi" src="res/drawable-xhdpi/screen.png" />
-        <resource-file src="res/android/notification_icon/drawable-ldpi/notification_icon.png" target="app/src/main/res/drawable-ldpi/notification_icon.png"/>
-        <resource-file src="res/android/notification_icon/drawable-mdpi/notification_icon.png" target="app/src/main/res/drawable-mdpi/notification_icon.png"/>
-        <resource-file src="res/android/notification_icon/drawable-hdpi/notification_icon.png" target="app/src/main/res/drawable-hdpi/notification_icon.png"/>
-        <resource-file src="res/android/notification_icon/drawable-xhdpi/notification_icon.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png"/>
-        <resource-file src="res/android/notification_icon/drawable-xxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png"/>
-        <resource-file src="res/android/notification_icon/drawable-xxxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png"/>
+        <resource-file src="res/my_notification_icon/android/ldpi.png" target="app/src/main/res/drawable-ldpi/my_notification_icon.png" />
+        <resource-file src="res/my_notification_icon/android/mdpi.png" target="app/src/main/res/drawable-mdpi/my_notification_icon.png" />
+        <resource-file src="res/my_notification_icon/android/hdpi.png" target="app/src/main/res/drawable-hdpi/my_notification_icon.png" />
+        <resource-file src="res/my_notification_icon/android/xhdpi.png" target="app/src/main/res/drawable-xhdpi/my_notification_icon.png" />
+        <resource-file src="res/my_notification_icon/android/xxhdpi.png" target="app/src/main/res/drawable-xxhdpi/my_notification_icon.png" />
+        <resource-file src="res/my_notification_icon/android/xxxhdpi.png" target="app/src/main/res/drawable-xxxhdpi/my_notification_icon.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
