@@ -182,7 +182,7 @@ function onSuccess(position) {
 
 function onError(error) {
 
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    //navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 }
 
