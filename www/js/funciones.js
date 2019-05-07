@@ -1694,8 +1694,8 @@ function ver_notificacion(){
                 vibrate: true,
                 /*icon: "res://ic_popup_reminder",
                 smallIcon:"res://ic_popup_reminder"*/
-                icon: "res://notification_icon",
-                smallIcon:"res://notification_icon"
+                icon: "file://www/res/icon/android/icon.png",
+                smallIcon:"res://ic_popup_reminder"
 				});
         });
     }
