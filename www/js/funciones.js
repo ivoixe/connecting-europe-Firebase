@@ -213,6 +213,10 @@ function initialize(lat,log) {
     }
 
 
+    alert(document.getElementById('map-canvas').id);
+    alert(mapOptions['zoom']);
+    alert(mapOptions['center']);
+    alert(mapOptions['mapTypeId']);
 
     map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions );
 
