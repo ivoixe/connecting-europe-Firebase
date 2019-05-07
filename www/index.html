@@ -75,7 +75,10 @@
                 );
 
             if (page == "mapa-fichado.html"){
-                carga_fichado();
+                content.load(page)
+                    .then(
+                        carga_fichado()
+                    );
             }
         };
         ons.ready(function() {
