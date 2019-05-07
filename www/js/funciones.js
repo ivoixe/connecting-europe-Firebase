@@ -244,8 +244,6 @@ function initialize(lat,log) {
 
     geocoder = new google.maps.Geocoder();
 
-    alert(geocoder);
-
     geocoder.geocode({"latLng": latlng}, function(results, status){
 
         if (status == google.maps.GeocoderStatus.OK)
