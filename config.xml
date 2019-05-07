@@ -53,7 +53,6 @@
         <splash density="xhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxxhdpi" src="res/drawable-xhdpi/screen.png" />
-        <resource-file src="www/res/icon/android/icon.png" target="res/drawable/icon.png"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
