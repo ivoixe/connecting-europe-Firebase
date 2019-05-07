@@ -128,7 +128,6 @@ var marker =new google.maps.Marker();
 //Cuando conseguimos localizarnos ...
 function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
-    alert("navigator_current_position: " + navigator.geolocation.getCurrentPosition);
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             if(status == "GRANTED"){
@@ -269,6 +268,7 @@ function initialize(lat,log) {
                 lat_actual = lat;
                 log_actual = log;
                 //navigator.splashscreen.hide();
+
             }else{
                 alert('esta llendo por un lado que no es');
                 dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
@@ -289,6 +289,7 @@ function initialize(lat,log) {
 
 
     });
+
 
 }
 
