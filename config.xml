@@ -53,6 +53,12 @@
         <splash density="xhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxhdpi" src="res/drawable-xhdpi/screen.png" />
         <splash density="xxxhdpi" src="res/drawable-xhdpi/screen.png" />
+        <resource-file src="res/android/notification_icon/drawable-ldpi/notification_icon.png" target="app/src/main/res/drawable-ldpi/notification_icon.png"/>
+        <resource-file src="res/android/notification_icon/drawable-mdpi/notification_icon.png" target="app/src/main/res/drawable-mdpi/notification_icon.png"/>
+        <resource-file src="res/android/notification_icon/drawable-hdpi/notification_icon.png" target="app/src/main/res/drawable-hdpi/notification_icon.png"/>
+        <resource-file src="res/android/notification_icon/drawable-xhdpi/notification_icon.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png"/>
+        <resource-file src="res/android/notification_icon/drawable-xxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png"/>
+        <resource-file src="res/android/notification_icon/drawable-xxxhdpi/notification_icon.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
