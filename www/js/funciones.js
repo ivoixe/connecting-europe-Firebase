@@ -201,8 +201,10 @@ function initialize(lat,log) {
     var geocoder;
 
     var infowindow = new google.maps.InfoWindow();
+    alert("infowindow" + infowindow);
 
     var latlng = new google.maps.LatLng(lat,log);
+    alert("latlng" + latlng);
 
     var mapOptions = {
 
