@@ -21,10 +21,7 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.connectingEuropeTEST.app"
-        },
-        "cordova-plugin-local-notification": {
-            "PACKAGE_NAME": "com.connectingEuropeTEST.app"
-        },
+        }
         "cordova-plugin-request-location-accuracy": {
             "PACKAGE_NAME": "com.connectingEuropeTEST.app"
         },
