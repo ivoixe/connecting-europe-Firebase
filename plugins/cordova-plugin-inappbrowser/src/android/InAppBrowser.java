@@ -1134,7 +1134,7 @@ public class InAppBrowser extends CordovaPlugin {
                 }
             }
 
-            if( url.startsWith("yourapp:") {
+            if( url.startsWith("intent://") {
                                Intent intent = new Intent(Intent.ACTION_VIEW);
                                intent.setData(Uri.parse(url));
                                cordova.getActivity().startActivity(intent);
