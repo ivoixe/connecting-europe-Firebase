@@ -174,7 +174,7 @@ function onSuccess(position) {
     var element = document.getElementById('geolocation');
     //alert('posicion'+position);
     //datos_portada();
-    initialize(position.coords.latitude,position.coords.longitude);
+    mostrarMapa(position.coords.latitude,position.coords.longitude);
     guardarPosicion(position.coords.latitude,position.coords.longitude);
     return position;
 }
@@ -188,7 +188,8 @@ function onError(error) {
 
 //Posiciona el marcador en el MAPA basandose en nuestra geolocalización (vía clearWatch() o getCurrentPosition() al iniciar la app)
 
-function initialize(lat,log) {
+//function initialize(lat,log) {
+function mostrarMapa(lat,log) {
     /*
         Basado en un código en
         https://developers.google.com/maps/documentation/javascript/geocoding?hl=es#GeocodingResponses
