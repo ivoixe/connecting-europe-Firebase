@@ -71,7 +71,8 @@
         
             content.load(page)
                 .then(
-                    menu.close.bind(menu)
+                    menu.close.bind(menu);
+                    alert(page);
                 );
         };
         ons.ready(function() {
