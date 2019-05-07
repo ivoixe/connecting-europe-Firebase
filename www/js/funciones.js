@@ -171,7 +171,6 @@ function onSuccessProgress(position){
 }
 
 function onSuccess(position) {
-    alert(position);
     var element = document.getElementById('geolocation');
     //alert('posicion'+position);
     //datos_portada();
@@ -183,7 +182,6 @@ function onSuccess(position) {
 
 function onError(error) {
 
-    alert(error);
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 }
@@ -196,7 +194,7 @@ function initialize(lat,log) {
         https://developers.google.com/maps/documentation/javascript/geocoding?hl=es#GeocodingResponses
     */
 
-    //alert(lat+log);
+    alert(lat+log);
 
     var geocoder;
 
