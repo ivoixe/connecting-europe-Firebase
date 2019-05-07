@@ -71,9 +71,10 @@
         
             content.load(page)
                 .then(
-                    menu.close.bind(menu);
-                    alert(page);
+                    menu.close.bind(menu)
                 );
+
+            alert(page);
         };
         ons.ready(function() {
             var user =  localStorage.getItem("username");
