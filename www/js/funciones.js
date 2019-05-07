@@ -197,6 +197,8 @@ function initialize(lat,log) {
     //alert(lat+log);
 
     alert("Enter Initialize");
+    alert("lat" + lat);
+    alert("log" + log);
 
     var geocoder;
 
