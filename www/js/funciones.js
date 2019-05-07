@@ -1682,6 +1682,7 @@ function ver_notificacion(){
             localNotificationsArray.push({
                 id: i,
                // at: dtTodap,
+                title: "         ";
                 trigger:{
                     at: dtTodap
                 },
