@@ -128,20 +128,19 @@
 
             }
 
+            $( document ).on( 'click','.entrar', function() {
+                content.load('mapa-fichado.html')
+                .then(
+                   carga_fichado();
+                );
+            }
+
 
         });
 
 	    
         function onDeviceReady() {
             ver_notificacion();
-            $( document ).on( 'click','.entrar', function() {
-                content.load('mapa-fichado.html')
-                    .then(
-                        carga_fichado();
-                    );
-            }
-
-
             /*  FCMPlugin.onTokenRefresh(function(token){
            localStorage.setItem("token", token);
        });
