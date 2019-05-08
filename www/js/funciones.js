@@ -152,9 +152,7 @@ function carga_fichado() {
                 });
 
             }*/
-            do {
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-
                     if(status == "GRANTED"){
                         alert("ha entrado en Granted");
                         requestLocation();
@@ -162,12 +160,9 @@ function carga_fichado() {
                         alert(status);
                         // Handle other cases
                     }
-
                 }, function(error){
-                    alert("ERROR");
+                    //alert("ERROR");
                 });
-            }
-            while (status != "GRANTED");
 
         }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
 }
