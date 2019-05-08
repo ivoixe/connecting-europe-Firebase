@@ -153,7 +153,7 @@ function carga_fichado() {
 
             }
 
-        }, onError), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
+        }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
 }
 function setLugar(){
     directionsDisplay.setDirections({routes: []});
@@ -169,6 +169,11 @@ function onSuccess(position) {
         return position;
 
 }
+
+function onErrorGranted(){
+    alert("errorGranted");
+}
+
 //Si algo fallase al localizarnos...
 
 function onError(error) {
