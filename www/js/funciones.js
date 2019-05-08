@@ -160,7 +160,7 @@ function setLugar(){
 
 function onSuccess(position) {
         var element = document.getElementById('geolocation');
-        //alert('posicion'+position);
+        alert('posicion'+position);
         //datos_portada();
         mostrarMapa(position.coords.latitude,position.coords.longitude);
         guardarPosicion(position.coords.latitude,position.coords.longitude);
