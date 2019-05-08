@@ -134,6 +134,7 @@ function carga_fichado() {
             /*if(status == "GRANTED"){
                 alert("Request Location");
                 requestLocation();
+
             }else{
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
 
@@ -156,6 +157,7 @@ function carga_fichado() {
                     if(status == "GRANTED"){
                         //alert("ha entrado en Granted");
                         requestLocation();
+
                     }else{
                         //alert(status);
                         // Handle other cases
@@ -165,6 +167,7 @@ function carga_fichado() {
                 });
 
         }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
+        navigator.geolocation.clearWatch(watchID);
 }
 function setLugar(){
     directionsDisplay.setDirections({routes: []});
