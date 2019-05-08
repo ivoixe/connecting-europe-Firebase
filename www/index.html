@@ -154,6 +154,17 @@
         }
         function errorCallback(error) {
         }
+
+
+        $( ".entrar" ).click(function() {
+            var checkExist = setInterval(function() {
+                if ($('##map-canvas').length) {
+                    carga_fichado();
+                    clearInterval(checkExist);
+                }
+            }, 100); // check every 100ms
+        });
+
     </script>
     <style>
         .hidden{

@@ -171,20 +171,12 @@ function onSuccessProgress(position){
 }
 
 function onSuccess(position) {
-
-    var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
-    if (mapaEnDocumentoBuscar.html() == null){
-        fn.load('mapa-fichado.html');
-        carga_fichado();
-    } else {
         var element = document.getElementById('geolocation');
         //alert('posicion'+position);
         //datos_portada();
         mostrarMapa(position.coords.latitude,position.coords.longitude);
         guardarPosicion(position.coords.latitude,position.coords.longitude);
         return position;
-    }
-
 }
 //Si algo fallase al localizarnos...
 
