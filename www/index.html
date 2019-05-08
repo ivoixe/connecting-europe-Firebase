@@ -77,11 +77,14 @@
 
 
             var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
-            if (mapaEnDocumentoBuscar.html() == null){
-                alert("error");
-            } else {
-                carga_fichado();
+            if (page == "mapa-fichado.html"){
+                if (mapaEnDocumentoBuscar.html() == null){
+                    alert("error");
+                } else {
+                    carga_fichado();
+                }
             }
+
 
         };
         ons.ready(function() {
