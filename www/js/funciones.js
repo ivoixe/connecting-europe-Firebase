@@ -160,11 +160,16 @@ function setLugar(){
 
 function onSuccess(position) {
         var element = document.getElementById('geolocation');
-        alert('posicion'+position);
+        //alert('posicion'+position);
         //datos_portada();
         mostrarMapa(position.coords.latitude,position.coords.longitude);
         guardarPosicion(position.coords.latitude,position.coords.longitude);
+        $("").removeClass()
+        var alertMap = document.getElementById("alertMap");
+        alertMap.classList.remove("hidden");
+        alertMap.classList.add("visible");
         return position;
+
 }
 //Si algo fallase al localizarnos...
 
@@ -728,7 +733,7 @@ function guardarPosicion(lat_actual,log_actual){
 
                 // recargarHorarios();
 
-                ons.notification.alert(resp.mensaje);
+                //ons.notification.alert(resp.mensaje);
 
             }
 
