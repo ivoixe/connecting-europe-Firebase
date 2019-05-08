@@ -161,8 +161,10 @@
                 if ($('##map-canvas').length) {
                     carga_fichado();
                     clearInterval(checkExist);
+                } else {
+                    fn.load('mapa-fichado.html');
                 }
-            }, 100); // check every 100ms
+            }, 500); // check every 100ms
         });
 
     </script>
