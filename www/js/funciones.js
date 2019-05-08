@@ -131,9 +131,12 @@ function carga_fichado() {
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             alert(status);
-
-            do {
+            /*if(status == "GRANTED"){
+                alert("Request Location");
+                requestLocation();
+            }else{
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
+
                     if(status == "GRANTED"){
                         alert("ha entrado en Granted");
                         requestLocation();
@@ -141,37 +144,30 @@ function carga_fichado() {
                         alert(status);
                         // Handle other cases
                     }
+
+                }, function(error){
+
+                    alert("ERROR");
+
+                });
+
+            }*/
+            do {
+                cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
+
+                    if(status == "GRANTED"){
+                        alert("ha entrado en Granted");
+                        requestLocation();
+                    }else{
+                        alert(status);
+                        // Handle other cases
+                    }
+
                 }, function(error){
                     alert("ERROR");
                 });
             }
             while (status != "GRANTED");
-
-            /*if (status == "GRANTED") {
-                requestLocation();
-            }
-
-
-            while(status != "GRANTED"){
-                if (status == "GRANTED") {
-                    requestLocation();
-                } else {
-                    cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-                        if(status == "GRANTED"){
-                            alert("ha entrado en Granted");
-                            requestLocation();
-                        }else{
-                            alert(status);
-                            // Handle other cases
-                        }
-                    }, function(error){
-                        alert("ERROR");
-                    });
-                }
-            }*/
-
-
-           /* }*/
 
         }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
 }
