@@ -130,15 +130,16 @@ function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
+            alert(status);
             if(status == "GRANTED"){
                 alert("Request Location");
-              //  requestLocation();
+                requestLocation();
             }else{
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
 
                     if(status == "GRANTED"){
 
-                        requestLocation();
+                        //requestLocation();
 
                     }else{
                         // Handle other cases
