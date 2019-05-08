@@ -158,18 +158,6 @@ function setLugar(){
 
 }
 
-function onSuccessProgress(position){
-
-
-
-    //alert(position.coords.latitude + position.coords.longitude);
-
-    guardarPosicionAtTime(position.coords.latitude,position.coords.longitude,position.coords.longitude);
-
-
-
-}
-
 function onSuccess(position) {
         var element = document.getElementById('geolocation');
         //alert('posicion'+position);
