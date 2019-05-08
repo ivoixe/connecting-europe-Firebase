@@ -131,7 +131,7 @@ function carga_fichado() {
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             if(status == "GRANTED"){
-                requestLocation();
+              //  requestLocation();
             }else{
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
 
@@ -1112,10 +1112,9 @@ function save(){
 
                 localStorage.setItem('datos',JSON.stringify(resp.datos));
 
-                localStorage.setItem("alertaMostrada", "ok");
+                //localStorage.setItem("alertaMostrada", "ok");
 
 
-                alert("alert: " + localStorage.getItem("alertaMostrada"));
 
                 ons.notification.alert(resp.mensaje);
 
