@@ -73,13 +73,6 @@
                 .then(
                     menu.close.bind(menu)
                 );
-
-            if (page == "mapa-fichado.html"){
-                content.load(page)
-                    .then(
-                        carga_fichado()
-                    );
-            }
         };
         ons.ready(function() {
             var user =  localStorage.getItem("username");
