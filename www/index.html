@@ -322,13 +322,12 @@
                 Registro de entrada
             </div>
         </ons-toolbar>
-        <div  id="alertMap" class="hidden">
-            Texto de prueba
-        </div>
         <p>Lugar del registro de entrada</p>
-        <div  id="map-canvas">
+        <div  id="map-canvas" style="position:relative;">
+            <div  id="alertMap" class="hidden" style="position:relative;left:50%top:50%;transform:translateX(-50%);background:red;" >
+                <strong>Texto de prueba</strong>
+            </div>
         </div>
-     
     </ons-page>
 </template>
 
