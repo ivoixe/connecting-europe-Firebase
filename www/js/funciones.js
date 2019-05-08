@@ -128,7 +128,7 @@ var marker =new google.maps.Marker();
 //Cuando conseguimos localizarnos ...
 function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
-    alert($(document).find('#map-canvas'));
+    alert($(document).find('#map-canvas')[0].id);
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             if(status == "GRANTED"){
