@@ -131,6 +131,7 @@ function carga_fichado() {
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             if(status == "GRANTED"){
+                alert("Request Location");
               //  requestLocation();
             }else{
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
@@ -145,7 +146,7 @@ function carga_fichado() {
 
                 }, function(error){
 
-                    console.error(error);
+                    alert("ERROR");
 
                 });
 
