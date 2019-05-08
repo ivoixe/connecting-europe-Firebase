@@ -674,7 +674,6 @@ function guardarPosicion(lat_actual,log_actual){
 
     //  data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password,token_fmc:token_fmc}),
 
-    alert("Mensaje Enviado");
 
     $.ajax({
 
