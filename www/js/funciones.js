@@ -166,7 +166,7 @@ function carga_fichado() {
                 //alert("ERROR");
             });
 
-        });
+        }, onErrorGranted);
             /*}, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });*/
         /*navigator.geolocation.clearWatch(watchID);*/
 }
