@@ -129,7 +129,7 @@ var marker =new google.maps.Marker();
 function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
     /*var watchID = navigator.geolocation.getCurrentPosition(onSuccess,*/
-        cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
+        cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status) {
             //alert(status);
             /*if(status == "GRANTED"){
                 alert("Request Location");
@@ -153,20 +153,21 @@ function carga_fichado() {
                 });
 
             }*/
-                cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-                    if(status == "GRANTED"){
-                        //alert("ha entrado en Granted");
-                        requestLocation();
+            cordova.plugins.diagnostic.requestLocationAuthorization(function (status) {
+                if (status == "GRANTED") {
+                    //alert("ha entrado en Granted");
+                    requestLocation();
 
-                    }else{
-                        //alert(status);
-                        // Handle other cases
-                    }
-                }, function(error){
-                    //alert("ERROR");
-                });
+                } else {
+                    //alert(status);
+                    // Handle other cases
+                }
+            }, function (error) {
+                //alert("ERROR");
+            });
 
-        /*}, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });*/
+        });
+            /*}, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });*/
         /*navigator.geolocation.clearWatch(watchID);*/
 }
 function setLugar(){
