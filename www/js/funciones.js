@@ -178,6 +178,7 @@ function onSuccess(position) {
         alert("Undefined");
         fn.load('mapa-fichado.html');
     } else {
+        alert("NOT - Undefined");
         var element = document.getElementById('geolocation');
         //alert('posicion'+position);
         //datos_portada();
