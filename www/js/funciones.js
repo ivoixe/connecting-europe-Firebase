@@ -1112,8 +1112,10 @@ function save(){
 
                 localStorage.setItem('datos',JSON.stringify(resp.datos));
 
+                localStorage.setItem("alertaMostrada", "ok");
 
-                alert("alert: " + ons.notification.alert);
+
+                alert("alert: " + localStorage.getItem("alertaMostrada"));
 
                 ons.notification.alert(resp.mensaje);
 
