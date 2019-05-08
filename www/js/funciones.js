@@ -173,8 +173,7 @@ function onSuccessProgress(position){
 function onSuccess(position) {
 
     var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
-    alert(typeof mapaEnDocumentoBuscar);
-    if (mapaEnDocumentoBuscar.html() == "undefined"){
+    if (mapaEnDocumentoBuscar.html() == null){
         alert("Undefined");
         fn.load('mapa-fichado.html');
     } else {
