@@ -131,12 +131,12 @@ function carga_fichado() {
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             alert(status);
-            if(status == "GRANTED"){
+            /*if(status == "GRANTED"){
                 alert("Request Location");
                 requestLocation();
-            }else{
+            }else{*/
+            while(status != "GRANTED"){
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-
                     if(status == "GRANTED"){
                         alert("ha entrado en Granted");
                         requestLocation();
@@ -144,14 +144,17 @@ function carga_fichado() {
                         alert(status);
                         // Handle other cases
                     }
-
                 }, function(error){
-
                     alert("ERROR");
-
                 });
-
             }
+
+            if (status == "GRANTED") {
+                requestLocation();
+            }
+
+
+           /* }*/
 
         }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
 }
