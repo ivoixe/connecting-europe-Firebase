@@ -732,7 +732,7 @@ function guardarPosicion(lat_actual,log_actual){
 
                 // recargarHorarios();
 
-                //ons.notification.alert(resp.mensaje);
+                ons.notification.alert(resp.mensaje);
 
             }
 
@@ -1111,6 +1111,9 @@ function save(){
                 localStorage.setItem('alojamientos',JSON.stringify(resp.alojamientos));
 
                 localStorage.setItem('datos',JSON.stringify(resp.datos));
+
+
+                alert("alert: " + ons.notification.alert);
 
                 ons.notification.alert(resp.mensaje);
 
