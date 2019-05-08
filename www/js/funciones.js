@@ -154,10 +154,10 @@ function carga_fichado() {
             }*/
                 cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
                     if(status == "GRANTED"){
-                        alert("ha entrado en Granted");
+                        //alert("ha entrado en Granted");
                         requestLocation();
                     }else{
-                        alert(status);
+                        //alert(status);
                         // Handle other cases
                     }
                 }, function(error){
