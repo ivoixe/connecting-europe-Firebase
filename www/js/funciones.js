@@ -175,7 +175,8 @@ function onSuccess(position) {
     var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
     //alert(mapaEnDocumentoBuscar.html());
     if (mapaEnDocumentoBuscar.html() == "undefined"){
-        carga_fichado();
+        alert("Undefined");
+        fn.load('mapa-fichado.html');
     } else {
         var element = document.getElementById('geolocation');
         //alert('posicion'+position);
