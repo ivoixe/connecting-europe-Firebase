@@ -290,7 +290,8 @@ function mostrarMapa(lat,log) {
 
         //element.innerHTML = dir;
 
-
+        directionsDisplay.setMap(null);
+        marker = null;
 
     });
 
