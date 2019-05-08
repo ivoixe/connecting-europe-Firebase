@@ -30,3 +30,4 @@ platforms/
 
 node_modules/
 
+plugins/browser.json
