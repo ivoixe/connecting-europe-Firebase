@@ -219,16 +219,19 @@ function mostrarMapa(lat,log) {
 
     }
 
+    var mapaEnDocumento = $(document).find('#map-canvas');
+    mapaEnDocumento.css( 'height','500px');
+
     alert(mapOptions['zoom']);
     alert(mapOptions['center']);
     alert(mapOptions['mapTypeId']);
-    alert(document.getElementById('map-canvas').id);
+    alert(mapaEnDocumento.html());
 
     map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions );
 
     alert(map);
 
-    $('#map-canvas').css( 'height','500px');
+    //$('#map-canvas').css( 'height','500px');
 
     marker = new google.maps.Marker({
 
