@@ -174,11 +174,9 @@ function onSuccess(position) {
 
     var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
     if (mapaEnDocumentoBuscar.html() == null){
-        alert("Undefined -- ");
         fn.load('mapa-fichado.html');
         carga_fichado();
     } else {
-        alert("NOT - Undefined");
         var element = document.getElementById('geolocation');
         //alert('posicion'+position);
         //datos_portada();
