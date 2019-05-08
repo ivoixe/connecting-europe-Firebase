@@ -139,7 +139,7 @@ function carga_fichado() {
 
                     if(status == "GRANTED"){
                         alert("ha entrado en Granted");
-                        //requestLocation();
+                        requestLocation();
                     }else{
                         alert(status);
                         // Handle other cases
@@ -166,10 +166,6 @@ function onSuccess(position) {
         //datos_portada();
         mostrarMapa(position.coords.latitude,position.coords.longitude);
         guardarPosicion(position.coords.latitude,position.coords.longitude);
-        $("").removeClass()
-        var alertMap = document.getElementById("alertMap");
-        alertMap.classList.remove("hidden");
-        alertMap.classList.add("visible");
         return position;
 
 }
