@@ -136,21 +136,21 @@ function carga_fichado() {
                 requestLocation();
             }else{*/
             while(status != "GRANTED"){
-                cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-                    if(status == "GRANTED"){
-                        alert("ha entrado en Granted");
-                        requestLocation();
-                    }else{
-                        alert(status);
-                        // Handle other cases
-                    }
-                }, function(error){
-                    alert("ERROR");
-                });
-            }
-
-            if (status == "GRANTED") {
-                requestLocation();
+                if (status == "GRANTED") {
+                    requestLocation();
+                } else {
+                    cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
+                        if(status == "GRANTED"){
+                            alert("ha entrado en Granted");
+                            requestLocation();
+                        }else{
+                            alert(status);
+                            // Handle other cases
+                        }
+                    }, function(error){
+                        alert("ERROR");
+                    });
+                }
             }
 
 
