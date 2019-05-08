@@ -128,8 +128,6 @@ var marker =new google.maps.Marker();
 //Cuando conseguimos localizarnos ...
 function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
-    var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
-    alert(mapaEnDocumentoBuscar.html());
     var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             if(status == "GRANTED"){
@@ -173,6 +171,9 @@ function onSuccessProgress(position){
 }
 
 function onSuccess(position) {
+
+    var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
+    alert(mapaEnDocumentoBuscar.html());
     var element = document.getElementById('geolocation');
     //alert('posicion'+position);
     //datos_portada();
