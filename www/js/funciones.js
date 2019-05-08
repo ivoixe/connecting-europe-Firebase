@@ -128,7 +128,7 @@ var marker =new google.maps.Marker();
 //Cuando conseguimos localizarnos ...
 function carga_fichado() {
     directionsDisplay.setDirections({routes: []});
-    var watchID = navigator.geolocation.getCurrentPosition(onSuccess,
+    /*var watchID = navigator.geolocation.getCurrentPosition(onSuccess,*/
         cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status){
             //alert(status);
             /*if(status == "GRANTED"){
@@ -166,8 +166,8 @@ function carga_fichado() {
                     //alert("ERROR");
                 });
 
-        }, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });
-        navigator.geolocation.clearWatch(watchID);
+        /*}, onErrorGranted), {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true });*/
+        /*navigator.geolocation.clearWatch(watchID);*/
 }
 function setLugar(){
     directionsDisplay.setDirections({routes: []});
