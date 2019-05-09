@@ -1134,7 +1134,10 @@ function save(){
 
 
 
-                ons.notification.alert(resp.mensaje);
+                ons.notification.alert({
+                    message: resp.mensaje,
+                    title: "Fichado Correcto"
+                });
 
             }
 
