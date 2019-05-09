@@ -201,16 +201,16 @@
                     Home
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('informacion.html'); cargar_info_estancia();" tappable>
-                    Información sobre tu estancia
+                    <i class="far fa-comment-alt"></i> Información sobre tu estancia
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('sobreDestino.html');cargar_info_destino()" tappable>
-                    Sobre tu destino
+                    <i class="far fa-comment-alt"></i> Sobre tu destino
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('alojamiento.html');cargar_info_alojamiento();" tappable>
-                    Cómo llegar a tu alojamiento
+                    <i class="far fa-comment-alt"></i> Cómo llegar a tu alojamiento
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('empresa.html');cargar_info_empresa();" tappable>
-                    Cómo llegar a tu empresa
+                    <i class="far fa-comment-alt"></i> Cómo llegar a tu empresa
                 </ons-list-item>
                 <!--
             <ons-list-item onclick="fn.load('horarios.html')" tappable>
@@ -231,12 +231,8 @@
 <ons-template id="login.html">
     <ons-page id="login">
         <ons-col>
-            <p style="margin-bottom:25px;">
-                <ons-input id="username_f" modifier="underbar" required placeholder="Usuario" float></ons-input>
-            </p>
-        <p>
+                <ons-input id="username_f" style="margin-bottom:25px;" modifier="underbar" required placeholder="Usuario" float></ons-input>
             <ons-input id="password_f" modifier="underbar" required type="password" placeholder="Password" float></ons-input>
-        </p>
         <p style="margin-top: 30px;text-align:center">
             <ons-button id="save_f"   onclick="save_data_first()" >guardar datos</ons-button>
         </p>
