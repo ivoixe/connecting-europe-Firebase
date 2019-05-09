@@ -750,7 +750,10 @@ function guardarPosicion(lat_actual,log_actual){
 
                 // recargarHorarios();
 
-                ons.notification.alert(resp.mensaje);
+                ons.notification.alert({
+                    message: resp.mensaje,
+                    title: "Fichado Correctamente"
+                });
 
             }
 
