@@ -443,7 +443,7 @@ ons-row span.menu{
 }
 #login{
     position:absolute;
-    top: 50%;
+    top: 70%;
     width:100%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -464,12 +464,14 @@ ons-row span.menu{
 
 #menu ons-list-item i{
      font-size:19px;
+    padding-left:3px;
 }
 
  #menu ons-list-item p {
      font-family: 'Exo';
      font-size: 19px;
      /*text-shadow: 3px 1px 2px #fff;*/
+     padding-top:2px;
  }
 
 
@@ -477,9 +479,4 @@ ons-row span.menu{
      background:red;
      color:blue;
      border-radius:15px;
- }
-
-
- ons-splitter-content[page="home.html"] {
-     background:red;
  }
