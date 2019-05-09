@@ -970,7 +970,10 @@ function save_data_first(){
 
                 if (resp.error) {
 
-                    ons.notification.alert(resp.error);
+                    ons.notification.alert({
+                        message:resp.error,
+                        title:''
+                    });
 
                     // window.fn.load('login.html');
 
