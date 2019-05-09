@@ -196,21 +196,21 @@
 <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
         <ons-page >
-            <ons-list>
+            <ons-list style="background: url('img/backgroundMenu.png');background-size:unset;">
                 <ons-list-item onclick="fn.load('home.html')" tappable>
-                    Home
+                    <i class="fas fa-home"></i> Connecting Europe
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('informacion.html'); cargar_info_estancia();" tappable>
-                    <i class="far fa-comment-alt"></i> Información sobre tu estancia
+                    <img class="img-responsive img-circle" src="img/estancia-menu.png"> Información sobre tu estancia
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('sobreDestino.html');cargar_info_destino()" tappable>
-                    <i class="far fa-comment-alt"></i> Sobre tu destino
+                    <img class="img-responsive img-circle" src="img/destino-menu.png"> Sobre tu destino
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('alojamiento.html');cargar_info_alojamiento();" tappable>
-                    <i class="far fa-comment-alt"></i> Cómo llegar a tu alojamiento
+                    <img class="img-responsive img-circle" src="img/casa-menu.png"> Cómo llegar a tu alojamiento
                 </ons-list-item>
                 <ons-list-item onclick="fn.load('empresa.html');cargar_info_empresa();" tappable>
-                    <i class="far fa-comment-alt"></i> Cómo llegar a tu empresa
+                    <img class="img-responsive img-circle" src="img/empresa-menu.png"> Cómo llegar a tu empresa
                 </ons-list-item>
                 <!--
             <ons-list-item onclick="fn.load('horarios.html')" tappable>
@@ -218,7 +218,7 @@
             </ons-list-item>
            -->
             <ons-list-item onclick="fn.load('configuracion.html')" tappable>
-                Configuración
+                <i class="far fa-cogs"></i> Configuración
             </ons-list-item>
 
             </ons-list>
@@ -231,8 +231,12 @@
 <ons-template id="login.html">
     <ons-page id="login">
         <ons-col>
-                <ons-input id="username_f" style="margin-bottom:25px;" modifier="underbar" required placeholder="Usuario" float></ons-input>
+            <p style="margin-bottom:25px;">
+                <ons-input id="username_f" modifier="underbar" required placeholder="Usuario" float></ons-input>
+            </p>
+        <p>
             <ons-input id="password_f" modifier="underbar" required type="password" placeholder="Password" float></ons-input>
+        </p>
         <p style="margin-top: 30px;text-align:center">
             <ons-button id="save_f"   onclick="save_data_first()" >guardar datos</ons-button>
         </p>
