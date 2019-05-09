@@ -972,7 +972,8 @@ function save_data_first(){
 
                     ons.notification.alert({
                         message:resp.error,
-                        title:''
+                        title:'',
+                        maskColor:'rgba(255, 0, 0, 0.3)'
                     });
 
                     // window.fn.load('login.html');
@@ -1108,7 +1109,13 @@ function save(){
 
             if(resp.error){
 
-                ons.notification.alert(resp.error);
+                ons.notification.alert({
+                    message:resp.error,
+                    title:'',
+                    maskColor:'rgba(255, 0, 0, 0.3)'
+                });
+
+
 
             }else{
 
