@@ -467,6 +467,7 @@ ons-row span.menu{
 }
 
  #menu ons-list-item p {
+     font-family: 'Exo';
      font-size: 19px;
      /*text-shadow: 3px 1px 2px #fff;*/
  }
