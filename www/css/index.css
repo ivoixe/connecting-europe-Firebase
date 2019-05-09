@@ -471,3 +471,10 @@ ons-row span.menu{
      font-size: 19px;
      /*text-shadow: 3px 1px 2px #fff;*/
  }
+
+
+ ons-alert-dialog.OK {
+     background:red;
+     color:blue;
+     border-radius:15px;
+ }
