@@ -1675,7 +1675,7 @@ function cargar_info_alojamiento(){
 
                             }, function() {
 
-                                alert(dataAlojamiento.gmaps_pos);
+                                //alert(dataAlojamiento.gmaps_pos);
 
                                 handleLocationError(true, infoWindow, map.getCenter());
 
