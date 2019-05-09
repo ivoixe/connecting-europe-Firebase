@@ -456,3 +456,17 @@ ons-row span.menu{
 .text-input--material__label--active {
     display:none !important;
 }
+
+#menu ons-list-item img{
+    width: 35px;
+    height: 35px;
+}
+
+#menu ons-list-item i{
+     font-size:19px;
+}
+
+ #menu ons-list-item p {
+     font-size: 19px;
+     /*text-shadow: 3px 1px 2px #fff;*/
+ }
