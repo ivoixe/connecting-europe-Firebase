@@ -68,6 +68,12 @@
              var valido =  localStorage.getItem("valido");
 
 
+             if  (page == "login.html"){
+                 $("ons-splitter").css("display","none");
+             } else {
+                 $("ons-splitter").css("display","block");
+             }
+
         
             content.load(page)
                 .then(
@@ -219,11 +225,11 @@
         </ons-page>
     </ons-splitter-side>
     <ons-splitter-content id="content" page="home.html">
-        <img src="img/logo.png" alt="Connecting Europa" style="margin-top:50px;">
     </ons-splitter-content>
 </ons-splitter>
 
-<ons-template id="login.html" >
+<ons-template id="login.html" style="margin-top:50px;" >
+    <img src="img/logo.png" alt="Connecting Europa" style="margin-bottom:50px;">
     <ons-page id="login">
         <ons-col>
             <label for="username_f" style="text-transform: capitalize;">Usuario</label>
