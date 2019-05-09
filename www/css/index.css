@@ -478,3 +478,8 @@ ons-row span.menu{
      color:blue;
      border-radius:15px;
  }
+
+
+ ons-splitter-content[page="home.html"] {
+     background:red;
+ }
