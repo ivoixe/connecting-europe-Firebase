@@ -1312,10 +1312,7 @@ function datos_portada(){
     var user =  localStorage.getItem("username");
 
     var pass_user =  localStorage.getItem("password");
-
-
-        alert("LOCAL STORAGE");
-        alert(localStorage.getItem("fichado"));
+    
         if (localStorage.getItem("fichado") == null){
             $(document).find('#iconoHorarioRegistrado').removeClass();
             $(document).find('#iconoHorarioRegistrado').addClass('fas fa-times red');
