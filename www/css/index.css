@@ -247,6 +247,8 @@ i {
     font-family:'exo-extra-bold';
     float:right;
     font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .fecha{
     color:#000;
@@ -501,7 +503,7 @@ ons-row span.menu{
      transform: translate(-50%) rotate(-30deg);
      position:relative;
      left:50%;
-     margin-top:10px;
-     margin-bottom:10px;
-     font-size:20px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-size: 25px;
  }
