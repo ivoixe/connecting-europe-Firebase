@@ -73,19 +73,6 @@
              } else {
                  menu.style.display = "block";
              }
-
-             if (page == "home.html") {
-                 var estaFichado = window.localStorage.getItem("fichado");
-                 var iconoFichado = document.getElementById('iconoHorarioRegistrado');
-                 if (estaFichado == null){
-                     iconoFichado.className = "fas fa-times";
-                 } else {
-                     iconoFichado.className = "fas fa-check";
-                 }
-
-             }
-
-        
             content.load(page)
                 .then(
                     menu.close.bind(menu)
@@ -105,6 +92,17 @@
                 if (mapaEnDocumentoBuscar != null) {
                     carga_fichado();
                 }
+            }
+
+            if (page == "home.html") {
+                var estaFichado = window.localStorage.getItem("fichado");
+                var iconoFichado = document.getElementById('iconoHorarioRegistrado');
+                if (estaFichado == null){
+                    iconoFichado.className = "fas fa-times";
+                } else {
+                    iconoFichado.className = "fas fa-check";
+                }
+
             }
 
 
