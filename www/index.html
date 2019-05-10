@@ -97,7 +97,7 @@
             if (page == "home.html") {
                 var estaFichado = localStorage.getItem("fichado");
                 var iconoFichado = document.getElementById('iconoHorarioRegistrado');
-                if (!estaFichado){
+                if (localStorage.getItem("fichado") == "null"){
                     iconoFichado.className = "fas fa-times";
                 } else {
                     iconoFichado.className = "fas fa-check";
