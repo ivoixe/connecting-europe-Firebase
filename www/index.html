@@ -95,6 +95,37 @@
             }
 
 
+            var iconoHorario = $(document).find('#iconoHorarioRegistrado');
+            if (page == "home.html"){
+                    setTimeout(checkVariableHorario, 500);
+            }
+
+
+            function checkVariableHorario() {
+                if (localStorage.getItem("fichado") == null){
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
+                } else {
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
+                }
+            }
+
+            /*if (content.page == "home.html") {
+                if (localStorage.getItem("fichado") == null){
+                    alert("NULL");
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
+                } else {
+                    alert("NOT  -  NULL");
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
+                }
+
+            }*/
+
+
+
 
         };
         ons.ready(function() {
@@ -150,20 +181,6 @@
                 window.fn.load('login.html');
 
             }
-
-            if (content.page == "home.html") {
-                if (localStorage.getItem("fichado") == null){
-                    alert("NULL");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
-                } else {
-                    alert("NOT  -  NULL");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
-                }
-
-            }
-
 
         });
 
