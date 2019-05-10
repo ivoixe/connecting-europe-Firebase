@@ -94,19 +94,6 @@
                 }
             }
 
-            if (page == "home.html") {
-                if (localStorage.getItem("fichado") == null){
-                    alert("Fichado Null");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
-                } else {
-                    alert("Fichado OK");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
-                }
-
-            }
-
 
 
         };
@@ -161,6 +148,20 @@
             if(!user && !pass_user ){
 
                 window.fn.load('login.html');
+
+            }
+
+            if (content.page == "home.html") {
+                alert("home.html");
+                if (localStorage.getItem("fichado") == null){
+                    alert("Fichado Null");
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
+                } else {
+                    alert("Fichado OK");
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
+                }
 
             }
 
