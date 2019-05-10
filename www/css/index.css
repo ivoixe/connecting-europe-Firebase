@@ -480,6 +480,6 @@ ons-row span.menu{
      border:2px solid green;
      color:green;
      border-radius:50%;
-     padding-left:15px;
-     padding-top:15px;
+     margin-left:15px;
+     margin-top:15px;
  }
