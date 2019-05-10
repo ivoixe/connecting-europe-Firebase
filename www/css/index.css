@@ -506,6 +506,8 @@ ons-row span.menu{
  #iconoHorarioRegistrado.red {
      color:red;
      border:2px solid red;
+     padding-left: 13px;
+     padding-right: 13px;
  }
 
  #dedoClick {
