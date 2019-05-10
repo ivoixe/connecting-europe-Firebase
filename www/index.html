@@ -94,25 +94,6 @@
                 }
             }
 
-
-            var iconoHorario = $(document).find('#iconoHorarioRegistrado');
-            if (page == "home.html"){
-                    setTimeout(checkVariableHorario, 500);
-            }
-
-
-            function checkVariableHorario() {
-                if (localStorage.getItem("fichado") == null){
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-times red');
-                    $('#iconoHorarioRegistrado').css('display','block');
-                } else {
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
-                    $('#iconoHorarioRegistrado').css('display','block');
-                }
-            }
-
             /*if (content.page == "home.html") {
                 if (localStorage.getItem("fichado") == null){
                     alert("NULL");
@@ -183,6 +164,10 @@
                 window.fn.load('login.html');
 
             }
+
+
+
+
 
         });
 

@@ -1313,6 +1313,20 @@ function datos_portada(){
 
     var pass_user =  localStorage.getItem("password");
 
+
+        alert("LOCAL STORAGE");
+        alert(localStorage.getItem("fichado"));
+        if (localStorage.getItem("fichado") == null){
+            $(document).find('#iconoHorarioRegistrado').removeClass();
+            $(document).find('#iconoHorarioRegistrado').addClass('fas fa-times red');
+            $(document).find('#iconoHorarioRegistrado').css('display','block');
+        } else {
+            $(document).find('#iconoHorarioRegistrado').removeClass();
+            $(document).find('#iconoHorarioRegistrado').addClass('fas fa-check');
+            $(document).find('#iconoHorarioRegistrado').css('display','block');
+        }
+
+
     if(!user && !pass_user){
 
         $('#home').hide();
