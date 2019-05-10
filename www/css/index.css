@@ -475,9 +475,11 @@ ons-row span.menu{
      padding-top:5px;
  }
 
-
- ons-alert-dialog.OK {
-     background:red;
-     color:blue;
-     border-radius:15px;
+ .iconoHorarioRegistrado {
+    font-size:20px;
+     border:2px solid green;
+     color:green;
+     border-radius:50%;
+     padding-left:15px;
+     padding-top:15px;
  }
