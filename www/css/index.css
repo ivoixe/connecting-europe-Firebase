@@ -205,6 +205,7 @@ h1 {
     padding: 10px 15px;
     border-radius:6px;
     margin-bottom:15px;
+    position:relative;
 }
 .recuadro h2{
     text-align: center;
@@ -498,13 +499,18 @@ ons-row span.menu{
      transform: translateY(-50%);
  }
 
- .entrar #dedoClick {
-     -ms-transform: rotate(-30deg); /* IE 9 */
-     -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+ #dedoClick {
+     -ms-transform: rotate(-30deg);
+     -webkit-transform: rotate(-30deg);
      transform: rotate(-30deg);
-     position:relative;
-     right:15px;
-     margin-top: 5px;
-     margin-bottom: 5px;
      font-size: 25px;
+     float: right;
+     display: block;
+     float: right;
+     z-index: 1000;
+     text-shadow: 1px 1px 8px black;
+     color: white;
+     position: absolute;
+     bottom: 0px;
+     right: 0;
  }
