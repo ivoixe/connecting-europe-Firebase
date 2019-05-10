@@ -97,10 +97,12 @@
             if (page == "home.html") {
                 if (localStorage.getItem("fichado") == null){
                     alert("Fichado Null");
-                    document.getElementById('iconoHorarioRegistrado').className = "fas fa-times";
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
                 } else {
                     alert("Fichado OK");
-                    document.getElementById('iconoHorarioRegistrado').className = "fas fa-check";
+                    $('#iconoHorarioRegistrado').removeClass();
+                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
                 }
 
             }
