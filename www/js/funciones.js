@@ -1179,7 +1179,12 @@ function save(){
 
 function  travel_mode(id) {
 
-    var html='<div id="floating-panel_'+id+'"> <b>Modo de viaje: <ons-select class="select"><select id="mode'+id+'"> <option value="DRIVING">Coche</option> <option value="WALKING">Caminando</option><option value="BICYCLING">Bicicleta</option><option value="TRANSIT">Coche</option></select></ons-select> </div>'
+    var html='<div id="floating-panel_'+id+'"> <b>Modo de viaje: <ons-select class="select"><select id="mode'+id+'"> ' +
+        '<option value="DRIVING">Coche</option> ' +
+        '<option value="WALKING">Caminando</option>' +
+        '<option value="BICYCLING">Bicicleta</option>' +
+        '<option value="TRANSIT">Transporte Público</option>' +
+        '</select></ons-select> </div>'
 
     return html;
 
@@ -1312,7 +1317,7 @@ function datos_portada(){
     var user =  localStorage.getItem("username");
 
     var pass_user =  localStorage.getItem("password");
-    
+
         if (localStorage.getItem("fichado") == null){
             $(document).find('#iconoHorarioRegistrado').removeClass();
             $(document).find('#iconoHorarioRegistrado').addClass('fas fa-times red');
@@ -1646,7 +1651,7 @@ function cargar_info_alojamiento(){
 
                     /******************************************************/
 
-                    contenido += '<ons-list-item expandable >'+dataAlojamiento.nombre+'<div class="expandable-content"><div id="mapa_'+dataAlojamiento.id+'"></div></div></ons-list-item>';
+                    contenido += '<p>'+dataAlojamiento.nombre+'<p><div class="expandable-content"><div id="mapa_'+dataAlojamiento.id+'"></div></div>';
 
 
 
