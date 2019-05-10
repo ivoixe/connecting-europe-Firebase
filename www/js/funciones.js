@@ -1654,7 +1654,7 @@ function cargar_info_alojamiento(){
 
                     /******************************************************/
 
-                    contenido += '<b>'+dataAlojamiento.nombre+'<b><div class="expandable-content"><div id="mapa_'+dataAlojamiento.id+'"></div></div>';
+                    contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
 
 
 
@@ -1694,7 +1694,7 @@ function cargar_info_alojamiento(){
 
 
 
-                        $('#mapa_'+dataAlojamiento.id).css( 'height','500px');
+                        /*$('#mapa_'+dataAlojamiento.id).css( 'height','500px');*/
 
                         directionsDisplay.setMap(mapa_a);
                         $('#mode'+dataAlojamiento.id).on('change', function() {

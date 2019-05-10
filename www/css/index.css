@@ -169,6 +169,7 @@ h1 {
  .mapas{
     width: 100%;
     height:400px;
+    margin-top:15px;
  }
 .blink {
     animation:fade 3000ms infinite;
