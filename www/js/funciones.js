@@ -752,7 +752,7 @@ function guardarPosicion(lat_actual,log_actual){
 
                 ons.notification.alert({
                     message: resp.mensaje,
-                    title: "Fichado Correctamente"
+                    title: "Fichado"
                 });
 
             }
