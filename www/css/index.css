@@ -502,7 +502,7 @@ ons-row span.menu{
      transform: translate(-50%) rotate(-30deg);
      position:relative;
      left:50%;
-     margin-top:15px;
-     margin-bottom:15px;
-
+     margin-top:10px;
+     margin-bottom:10px;
+     font-size:20px;
  }
