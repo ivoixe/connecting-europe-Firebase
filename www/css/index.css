@@ -488,13 +488,14 @@ ons-row span.menu{
  }
 
  #iconoHorarioRegistrado {
-    font-size:15px;
+     font-size:15px;
      border:2px solid green;
      color:green;
      border-radius:50%;
-     margin-top:50px;
-     margin-bottom:10px;
      padding:10px;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
  }
 
  .entrar #dedoClick {
