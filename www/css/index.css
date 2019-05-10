@@ -246,7 +246,7 @@ i {
     color:#fff;
     font-family:'exo-extra-bold';
     float:right;
-    font-size:15px;
+    font-size: 17px;
 }
 .fecha{
     color:#000;
@@ -486,7 +486,7 @@ ons-row span.menu{
  }
 
  .iconoHorarioRegistrado {
-    font-size:20px;
+    font-size:15px;
      border:2px solid green;
      color:green;
      border-radius:50%;
