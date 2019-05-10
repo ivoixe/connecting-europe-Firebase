@@ -246,6 +246,7 @@ i {
     color:#fff;
     font-family:'exo-extra-bold';
     float:right;
+    font-size:20px;
 }
 .fecha{
     color:#000;
@@ -466,6 +467,9 @@ ons-row span.menu{
  #menu ons-list-item {
      margin-top:15px;
      margin-bottom:15px;
+ }
+
+ #menu ons-list-item .list-item__center {
      background-image: unset;
  }
 
@@ -489,14 +493,16 @@ ons-row span.menu{
      margin-left:15px;
      margin-top:10px;
      margin-bottom:10px;
+     padding:15px;
  }
 
  .entrar .dedoClick {
-     -ms-transform: rotate(30deg); /* IE 9 */
-     -webkit-transform: rotate(30deg); /* Safari 3-8 */
-     transform: translate(-50%) rotate(30deg);
+     -ms-transform: rotate(-30deg); /* IE 9 */
+     -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+     transform: translate(-50%) rotate(-30deg);
      position:relative;
      left:50%;
      margin-top:15px;
-     padding:15px;
+     margin-bottom:15px;
+
  }
