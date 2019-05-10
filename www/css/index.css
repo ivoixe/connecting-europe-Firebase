@@ -177,7 +177,7 @@ h1 {
 #content .page__content {
     padding:0 15px;
     padding-top:0px;
-    margin-top:35px;
+    /*margin-top:35px;*/
 }
 #home .page__content{
     margin-top:0px;
