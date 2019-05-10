@@ -490,7 +490,7 @@ ons-row span.menu{
      margin-top:15px;
  }
 
- .entrar .mano {
+ .entrar .dedoClick {
      -ms-transform: rotate(30deg); /* IE 9 */
      -webkit-transform: rotate(30deg); /* Safari 3-8 */
      transform: rotate(30deg);
