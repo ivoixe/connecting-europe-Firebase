@@ -1179,7 +1179,10 @@ function save(){
 
 function  travel_mode(id) {
 
-    var html='<div id="floating-panel_'+id+'"> <b>Modo de viaje: <ons-select class="select"><select id="mode'+id+'"> ' +
+    var html='<div id="floating-panel_'+id+'"> <b>Modo de viaje:</b> ' +
+        '<ons-select class="select">' +
+        '<select id="mode'+id+'"> ' +
+        '<option value="default">-- Selecciona un modo de viaje --</option> ' +
         '<option value="DRIVING">Coche</option> ' +
         '<option value="WALKING">Caminando</option>' +
         '<option value="BICYCLING">Bicicleta</option>' +
@@ -1651,7 +1654,7 @@ function cargar_info_alojamiento(){
 
                     /******************************************************/
 
-                    contenido += '<p>'+dataAlojamiento.nombre+'<p><div class="expandable-content"><div id="mapa_'+dataAlojamiento.id+'"></div></div>';
+                    contenido += '<b>'+dataAlojamiento.nombre+'<b><div class="expandable-content"><div id="mapa_'+dataAlojamiento.id+'"></div></div>';
 
 
 

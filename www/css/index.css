@@ -526,3 +526,15 @@ ons-row span.menu{
      bottom: 5px;
      right: 5px;
  }
+
+ #alojamiento ons-list-item .list-item__center,
+ #alojamiento .select-input--material{
+     background-image:unset;
+ }
+
+ #alojamiento .select-input--material {
+     position: relative;
+     top: -10px;
+     left: 15px;
+ }
+
