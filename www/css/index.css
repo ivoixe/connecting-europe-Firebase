@@ -450,7 +450,8 @@ ons-row span.menu{
 }
 #login{
     position:absolute;
-    top: 55%;
+    /*top: 55%;*/
+    top: 50%;
     width:100%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
