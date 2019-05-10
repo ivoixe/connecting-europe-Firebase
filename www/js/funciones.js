@@ -748,6 +748,8 @@ function guardarPosicion(lat_actual,log_actual){
 
                 localStorage.setItem('empresa',JSON.stringify(resp.empresa));
 
+                localStorage.setItem('fichado','OK');
+
                 // recargarHorarios();
 
                 ons.notification.alert({
