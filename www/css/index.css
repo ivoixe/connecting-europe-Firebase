@@ -463,14 +463,15 @@ ons-row span.menu{
 }
 
 #menu ons-list-item i{
-     font-size:19px;
-    padding-left:3px;
+    font-size:19px;
+    padding-left:10px;
 }
 
  #menu ons-list-item p {
      font-family: 'Exo';
      font-size: 15px;
      /*text-shadow: 3px 1px 2px #fff;*/
+     padding-top:3px;
  }
 
 
