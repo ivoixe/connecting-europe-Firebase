@@ -487,7 +487,8 @@ ons-row span.menu{
      color:green;
      border-radius:50%;
      margin-left:15px;
-     margin-top:15px;
+     margin-top:10px;
+     margin-bottom:10px;
  }
 
  .entrar .dedoClick {
@@ -497,4 +498,5 @@ ons-row span.menu{
      position:relative;
      left:50%;
      margin-top:15px;
+     padding:15px;
  }
