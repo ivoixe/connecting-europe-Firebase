@@ -503,6 +503,11 @@ ons-row span.menu{
      margin-left:10px;
  }
 
+ #iconoHorarioRegistrado.red {
+     color:red;
+     border:2px solid red;
+ }
+
  #dedoClick {
      -ms-transform: rotate(-30deg);
      -webkit-transform: rotate(-30deg);
