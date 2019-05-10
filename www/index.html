@@ -95,13 +95,12 @@
             }
 
             if (page == "home.html") {
-                var iconoFichado = document.getElementById('iconoHorarioRegistrado');
                 if (localStorage.getItem("fichado") == null){
                     alert("Fichado Null");
-                    iconoFichado.className = "fas fa-times";
+                    document.getElementById('iconoHorarioRegistrado').className = "fas fa-times";
                 } else {
                     alert("Fichado OK");
-                    iconoFichado.className = "fas fa-check";
+                    document.getElementById('iconoHorarioRegistrado').className = "fas fa-check";
                 }
 
             }
