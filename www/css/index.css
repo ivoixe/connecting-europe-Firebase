@@ -513,6 +513,6 @@ ons-row span.menu{
      text-shadow: 1px 1px 8px black;
      color: white;
      position: absolute;
-     bottom: 0px;
-     right: 0;
+     bottom: 5px;
+     right: 5px;
  }
