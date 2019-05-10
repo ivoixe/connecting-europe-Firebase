@@ -466,7 +466,7 @@ ons-row span.menu{
  #menu ons-list-item {
      margin-top:15px;
      margin-bottom:15px;
-     border:unset;
+     background-image: unset;
  }
 
 #menu ons-list-item i{
