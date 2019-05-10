@@ -74,6 +74,11 @@
                  menu.style.display = "block";
              }
 
+             if (page == "home.html") {
+                 var estaFichado = window.localStorage.getItem("fichado");
+                 alert(estaFichado);
+             }
+
         
             content.load(page)
                 .then(
