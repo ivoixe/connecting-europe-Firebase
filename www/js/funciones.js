@@ -766,7 +766,7 @@ function guardarPosicion(lat_actual,log_actual){
             // ocultamos el select.
 
             ons.notification.alert({
-                message: "No hay conexión a Internet",
+                message: "La aplicación no se puede conectar con el servidor",
                 title: "Error de conexión",
                 maskColor:'rgba(255, 0, 0, 0.3)'
             });
@@ -1068,7 +1068,7 @@ function save_data_first(){
                 // ocultamos el select.
 
                 ons.notification.alert({
-                    message: 'No hay conexión a Internet',
+                    message: 'La aplicación no se puede conectar con el servidor',
                     title:'Error en la conexión',
                     maskColor:'rgba(255, 0, 0, 0.3)'
                 });
@@ -1651,6 +1651,7 @@ function cargar_info_alojamiento(){
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
                         alert("ENTER ALOJAMIENTO");
+                        alert(fechaSalida);
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
                     } else {
