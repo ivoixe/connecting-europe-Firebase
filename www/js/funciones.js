@@ -1648,8 +1648,11 @@ function cargar_info_alojamiento(){
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
+                        alert("ENTER ALOJAMIENTO");
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
+                    } else {
+                        alert("  - - - - - -- - ERROR ALOJAMIENTO");
                     }
 
                 });
