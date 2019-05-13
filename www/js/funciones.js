@@ -1667,7 +1667,7 @@ function cargar_info_alojamiento(){
             });
 
             navigator.geolocation.getCurrentPosition(function(position) {
-                url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
+                url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+currentAlojamientoLat+','+currentAlojamientoLon;
                 alert(url);
             }, function(e) {
                 alert("ERROR: " + e);
