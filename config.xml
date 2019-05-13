@@ -9,7 +9,6 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
     </feature>
-    <preference name="HeaderColor" value="#f08000" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="webviewbounce" value="true" />
