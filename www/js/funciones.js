@@ -1704,8 +1704,6 @@ function cargar_info_alojamiento(){
                     var selectedMode = $(this).val();
                     infoWindow = new google.maps.InfoWindow;
 
-
-
                     navigator.geolocation.getCurrentPosition(function(position) {
 
                         calcula_ruta(directionsService, directionsDisplay,currentAlojamientoGpos,selectedMode,position.coords.latitude,position.coords.longitude);
