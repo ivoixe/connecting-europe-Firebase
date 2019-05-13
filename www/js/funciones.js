@@ -1543,9 +1543,9 @@ function cargar_info_empresa(){
             navigator.geolocation.getCurrentPosition(function(position) {
                 url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
             }, function(e) {
-                alert("ERROR: " + e );
+                alert("ERROR: " + e);
             });
-            
+
             if(contenido){
 
                 $(document).find('#empresa').append(contenido);
@@ -1559,8 +1559,6 @@ function cargar_info_empresa(){
                     zoom: 12,
                     mapTypeId: 'roadmap'
                 }
-
-
 
                 mapa_emp = new google.maps.Map(document.getElementById('mapa_'+emp.id),mapOptions );
 
@@ -1644,6 +1642,9 @@ function cargar_info_alojamiento(){
                 contenido +='<ons-list>';
 
                 $.each(item.alojamiento, function(p, dataAlojamiento) {
+
+                    alert(dataAlojamiento.fecha_in);
+                    alert(dataAlojamiento.fecha_out);
 
                     contenido += travel_mode(dataAlojamiento.id);
 
