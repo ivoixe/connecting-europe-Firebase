@@ -1644,8 +1644,10 @@ function cargar_info_alojamiento(){
                 $.each(item.alojamiento, function(p, dataAlojamiento) {
 
                     alert(dataAlojamiento.nombre);
-                    alert(new Date());
-                    alert(new Date(dataAlojamiento.fecha_in.replace(/-/g,"/")));
+                    alert("Fecha Actual: " + new Date());
+                    alert("Fecha Inicio Alojamiento: " + new Date(dataAlojamiento.fecha_in.replace(/-/g,"/")));
+                    alert("Fecha Salida Alojamiento: " + new Date(dataAlojamiento.fecha_out.replace(/-/g,"/")));
+
                     //alert(dataAlojamiento.fecha_out);
 
 
