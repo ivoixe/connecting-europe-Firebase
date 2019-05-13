@@ -1637,7 +1637,11 @@ function cargar_info_alojamiento(){
 
             var fechaActual = new Date();
 
+            alert("0: ");
+
             $.each(al, function(i, item) {
+
+                alert("1: ");
 
                 contenido +='<ons-list>';
 
