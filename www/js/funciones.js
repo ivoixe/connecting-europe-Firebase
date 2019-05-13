@@ -1012,7 +1012,7 @@ function save_data_first(){
 
                     localStorage.setItem('empresa', JSON.stringify(resp.empresa));
 
-                    localStorage.setItem('alojamientos', JSON.stringify(resp.alojamientos));
+                    /*localStorage.setItem('alojamientos', JSON.stringify(resp.alojamientos));*/
 
                     localStorage.setItem('datos', JSON.stringify(resp.datos));
 
@@ -1149,7 +1149,7 @@ function save(){
 
                 localStorage.setItem('empresa',JSON.stringify(resp.empresa));
 
-                localStorage.setItem('alojamientos',JSON.stringify(resp.alojamientos));
+                /*localStorage.setItem('alojamientos',JSON.stringify(resp.alojamientos));*/
 
                 localStorage.setItem('datos',JSON.stringify(resp.datos));
 
