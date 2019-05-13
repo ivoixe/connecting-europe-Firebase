@@ -33,12 +33,7 @@ var app = {
 
     onDeviceReady: function() {
 
-        window.plugins.headerColor.tint("#becb29");
         app.receivedEvent('deviceready');
-
-
-
-
 
     },
 
