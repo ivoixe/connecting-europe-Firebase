@@ -765,7 +765,11 @@ function guardarPosicion(lat_actual,log_actual){
 
             // ocultamos el select.
 
-            alert('error en la conexion?'+e.message);
+            ons.notification.alert({
+                message: "No hay conexión a Internet",
+                title: "Error de conexión",
+                maskColor:'rgba(255, 0, 0, 0.3)'
+            });
 
             console.log('no nos conectamos con la nube.');
 
