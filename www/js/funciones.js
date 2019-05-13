@@ -1627,6 +1627,8 @@ function cargar_info_alojamiento(){
 
             var contenido="";
 
+            var url = "";
+
             var al= JSON.parse( localStorage.getItem("alojamientos"));
 
             var geocoder;
@@ -1660,6 +1662,13 @@ function cargar_info_alojamiento(){
                 contenido +='</ons-list>';
 
             });
+
+            navigator.geolocation.getCurrentPosition(function(position) {
+                url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
+            }, function(e) {
+                alert("ERROR: " + e);
+            });
+
 
             if(contenido){
 
@@ -1714,6 +1723,14 @@ function cargar_info_alojamiento(){
                             });
 
                         });
+
+
+                        $( "#ver_en_maps" ).click(function() {
+                            cordova.InAppBrowser.open(url, '_system','location=yes');
+                            // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
+
+                        });
+
                     });
                 });
 
