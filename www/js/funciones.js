@@ -1635,19 +1635,25 @@ function cargar_info_alojamiento(){
 
             var infowindow = new google.maps.InfoWindow();
 
+            var fechaActual = new Date();
 
+            alert(al.toString());
 
             $.each(al, function(i, item) {
 
+                alert(item.toString());
 
 
                 contenido +='<ons-list>';
 
                 $.each(item.alojamiento, function(p, dataAlojamiento) {
 
-                    var fechaActual = new Date();
+
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
+
+                    alert(fechaInicio);
+                    alert(fechaSalida);
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
                         alert("ENTER ALOJAMIENTO");
