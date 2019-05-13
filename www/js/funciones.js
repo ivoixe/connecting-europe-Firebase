@@ -1656,7 +1656,7 @@ function cargar_info_alojamiento(){
                     }
                 });*/
 
-                al.forEach(function(p, dataAlojamien) {
+                al.forEach(function(p, dataAlojamiento) {
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
