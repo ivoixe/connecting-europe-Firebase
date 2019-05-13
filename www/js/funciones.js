@@ -1560,25 +1560,23 @@ function cargar_info_empresa(){
 
                 }
 
-
-
-
-                var url ='https://www.google.com/maps/dir/?api=1&origin=43.3012736,-2.0168704&destination='+emp.lat+','+emp.lon;
                 mapa_emp = new google.maps.Map(document.getElementById('mapa_'+emp.id),mapOptions );
 
                 directionsDisplay.setMap(mapa_emp);
 
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
+                    calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,selectedMode,position.coords.latitude,position.coords.longitude);
+                }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
 
 
                 $('#mode'+emp.id).on('change', function() {
 
                     var selectedMode = $(this).val();
 
-
-
                     infoWindow = new google.maps.InfoWindow;
-
-
 
                     navigator.geolocation.getCurrentPosition(function(position) {
                         //var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
