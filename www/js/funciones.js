@@ -1526,6 +1526,8 @@ function cargar_info_empresa(){
 
             var contenido="";
 
+            var url = "";
+
             var emp= JSON.parse( localStorage.getItem("empresa"));
 
             var geocoder;
@@ -1554,15 +1556,15 @@ function cargar_info_empresa(){
                     mapTypeId: 'roadmap'
                 }
 
+
+
                 mapa_emp = new google.maps.Map(document.getElementById('mapa_'+emp.id),mapOptions );
 
                 directionsDisplay.setMap(mapa_emp);
 
                 navigator.geolocation.getCurrentPosition(function(position) {
-                    var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
-                    calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,'TRANSIT',position.coords.latitude,position.coords.longitude);
+                    url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
                 }, function() {
-                    handleLocationError(true, infoWindow, map.getCenter());
                 });
 
 
@@ -1575,21 +1577,14 @@ function cargar_info_empresa(){
                     navigator.geolocation.getCurrentPosition(function(position) {
                         //var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
                         calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,selectedMode,position.coords.latitude,position.coords.longitude);
-
-
                     }, function() {
-
                         handleLocationError(true, infoWindow, map.getCenter());
-
                     });
 
                 });
 
                 $( "#ver_en_maps" ).click(function() {
-
-
                     cordova.InAppBrowser.open(url, '_system','location=yes');
-
                     // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
 
                 });
