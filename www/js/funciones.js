@@ -1645,6 +1645,7 @@ function cargar_info_alojamiento(){
 
                     alert(dataAlojamiento.fecha_in);
                     alert(dataAlojamiento.fecha_out);
+                    alert(new Date());
 
                     contenido += travel_mode(dataAlojamiento.id);
 
