@@ -1565,6 +1565,7 @@ function cargar_info_empresa(){
                 directionsDisplay.setMap(mapa_emp);
 
                 navigator.geolocation.getCurrentPosition(function(position) {
+                    alert("position: "+ position);
                     var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
                     calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,selectedMode,position.coords.latitude,position.coords.longitude);
                 }, function() {
