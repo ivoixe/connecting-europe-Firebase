@@ -1564,7 +1564,8 @@ function cargar_info_empresa(){
 
                 navigator.geolocation.getCurrentPosition(function(position) {
                     url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
-                }, function() {
+                }, function(e) {
+                    alert("ERROR: " + e );
                 });
 
 
