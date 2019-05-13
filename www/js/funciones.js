@@ -1597,9 +1597,11 @@ function cargar_info_empresa(){
 
 
 
-                    var ref = cordova.InAppBrowser.open(url, '_system','location=yes');
+                    /*var ref = cordova.InAppBrowser.open(url, '_system','location=yes');
 
-                    ref.show();
+                    ref.show();*/
+                    
+                    cordova.InAppBrowser.open(url, '_system','location=yes');
 
                     // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
 
