@@ -35,6 +35,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="5000" />
     <preference name="SplashMaintainAspectRatio" value="true|false" />
+    <preference name="StatusBarBackgroundColor" value="#f08000" />
     <platform name="android">
         <resource-file src="google-services.json" target="google-services.json" />
         <allow-intent href="market:*" />
