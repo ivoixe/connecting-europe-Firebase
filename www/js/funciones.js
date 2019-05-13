@@ -1637,11 +1637,13 @@ function cargar_info_alojamiento(){
 
             var fechaActual = new Date();
 
-            alert("0: ");
+            var currentAlojamientoLat = "";
+            var currentAlojamientoLon = "";
+            var currentAlojamientoId = "";
+            var currentAlojamientoGpos = "";
+
 
             $.each(al, function(i, item) {
-
-                alert("1: ");
 
                 contenido +='<ons-list>';
 
@@ -1650,24 +1652,23 @@ function cargar_info_alojamiento(){
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
-                    alert("fechaActual: " + fechaActual);
-                    alert("fechaInicio: " + fechaInicio);
-                    alert("fechaSalida: " + fechaSalida);
-
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
+                        currentAlojamientoLat = dataAlojamiento.lat;
+                        currentAlojamientoLon = dataAlojamiento.lon;
+                        currentAlojamientoId = dataAlojamiento.id;
+                        currentAlojamientoGpos = dataAlojamiento.gmaps_pos;
                     } else {
-                        contenido += '<b>ERROR</b>';
                     }
                 });
-
                 contenido +='</ons-list>';
 
             });
 
             navigator.geolocation.getCurrentPosition(function(position) {
                 url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
+                alert(url);
             }, function(e) {
                 alert("ERROR: " + e);
             });
@@ -1679,64 +1680,52 @@ function cargar_info_alojamiento(){
 
                 var mapOptions=[];
 
-                $.each(al, function(i, item) {
+                var latlng = new google.maps.LatLng(currentAlojamientoLat,currentAlojamientoLon);
 
-                    $.each(item.alojamiento, function(p, dataAlojamiento) {
+                mapOptions = {
 
-                        //console.log(dataAlojamiento.lat);
+                    center: latlng,
 
-                        //  console.log(dataAlojamiento.lon);
+                    zoom: 12,
 
-                        var latlng = new google.maps.LatLng(dataAlojamiento.lat,dataAlojamiento.lon);
+                    mapTypeId: 'roadmap'
 
-                        mapOptions = {
+                }
 
-                            center: latlng,
-
-                            zoom: 12,
-
-                            mapTypeId: 'roadmap'
-
-                        }
-
-                        mapa_a = new google.maps.Map(document.getElementById('mapa_'+dataAlojamiento.id),mapOptions );
+                mapa_a = new google.maps.Map(document.getElementById('mapa_'+currentAlojamientoId),mapOptions );
 
 
 
-                        /*$('#mapa_'+dataAlojamiento.id).css( 'height','500px');*/
+                /*$('#mapa_'+dataAlojamiento.id).css( 'height','500px');*/
 
-                        directionsDisplay.setMap(mapa_a);
-                        $('#mode'+dataAlojamiento.id).on('change', function() {
+                directionsDisplay.setMap(mapa_a);
+                $('#mode'+currentAlojamientoId).on('change', function() {
 
-                            var selectedMode = $(this).val();
-                            infoWindow = new google.maps.InfoWindow;
-
-
-
-                            navigator.geolocation.getCurrentPosition(function(position) {
-
-                                calcula_ruta(directionsService, directionsDisplay,dataAlojamiento.gmaps_pos,selectedMode,position.coords.latitude,position.coords.longitude);
-
-                            }, function() {
-
-                                //alert(dataAlojamiento.gmaps_pos);
-
-                                handleLocationError(true, infoWindow, map.getCenter());
-
-                            });
-
-                        });
+                    var selectedMode = $(this).val();
+                    infoWindow = new google.maps.InfoWindow;
 
 
-                        $( "#ver_en_maps" ).click(function() {
-                            cordova.InAppBrowser.open(url, '_system','location=yes');
-                            // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
 
-                        });
+                    navigator.geolocation.getCurrentPosition(function(position) {
+
+                        calcula_ruta(directionsService, directionsDisplay,currentAlojamientoGpos,selectedMode,position.coords.latitude,position.coords.longitude);
+
+                    }, function() {
+
+                        //alert(dataAlojamiento.gmaps_pos);
+
+                        handleLocationError(true, infoWindow, map.getCenter());
 
                     });
+
                 });
 
+
+                $( "#ver_en_maps" ).click(function() {
+                    cordova.InAppBrowser.open(url, '_system','location=yes');
+                    // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
+
+                });
             }else{
 
             }
