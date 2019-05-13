@@ -719,12 +719,12 @@ function guardarPosicion(lat_actual,log_actual){
 
                 var destino;
 
-                $.each(resp.alojamientos, function(i, item){
+                /*$.each(resp.alojamientos, function(i, item){
 
                     alojamientos.push(item);
                     //localStorage.setItem('alojamiento'+i,item);
 
-                });
+                });*/
 
                 $.each(resp.datas, function(i, item){
 
@@ -740,7 +740,7 @@ function guardarPosicion(lat_actual,log_actual){
 
                 localStorage.setItem('horarios',JSON.stringify(datos));
 
-                localStorage.setItem('alojamientos',JSON.stringify(alojamientos));
+                /*localStorage.setItem('alojamientos',JSON.stringify(alojamientos));*/
 
                 localStorage.setItem('destino',JSON.stringify(resp.destino));
 
