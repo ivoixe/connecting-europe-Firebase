@@ -1642,10 +1642,10 @@ function cargar_info_alojamiento(){
                 contenido +='<ons-list>';
 
                 $.each(item.alojamiento, function(p, dataAlojamiento) {
-
-                    alert(dataAlojamiento.fecha_in);
-                    alert(dataAlojamiento.fecha_out);
                     alert(new Date());
+                    alert(new Date(dataAlojamiento.fecha_in.replace(/-/g,"/")));
+                    //alert(dataAlojamiento.fecha_out);
+
 
                     contenido += travel_mode(dataAlojamiento.id);
 
