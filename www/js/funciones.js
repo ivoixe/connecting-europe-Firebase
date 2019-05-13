@@ -1651,6 +1651,7 @@ function cargar_info_alojamiento(){
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
                         alert("ENTER ALOJAMIENTO");
+                        alert(fechaInicio);
                         alert(fechaSalida);
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
