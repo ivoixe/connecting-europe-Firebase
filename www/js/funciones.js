@@ -1540,8 +1540,12 @@ function cargar_info_empresa(){
 
             contenido +='<div class="mapas" id=mapa_'+emp.id+' ></div>';
 
-
-
+            navigator.geolocation.getCurrentPosition(function(position) {
+                url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
+            }, function(e) {
+                alert("ERROR: " + e );
+            });
+            
             if(contenido){
 
                 $(document).find('#empresa').append(contenido);
@@ -1561,13 +1565,6 @@ function cargar_info_empresa(){
                 mapa_emp = new google.maps.Map(document.getElementById('mapa_'+emp.id),mapOptions );
 
                 directionsDisplay.setMap(mapa_emp);
-
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
-                }, function(e) {
-                    alert("ERROR: " + e );
-                });
-
 
                 $('#mode'+emp.id).on('change', function() {
 
