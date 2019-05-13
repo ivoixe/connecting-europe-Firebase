@@ -186,7 +186,7 @@ function onSuccess(position) {
 }
 
 function onErrorGranted(){
-    alert("errorGranted");
+    //alert("errorGranted");
 }
 
 //Si algo fallase al localizarnos...
@@ -285,13 +285,13 @@ function mostrarMapa(lat,log) {
                 //navigator.splashscreen.hide();
 
             }else{
-                alert('esta llendo por un lado que no es');
+                //alert('esta llendo por un lado que no es');
                 dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
             }
 
         }else{
 
-            alert( "error status: " + status);
+            //alert( "error status: " + status);
 
             dir = "<p>El Servicio de Codificación Geográfica ha fallado con el siguiente error: " + status + ".</p>";
 
@@ -902,7 +902,7 @@ function recargarHorarios(){
 
         error: function(e){
 
-            alert('error'+e.status);
+            //alert('error'+e.status);
 
         }
 
@@ -1388,7 +1388,7 @@ function cargar_info_destino(){
         error: function(e){
             //  alert(window.location.pathname);
 
-            alert('error'+e.status);
+            //alert('error'+e.status);
 
 
 
@@ -1496,7 +1496,7 @@ function cargar_info_estancia(){
 
             //  alert(window.location.pathname);
 
-            alert('error'+e.status);
+            //alert('error'+e.status);
 
 
 
@@ -1543,7 +1543,7 @@ function cargar_info_empresa(){
             navigator.geolocation.getCurrentPosition(function(position) {
                 url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
             }, function(e) {
-                alert("ERROR: " + e);
+                //alert("ERROR: " + e);
             });
 
             if(contenido){
@@ -1597,7 +1597,7 @@ function cargar_info_empresa(){
 
             //  alert(window.location.pathname);
 
-            alert('error'+e.status);
+            //alert('error'+e.status);
 
 
 
@@ -1651,7 +1651,7 @@ function cargar_info_alojamiento(){
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
                     }
-                    
+
                 });
 
                 contenido +='</ons-list>';
@@ -1724,7 +1724,7 @@ function cargar_info_alojamiento(){
 
             //  alert(window.location.pathname);
 
-            alert('error'+e.status);
+            //alert('error'+e.status);
 
         }
 
@@ -1768,15 +1768,15 @@ function ver_notificacion(){
         //obtenemos los horarios
         if( granted == false ) {
 
-            alert("No permission");
+            //alert("No permission");
 // If app doesnt have permission request it
             cordova.plugin.notification.local.registerPermission(function (granted) {
-                alert("Ask for permission");
+                //alert("Ask for permission");
                 if( granted == true ) {
-                    alert("Permission accepted");
+                    //alert("Permission accepted");
 
                 } else {
-                    alert("We need permission to show you notifications");
+                    //alert("We need permission to show you notifications");
                 }
             });
         } else {
@@ -1802,7 +1802,7 @@ function ver_notificacion(){
 
                 console.log(e);
 
-                alert(e);
+                //alert(e);
             }
         }
     });
