@@ -529,11 +529,14 @@ ons-row span.menu{
  }
 
  #alojamiento ons-list-item .list-item__center,
- #alojamiento .select-input--material{
+ #empresa ons-list-item .list-item__center,
+ #alojamiento .select-input--material,{
+ #empresa .select-input--material{
      background-image:unset;
  }
 
- #alojamiento .select-input--material {
+ #alojamiento .select-input--material,
+ #empresa .select-input--material {
      position: relative;
      top: -10px;
      left: 15px;
