@@ -1062,7 +1062,6 @@ public class InAppBrowser extends CordovaPlugin {
         @Override
         public boolean shouldOverrideUrlLoading(WebView webView, String url) {
 
-        alert("url");
             if (url.startsWith(WebView.SCHEME_TEL)) {
                 try {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -1135,6 +1134,13 @@ public class InAppBrowser extends CordovaPlugin {
                     }
                 }
             }
+
+            if( url.startsWith("yourapp:") {
+                               Intent intent = new Intent(Intent.ACTION_VIEW);
+                               intent.setData(Uri.parse(url));
+                               cordova.getActivity().startActivity(intent);
+                               return true;
+                           }
 
             return false;
         }
