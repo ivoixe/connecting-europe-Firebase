@@ -1067,7 +1067,11 @@ function save_data_first(){
 
                 // ocultamos el select.
 
-                alert('error en la conexion?' + e.message);
+                ons.notification.alert({
+                    message: 'No hay conexión a Internet',
+                    title:'Errror en la conexion',
+                    maskColor:'rgba(255, 0, 0, 0.3)'
+                });
 
                 $('#sitios_cercanos').addClass('hidden');
 
@@ -1169,7 +1173,11 @@ function save(){
 
             // ocultamos el select.
 
-            alert('error en la conexion?'+e.message);
+            ons.notification.alert({
+                message: 'No hay conexión a Internet',
+                title:'Errror en la conexion',
+                maskColor:'rgba(255, 0, 0, 0.3)'
+            });
 
             $('#sitios_cercanos').addClass('hidden');
 
