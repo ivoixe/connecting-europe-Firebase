@@ -719,12 +719,12 @@ function guardarPosicion(lat_actual,log_actual){
 
                 var destino;
 
-                $.each(resp.alojamientos, function(i, item){
+                /*$.each(resp.alojamientos, function(i, item){
 
                     alojamientos.push(item);
                     //localStorage.setItem('alojamiento'+i,item);
 
-                });
+                });*/
 
                 $.each(resp.datas, function(i, item){
 
