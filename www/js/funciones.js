@@ -1561,9 +1561,18 @@ function cargar_info_empresa(){
                 }
 
 
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
+                    calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,'TRANSIT',position.coords.latitude,position.coords.longitude);
+
+                }, function() {
+
+                    handleLocationError(true, infoWindow, map.getCenter());
+
+                });
 
 
-                var url ='https://www.google.com/maps/dir/?api=1&origin=43.3012736,-2.0168704&destination='+emp.lat+','+emp.lon;
+                //var url ='https://www.google.com/maps/dir/?api=1&origin=43.3012736,-2.0168704&destination='+emp.lat+','+emp.lon;
                 mapa_emp = new google.maps.Map(document.getElementById('mapa_'+emp.id),mapOptions );
 
                 directionsDisplay.setMap(mapa_emp);
@@ -1573,18 +1582,9 @@ function cargar_info_empresa(){
                 $('#mode'+emp.id).on('change', function() {
 
                     var selectedMode = $(this).val();
-
-
-
                     infoWindow = new google.maps.InfoWindow;
-
-
-
                     navigator.geolocation.getCurrentPosition(function(position) {
-                        //var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+emp.lat+','+emp.lon;
                         calcula_ruta(directionsService, directionsDisplay,emp.gmaps_pos,selectedMode,position.coords.latitude,position.coords.longitude);
-
-
                     }, function() {
 
                         handleLocationError(true, infoWindow, map.getCenter());
@@ -1596,11 +1596,6 @@ function cargar_info_empresa(){
                 $( "#ver_en_maps" ).click(function() {
 
 
-
-                    /*var ref = cordova.InAppBrowser.open(url, '_system','location=yes');
-
-                    ref.show();*/
-                    
                     cordova.InAppBrowser.open(url, '_system','location=yes');
 
                     // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
@@ -1704,6 +1699,17 @@ function cargar_info_alojamiento(){
                             mapTypeId: 'roadmap'
 
                         }
+                        
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            var url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
+                            calcula_ruta(directionsService, directionsDisplay,dataAlojamiento.gmaps_pos,'TRANSIT',position.coords.latitude,position.coords.longitude);
+
+                        }, function() {
+
+                            handleLocationError(true, infoWindow, map.getCenter());
+
+                        });
+
 
                         mapa_a = new google.maps.Map(document.getElementById('mapa_'+dataAlojamiento.id),mapOptions );
 
@@ -1732,6 +1738,13 @@ function cargar_info_alojamiento(){
                             });
 
                         });
+
+
+                        $( "#ver_en_maps" ).click(function() {
+                            cordova.InAppBrowser.open(url, '_system','location=yes');
+                            // win.document.write('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>')
+                        });
+
                     });
                 });
 
