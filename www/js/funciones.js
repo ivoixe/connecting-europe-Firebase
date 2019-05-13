@@ -1637,41 +1637,29 @@ function cargar_info_alojamiento(){
 
             var fechaActual = new Date();
 
-            alert(al.toString());
+            //console.log(al);
 
             $.each(al, function(i, item) {
-
-                alert(item.toString());
-
 
                 contenido +='<ons-list>';
 
                 $.each(item, function(p, dataAlojamiento) {
 
-                    alert(dataAlojamiento);
-                    //var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
-                    //var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
-
-                    /*alert(fechaInicio);
-                    alert(fechaSalida);
+                    var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
+                    var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
-                        alert("ENTER ALOJAMIENTO");
-                        alert(fechaInicio);
-                        alert(fechaSalida);
                         contenido += travel_mode(dataAlojamiento.id);
                         contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
-                    } else {
-                        alert("  - - - - - -- - ERROR ALOJAMIENTO");
-                    }*/
-
-
-
+                    }
                 });
 
                 contenido +='</ons-list>';
 
             });
+
+            alert(dataAlojamiento.lat);
+            alert(dataAlojamiento.lon);
 
             navigator.geolocation.getCurrentPosition(function(position) {
                 url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
