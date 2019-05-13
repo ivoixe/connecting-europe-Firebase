@@ -1069,7 +1069,7 @@ function save_data_first(){
 
                 ons.notification.alert({
                     message: 'No hay conexión a Internet',
-                    title:'Errror en la conexion',
+                    title:'Error en la conexión',
                     maskColor:'rgba(255, 0, 0, 0.3)'
                 });
 
@@ -1175,7 +1175,7 @@ function save(){
 
             ons.notification.alert({
                 message: 'No hay conexión a Internet',
-                title:'Errror en la conexion',
+                title:'Error en la conexión',
                 maskColor:'rgba(255, 0, 0, 0.3)'
             });
 
