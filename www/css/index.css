@@ -535,10 +535,16 @@ ons-row span.menu{
      background-image:unset;
  }
 
- #alojamiento .select-input--material,
- #empresa .select-input--material {
+ #alojamiento .select-input--material{
      position: relative;
      top: -10px;
      left: 15px;
  }
+
+ #empresa .mapas  {
+     position: relative;
+     top: -10px;
+ }
+
+
 
