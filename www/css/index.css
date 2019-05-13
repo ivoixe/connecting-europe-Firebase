@@ -530,7 +530,7 @@ ons-row span.menu{
 
  #alojamiento ons-list-item .list-item__center,
  #empresa ons-list-item .list-item__center,
- #alojamiento .select-input--material,{
+ #alojamiento .select-input--material,
  #empresa .select-input--material{
      background-image:unset;
  }
