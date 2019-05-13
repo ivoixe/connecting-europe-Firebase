@@ -1637,29 +1637,29 @@ function cargar_info_alojamiento(){
 
             var fechaActual = new Date();
 
-            $.each(al, function(i, item) {
+            contenido +='<ons-list>';
 
-                contenido +='<ons-list>';
 
-                /*$.each(item, function(p, dataAlojamiento) {
+            al.forEach(function(p, dataAlojamiento) {
+                var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
+                var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
+                alert("fechaActual: " + fechaActual);
+                alert("fechaInicio: " + fechaInicio);
+                alert("fechaSalida: " + fechaSalida);
+
+                if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
+                    contenido += travel_mode(dataAlojamiento.id);
+                    contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
+                }
+            });
+
+
+            /*$.each(al, function(i, item) {
+
+                $.each(item, function(p, dataAlojamiento) {
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
-
-                    alert("fechaActual: " + fechaActual);
-                    alert("fechaInicio: " + fechaInicio);
-                    alert("fechaSalida: " + fechaSalida);
-
-                    if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
-                        contenido += travel_mode(dataAlojamiento.id);
-                        contenido += '<b>'+dataAlojamiento.nombre+'</b><div class="mapas" id="mapa_'+dataAlojamiento.id+'"></div>';
-                    }
-                });*/
-
-                al.forEach(function(p, dataAlojamiento) {
-                    var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
-                    var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
-
                     alert("fechaActual: " + fechaActual);
                     alert("fechaInicio: " + fechaInicio);
                     alert("fechaSalida: " + fechaSalida);
@@ -1670,9 +1670,9 @@ function cargar_info_alojamiento(){
                     }
                 });
 
-                contenido +='</ons-list>';
+            });*/
 
-            });
+            contenido +='</ons-list>';
 
             navigator.geolocation.getCurrentPosition(function(position) {
                 url ='https://www.google.com/maps/dir/?api=1&origin='+position.coords.latitude+','+position.coords.longitude+'&destination='+dataAlojamiento.lat+','+dataAlojamiento.lon;
