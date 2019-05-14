@@ -1427,6 +1427,8 @@ function cargar_info_estancia(){
 
             var contenido="";
 
+            var fechaActual = new Date();
+
             $('#info-destino .tituloViaje span').text(destino.nombre);
 
             $('#info-destino .destino_llegada').text(datos.llegada_a_ida);
@@ -1464,30 +1466,24 @@ function cargar_info_estancia(){
             $('#info-destino .vuelta_desde').text(datos.llegada_a_vuelta);
 
 
-
             $.each(al, function(i, item) {
-
-
 
                 contenido +='<ons-list>';
 
-                $.each(item.alojamiento, function(p, dataAlojamiento) {
+                $.each(item, function(p, dataAlojamiento) {
 
+                    var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
+                    var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
-
-                    /******************************************************/
-
-                    contenido += '<ons-list-item expandable ><p>'+dataAlojamiento.nombre+'</p><p><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </p><p><strong>Fecha salida:</strong> '+dataAlojamiento.fecha_out+'</p><div class="expandable-content"><div >'+dataAlojamiento.direccion+'</div></div></ons-list-item>';
-
-
-
+                    if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
+                        contenido += travel_mode(dataAlojamiento.id);
+                        contenido += '<p>'+dataAlojamiento.nombre+'</p><p><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </p><p><strong>Fecha salida:</strong>'+dataAlojamiento.fecha_out+'</p><div>'+dataAlojamiento.direccion+'</div>;
+                    } else {
+                    }
                 });
-
                 contenido +='</ons-list>';
 
             });
-
-
 
             if(contenido){
 
