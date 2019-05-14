@@ -1642,9 +1642,6 @@ function cargar_info_alojamiento(){
 
 
             $.each(al, function(i, item) {
-
-                contenido +='<ons-list>';
-
                 $.each(item, function(p, dataAlojamiento) {
 
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
@@ -1661,7 +1658,6 @@ function cargar_info_alojamiento(){
                     } else {
                     }
                 });
-                contenido +='</ons-list>';
 
             });
 
