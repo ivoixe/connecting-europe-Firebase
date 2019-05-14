@@ -197,6 +197,12 @@
         }
         function errorCallback(error) {
         }
+
+        function closeMenu(){
+            var menu = document.getElementById('menu');
+            menu.close();
+        }
+
     </script>
     <style>
         .hidden{
@@ -215,6 +221,13 @@
     <ons-splitter-side id="menu" side="left" width="400px" collapse>
         <ons-page >
             <ons-list style="background: url('img/backgroundMenu.png');background-size:unset;padding-top:25px;">
+                <ons-toolbar>
+                    <div class="left">
+                        <ons-toolbar-button onclick="closeMenu();">
+                            <ons-icon icon="md-menu"></ons-icon>
+                        </ons-toolbar-button>
+                    </div>
+                    </ons-toolbar>
                 <ons-list-item onclick="fn.load('home.html')" tappable>
                     <img class="img-responsive img-circle" src="img/home.png">  <p>Connecting Europe</p>
                 </ons-list-item>
