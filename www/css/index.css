@@ -364,6 +364,11 @@ ons-row span.menu{
 #estancias{
 	padding-left:10px;
 }
+
+ #estancias ul {
+     padding-left:0px;
+ }
+
 #estancias .list-item--expandable{
     padding-bottom: 5px;
     padding-bottom: 10px;
