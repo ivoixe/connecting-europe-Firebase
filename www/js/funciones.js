@@ -1473,7 +1473,7 @@ function cargar_info_estancia(){
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
                     if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
-                        contenido += '<p>'+dataAlojamiento.nombre+'</p><p><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </p><p><strong>Fecha salida: </strong>'+dataAlojamiento.fecha_out+'</p><div>'+dataAlojamiento.direccion+'</div>';
+                        contenido += '<ul><li>'+dataAlojamiento.nombre+'</li><li><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </li><li><strong>Fecha salida: </strong>'+dataAlojamiento.fecha_out+'</li><li><div>'+dataAlojamiento.direccion+'</div></li></ul>';
                     } else {
                     }
                 });
