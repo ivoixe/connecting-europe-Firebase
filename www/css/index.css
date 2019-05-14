@@ -474,7 +474,7 @@ ons-row span.menu{
  #menu ons-list-item {
      margin-top:15px;
      margin-bottom:15px;
-     padding: 0px 0 0 4px;
+     padding: 0px 0 0 10px;
  }
 
  #menu ons-list-item .list-item__center {
