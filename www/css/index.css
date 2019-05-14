@@ -552,7 +552,9 @@ ons-row span.menu{
      position: relative;
      top: -10px;
  }
-
+ .maps-google-ver {
+     margin-bottom:-5px;
+ }
 
 .googleMapsIcon {
      position:relative;
