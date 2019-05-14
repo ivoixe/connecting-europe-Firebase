@@ -1468,10 +1468,7 @@ function cargar_info_estancia(){
 
             $.each(al, function(i, item) {
 
-                contenido +='<ons-list>';
-
                 $.each(item, function(p, dataAlojamiento) {
-
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
 
@@ -1480,7 +1477,6 @@ function cargar_info_estancia(){
                     } else {
                     }
                 });
-                contenido +='</ons-list>';
 
             });
 
