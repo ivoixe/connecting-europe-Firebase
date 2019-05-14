@@ -1340,6 +1340,17 @@ function datos_portada(){
         }
 
 
+    cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status) {
+        cordova.plugins.diagnostic.requestLocationAuthorization(function (status) {
+            if (status == "GRANTED") {
+            } else {
+            }
+        }, function (error) {
+            //alert("ERROR");
+        });
+
+    }, onErrorGranted);
+
     if(!user && !pass_user){
 
         $('#home').hide();
