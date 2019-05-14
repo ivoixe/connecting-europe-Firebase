@@ -1433,13 +1433,13 @@ function cargar_info_estancia(){
 
             $('#info-destino .destino_llegada').text(datos.llegada_a_ida);
 
-            $('#info-destino .fechas_llegada').text(datos.fecha_ida+' a las'+datos.hora_ida);
+            $('#info-destino .fechas_llegada').text(datos.fecha_ida+' a las '+datos.hora_ida);
 
-            $('#info-destino .fechas_llegada').text(datos.fecha_ida+' a las'+datos.hora_ida);
+            $('#info-destino .fechas_llegada').text(datos.fecha_ida+' a las '+datos.hora_ida);
 
             $('#info-destino .colaborador_nombre').text(datos.colaborador_nombre);
 
-            $('#info-destino .colaborador_email a').attr('href','mailto:'+datos.colaborador_email);
+            $('#info-destino .colaborador_email a').attr('href','mailto: '+datos.colaborador_email);
 
             $('#info-destino .colaborador_email a').text(datos.colaborador_email);
 
@@ -1451,7 +1451,7 @@ function cargar_info_estancia(){
 
             $('#info-destino .empresa_responsable').text(empresa.responsable);
 
-            $('#info-destino .responsable_mentor_mail a').attr('href','mailto:'+empresa.responsable_mentor_mail);
+            $('#info-destino .responsable_mentor_mail a').attr('href','mailto: '+empresa.responsable_mentor_mail);
 
             $('#info-destino .responsable_mentor_mail a').text(empresa.responsable_mentor_mail);
 
