@@ -34,7 +34,6 @@ var app = {
     onDeviceReady: function() {
 
         app.receivedEvent('deviceready');
-        this.pushNotification();
 
     },
 
@@ -85,19 +84,6 @@ var app = {
             document.getElementById('dynamic-sel').appendChild(option);
 
         }
-
-        pushNotification: function(){
-            FCMPlugin.onNotification(function(data){
-                if(data.wasTapped){
-                    alert(JSON.stringify(data));
-                }else{
-                    alert(JSON.stringify(data));
-                }
-            });
-        }
-
-
-
 
 
     }
