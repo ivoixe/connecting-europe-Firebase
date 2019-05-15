@@ -110,7 +110,7 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
-            /*FCMPlugin.onTokenRefresh(function(token){
+            FCMPlugin.onTokenRefresh(function(token){
                 alert("token: " + token);
            localStorage.setItem("token", token);
        });
@@ -119,7 +119,7 @@
                alert("token1: " + token);
                localStorage.setItem("token", token);
            });
-       }*/
+       }
             // window.plugins.sim.getSimInfo(successCallback, errorCallback);
 	   navigator.splashscreen.show();
            if (navigator.splashscreen){
