@@ -112,12 +112,4 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
     <plugin name="cordova-plugin-fcm-push" source="npm" />
-    <plugin name='cordova-background-geolocation-lt' spec='npm'>
-
-    </plugin>
-    <plugin name='pluginB' spec='npm'>
-    <variable name='PLAY_SERVICES_VERSION' value='15.0.0' />
-    </plugin>
-
-
 </widget>
