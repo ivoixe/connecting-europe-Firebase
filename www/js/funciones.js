@@ -1356,7 +1356,7 @@ function datos_portada(){
         ver_notificacion();
 
 
-            FCMPlugin.onTokenRefresh(function(token){
+            /*FCMPlugin.onTokenRefresh(function(token){
                   alert("token2: " + token);
                   localStorage.setItem("token", token);
               });
@@ -1365,7 +1365,7 @@ function datos_portada(){
                       alert("token3: " + token);
                       localStorage.setItem("token", token);
                   });
-              }
+              }*/
 
 
         $('#login').remove();

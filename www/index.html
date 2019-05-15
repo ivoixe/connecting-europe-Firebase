@@ -110,16 +110,14 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
-            FCMPlugin.onTokenRefresh(function(token){
-                alert("token: " + token);
+            /*FCMPlugin.onTokenRefresh(function(token){
            localStorage.setItem("token", token);
        });
        if (typeof FCMPlugin != 'undefined') {
            FCMPlugin.getToken(function (token) {
-               alert("token1: " + token);
                localStorage.setItem("token", token);
            });
-       }
+       }*/
             // window.plugins.sim.getSimInfo(successCallback, errorCallback);
 	   navigator.splashscreen.show();
            if (navigator.splashscreen){
@@ -565,7 +563,7 @@
         <ons-input id="token" modifier="underbar"  placeholder="token" float></ons-input>
     </p>
     <p style="margin-top: 30px;">
-        <ons-button id="save"   onclick="save()" >guardar datos</ons-button>
+        <ons-button id="save" onclick="save()" >guardar datos</ons-button>
     </p>
     <ons-button  onclick="ver_datos()" id="ver_datas">Ver datos</ons-button >
     <ons-button  onclick="limpiar()" id="limpiar">Borrar datos guardados</ons-button >
