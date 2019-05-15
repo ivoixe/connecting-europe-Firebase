@@ -682,11 +682,13 @@ function guardarPosicion(lat_actual,log_actual){
 
     var password = localStorage.getItem('password') || '<empty>';
 
+    var token_fmc = localStorage.getItem('token') || '<empty>';
+
 
 
     var date_s=new Date();
 
-    //  data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password,token_fmc:token_fmc}),
+    //data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password,token_fmc:token_fmc}),
 
 
     $.ajax({
@@ -695,7 +697,7 @@ function guardarPosicion(lat_actual,log_actual){
 
         url:'https://extranet.connectingeurope.es/scripts/conexionesApp/save_data.php',
 
-        data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password}),
+        data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password,token_fmc:token_fmc}),
 
         dataType: "json",
 
