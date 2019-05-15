@@ -110,7 +110,6 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
-    <plugin name="cordova-plugin-fcm-push" source="npm" />
     <plugin name="cordova-plugin-firebase" spec="^2.0.0" />
 
 </widget>

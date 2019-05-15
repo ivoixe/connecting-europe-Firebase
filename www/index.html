@@ -51,11 +51,11 @@
                 );
 
 
-            if (typeof FCMPlugin != 'undefined') {
+            /*if (typeof FCMPlugin != 'undefined') {
                 FCMPlugin.getToken(function (token) {
                     console.log(token);
                 });
-            }
+            }*/
 
             var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
             if (page == "mapa-fichado.html"){
@@ -116,7 +116,7 @@
 	    
         function onDeviceReady() {
             ver_notificacion();
-            FCMPlugin.onTokenRefresh(function(token){
+            /*FCMPlugin.onTokenRefresh(function(token){
                 alert("token: " + token);
            localStorage.setItem("token", token);
        });
@@ -125,7 +125,7 @@
                alert("token2: " + token);
                localStorage.setItem("token", token);
            });
-       }
+       }*/
             // window.plugins.sim.getSimInfo(successCallback, errorCallback);
 	   navigator.splashscreen.show();
            if (navigator.splashscreen){

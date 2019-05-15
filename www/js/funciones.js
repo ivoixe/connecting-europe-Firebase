@@ -1346,6 +1346,7 @@ function datos_portada(){
         alert(token);
         console.log(token);
     }, function(error) {
+        alert("error");
         console.error(error);
     });
 
