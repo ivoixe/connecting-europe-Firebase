@@ -5,31 +5,6 @@
 
 <head xmlns="">
     <title>Geolocalización </title>
-    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-    <script>
-        var config = {
-            apiKey: "AIzaSyCzfZw9Vm9e8ztaumvTQsTX1qaBZSfr99U",
-            authDomain: "connecting-e5377.firebaseapp.com",
-            databaseURL: "https://connecting-e5377.firebaseio.com",
-            projectId: "connecting-e5377",
-            storageBucket: "connecting-e5377.appspot.com",
-            messagingSenderId: "953842536904"
-        };
-        var app=  firebase.initializeApp(config);
-        var aut= app.auth();
-        const messaging = firebase.messaging();
-        messaging.requestPermission()
-            .then(function(){
-                //  alert(messaging.getToken());
-                return messaging.getToken();
-            })
-            .then(function (token){
-                localStorage.setItem("token", token);
-            })
-            .catch(function(err){
-                console.log('no hay permiso');
-            })
-    </script>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
