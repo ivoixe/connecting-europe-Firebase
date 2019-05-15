@@ -9,7 +9,7 @@
   "installed_plugins": {
     "cordova-background-geolocation-lt": {
       "LICENSE": "YOUR_LICENSE_KEY",
-      "GOOGLE_API_VERSION": "15.0.1",
+      "GOOGLE_API_VERSION": "9.0.0",
       "APPCOMPAT_VERSION": "27.1.1",
       "PACKAGE_NAME": "com.connectingEurope.app"
     }

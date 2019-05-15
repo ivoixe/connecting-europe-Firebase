@@ -187,7 +187,7 @@ $ cordova platform add ios
 ##### `@variable LICENSE [""]`
 Your Android license key generated from [Product Dashboard](http://www.transistorsoft.com/shop/customers)
 
-##### `@variable GOOGLE_API_VERSION ["15.0.1"]`
+##### `@variable GOOGLE_API_VERSION ["9.0.0"]`
 Sets the desired version of `play-services-location` dependency.  Many other plugins require `play-services` dependencies, (eg: `cordova-plugin-googlemaps`, `phonegap-plugin-push`):  If the version of `play-services` and/or `firebase` is not aligned to the **same** version for **ALL** plugins, your build **will fail**.
 
 ##### `@variable APPCOMPAT_VERSION ["27.1.1"]`
