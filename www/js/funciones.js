@@ -1339,18 +1339,6 @@ function datos_portada(){
             $(document).find('#iconoHorarioRegistrado').css('display','block');
         }
 
-    alert("--- token ---");
-    window.FirebasePlugin.getToken(function(token) {
-        // save this server-side and use it to push notifications to this device
-        alert("--- Enter token ---");
-        alert(token);
-        console.log(token);
-    }, function(error) {
-        alert("error");
-        console.error(error);
-    });
-
-
     cordova.plugins.diagnostic.getLocationAuthorizationStatus(function(status) {
         cordova.plugins.diagnostic.requestLocationAuthorization(function (status) {
             if (status == "GRANTED") {
