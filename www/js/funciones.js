@@ -1358,6 +1358,7 @@ function datos_portada(){
     }else{
         ver_notificacion();
 
+        alert("token---: " + token);
 
             FCMPlugin.onTokenRefresh(function(token){
                  alert("token3: " + token);
