@@ -112,8 +112,4 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
     <plugin name="cordova-plugin-fcm-push" source="npm" />
-    <plugin name="com.google.android.gms">
-        <variable name='PLAY_SERVICES_VERSION' value='9.0.0' />
-    </plugin>
-
 </widget>
