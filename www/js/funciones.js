@@ -1351,25 +1351,26 @@ function datos_portada(){
 
     }, onErrorGranted);
 
+
+    alert("token---: " + token);
+
+    FCMPlugin.onTokenRefresh(function(token){
+        alert("token3: " + token);
+        localStorage.setItem("token", token);
+    });
+    if (typeof FCMPlugin != 'undefined') {
+        FCMPlugin.getToken(function (token) {
+            alert("token4: " + token);
+            localStorage.setItem("token", token);
+        });
+    }
+
     if(!user && !pass_user){
 
         $('#home').hide();
 
     }else{
         ver_notificacion();
-
-        alert("token---: " + token);
-
-            FCMPlugin.onTokenRefresh(function(token){
-                 alert("token3: " + token);
-                  localStorage.setItem("token", token);
-              });
-              if (typeof FCMPlugin != 'undefined') {
-                  FCMPlugin.getToken(function (token) {
-                      alert("token4: " + token);
-                      localStorage.setItem("token", token);
-                  });
-              }
 
 
         $('#login').remove();
