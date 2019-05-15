@@ -1339,7 +1339,7 @@ function datos_portada(){
             $(document).find('#iconoHorarioRegistrado').css('display','block');
         }
 
-    alert("token");
+    alert("--- token ---");
     alert(FCMPlugin);
     FCMPlugin.getToken(function(token) {
         //this is the FCM token which can be used
