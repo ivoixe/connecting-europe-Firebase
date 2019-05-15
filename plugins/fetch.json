@@ -147,10 +147,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-fcm": {
+  "cordova-plugin-fcm-push": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-fcm"
+      "id": "cordova-plugin-fcm-push"
     },
     "is_top_level": true,
     "variables": {}
