@@ -111,6 +111,11 @@
 
             }
 
+        });
+
+	    
+        function onDeviceReady() {
+            ver_notificacion();
 
             alert("--- token ---");
             window.FirebasePlugin.getToken(function(token) {
@@ -123,11 +128,6 @@
                 console.error(error);
             });
 
-        });
-
-	    
-        function onDeviceReady() {
-            ver_notificacion();
             /*FCMPlugin.onTokenRefresh(function(token){
                 alert("token: " + token);
            localStorage.setItem("token", token);
