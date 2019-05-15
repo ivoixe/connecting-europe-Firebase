@@ -172,5 +172,13 @@
     "variables": {
       "PLAY_SERVICES_VERSION": "9.0.0"
     }
+  },
+  "cordova-plugin-firebase": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebase"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

@@ -103,7 +103,6 @@
         <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Background location-tracking is required" />
         <variable name="LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION" value="Background location-tracking is required" />
         <variable name="MOTION_USAGE_DESCRIPTION" value="Using the accelerometer increases battery-efficiency by intelligently toggling location-tracking only when the device is detected to be moving" />
-        <variable name='PLAY_SERVICES_VERSION' value='15.0.0' />
     </plugin>
     <plugin name="cordova-plugin-request-location-accuracy" source="npm" />
     <plugin name="cordova.plugins.diagnostic">
@@ -112,8 +111,6 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
     <plugin name="cordova-plugin-fcm-push" source="npm" />
-    <plugin name="cordova-support-google-services">
-        <variable name='PLAY_SERVICES_VERSION' value='9.0.0' />
-    </plugin>
+    <plugin name="cordova-plugin-firebase" spec="^2.0.0" />
 
 </widget>

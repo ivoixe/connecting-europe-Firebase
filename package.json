@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "cordova-android-play-services-gradle-release": "^3.0.0",
+    "cordova-plugin-firebase": "2.0.5",
     "cordova-plugin-geolocation": "file:plugins/cordova-plugin-geolocation",
     "cordova-support-google-services": "file:plugins/cordova-support-google-services"
   }
