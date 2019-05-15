@@ -77,7 +77,6 @@
                 );
 
 
-
             var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
             if (page == "mapa-fichado.html"){
                 if (mapaEnDocumentoBuscar.html() == null){
@@ -92,19 +91,6 @@
                 }
             }
 
-            /*if (content.page == "home.html") {
-                if (localStorage.getItem("fichado") == null){
-                    alert("NULL");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-times');
-                } else {
-                    alert("NOT  -  NULL");
-                    $('#iconoHorarioRegistrado').removeClass();
-                    $('#iconoHorarioRegistrado').addClass('fas fa-check');
-                }
-
-            }*/
-
             if (page == "login.html"){
                 $("#content").css("background", "url(img/pantallaCarga.png) no-repeat center");
                 $("#content").css("background-size", "cover");
@@ -112,35 +98,10 @@
                 $("#content").css("background", "unset");
             }
 
-
-
-
         };
         ons.ready(function() {
             var user =  localStorage.getItem("username");
             var pass_user =  localStorage.getItem("password");
-
-            /*
-            var user =  localStorage.getItem("username");
-            var pass_user =  localStorage.getItem("password");
-
-
-            if(!user && !pass_user ){
-                window.fn.load('login.html');
-            }else{
-                var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, {maximumAge: Infinity, timeout: 30000, enableHighAccuracy: true }); // esta me mira una vez
-                var ahora = new Date();
-                var datetime = ahora.getDate() + "/"
-                    + (ahora.getMonth()+1)  + "/"
-                    + ahora.getFullYear() + "  "
-                    + ahora.getHours() + ":"
-                    + ahora.getMinutes() + ":"
-                    + ahora.getSeconds();
-
-                /*************limpia *************/
-              /*  navigator.geolocation.clearWatch(watchID);
-            }*/
-
 
             /********************************/
             ons.disableDeviceBackButtonHandler();
