@@ -16,3 +16,4 @@ dependencies {
   compile 'com.github.tony19:logback-android:1.1.1-9'
   compile 'com.intentfilter:android-permissions:0.1.6'  
 }
+apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
