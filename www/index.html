@@ -51,6 +51,12 @@
                 );
 
 
+            if (typeof FCMPlugin != 'undefined') {
+                FCMPlugin.getToken(function (token) {
+                    console.log(token);
+                });
+            }
+
             var mapaEnDocumentoBuscar = $(document).find('#map-canvas');
             if (page == "mapa-fichado.html"){
                 if (mapaEnDocumentoBuscar.html() == null){
@@ -155,7 +161,7 @@
 <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="400px" collapse>
         <ons-page >
-            <ons-list style="background: url('img/backgroundMenu.png');background-size:unset;padding-top:25px;">
+            <ons-list style="padding-top:25px;">
                 <ons-toolbar>
                     <div class="left">
                         <ons-toolbar-button onclick="closeMenu();">
