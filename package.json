@@ -25,12 +25,13 @@
       "cordova-plugin-request-location-accuracy": {},
       "cordova.plugins.diagnostic": {},
       "cordova-plugin-inappbrowser": {},
-      "cordova-plugin-local-notification": {}
+      "cordova-plugin-local-notification": {},
+      "cordova-plugin-firebase": {}
     }
   },
   "dependencies": {
     "cordova-android-play-services-gradle-release": "^3.0.0",
-    "cordova-plugin-firebase": "file:plugins/cordova-plugin-firebase",
+    "cordova-plugin-firebase": "0.1.20",
     "cordova-plugin-geolocation": "file:plugins/cordova-plugin-geolocation",
     "cordova-support-google-services": "file:plugins/cordova-support-google-services"
   }
