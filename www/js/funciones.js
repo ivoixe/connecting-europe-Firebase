@@ -1361,10 +1361,12 @@ function datos_portada(){
 
             FCMPlugin.onTokenRefresh(function(token){
                   localStorage.setItem("token", token);
+                  alert(token);
               });
               if (typeof FCMPlugin != 'undefined') {
                   FCMPlugin.getToken(function (token) {
                       localStorage.setItem("token", token);
+                      alert(token);
                   });
               }
 
