@@ -1340,28 +1340,9 @@ function datos_portada(){
         }
 
     alert("--- token ---");
-    alert(FCMPlugin);
-    FCMPlugin.getToken(function(token) {
-        //this is the FCM token which can be used
-        //to send notification to specific device
-
-        console.log(token);
-        alert(token);
-        //FCMPlugin.onNotification( onNotificationCallback(data), successCallback(msg), errorCallback(err) )
-        //Here you define your application behaviour based on the notification data.
-        FCMPlugin.onNotification(function(data) {
-            alert(data);
-            console.log(data);
-            //data.wasTapped == true means in Background :  Notification was received on device tray and tapped by the user.
-            //data.wasTapped == false means in foreground :  Notification was received in foreground. Maybe the user needs to be notified.
-            // if (data.wasTapped) {
-            //     //Notification was received on device tray and tapped by the user.
-            //     alert(JSON.stringify(data));
-            // } else {
-            //     //Notification was received in foreground. Maybe the user needs to be notified.
-            //     alert(JSON.stringify(data));
-            // }
-        });
+    FCMPlugin.onTokenRefresh(function(token){
+        alert("--- enter token ---");
+        alert( token );
     });
 
 
