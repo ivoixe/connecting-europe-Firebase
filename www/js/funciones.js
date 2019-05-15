@@ -1359,14 +1359,14 @@ function datos_portada(){
         ver_notificacion();
 
 
-            /*FCMPlugin.onTokenRefresh(function(token){
+            FCMPlugin.onTokenRefresh(function(token){
                   localStorage.setItem("token", token);
               });
               if (typeof FCMPlugin != 'undefined') {
                   FCMPlugin.getToken(function (token) {
                       localStorage.setItem("token", token);
                   });
-              }*/
+              }
 
 
         $('#login').remove();
