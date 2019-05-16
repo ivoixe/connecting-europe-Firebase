@@ -116,6 +116,6 @@
         <!-- This is the Android app's "API ID" in your Firebase Console. It should have 'android' in the middle -->
         <variable name="APP_GOOGLE_API_ID" value="connecting-app-9062e" />
         <!-- This is the long "Web API Key" in your Firebase Console -->
-        <variable name="APP_GOOGLE_API_KEY" value=" AIzaSyAf_S-VuHpPODetCApg2feDJjl6oL6HHJA " />
+        <variable name="APP_GOOGLE_API_KEY" value="AIzaSyAf_S-VuHpPODetCApg2feDJjl6oL6HHJA" />
     </plugin>
 </widget>
