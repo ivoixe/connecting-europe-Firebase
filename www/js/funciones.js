@@ -910,13 +910,24 @@ function recargarHorarios(){
 
 function ver_datos(){
 
+    var token_id = document.getElementById("token");
+        window.FirebasePlugin.getToken(function(token) {
+            // save this server-side and use it to push notifications to this device
+            alert(token);
+            token_id.innerHTML = "the token is "+ token;
+        }, function(error) {
+            alert('error');
+            token_id.innerHTML = "the token error  "+ error;
+        });
+
+
     var username = localStorage.getItem('username') || '';
 
     var password = localStorage.getItem('password') || '';
-    var token = localStorage.getItem('token') || '';
+    //var token = localStorage.getItem('token') || '';
 
     $('#username').val(username);
-    $('#token').val(token);
+    //$('#token').val(token);
 
 }
 
