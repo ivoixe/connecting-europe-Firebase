@@ -917,14 +917,19 @@ function ver_datos(){
 
     $('#username').val(username);
 
-    window.FirebasePlugin.getToken(function(token) {
-        // save this server-side and use it to push notifications to this device
-        alert(token);
-        $('#token').val(token);
-    }, function(error) {
-        alert("error");
-        $('#token').val("ERROR TOKEN");
+    window.FirebasePlugin.hasPermission(function(data){
+        alert(data.isEnabled);
+        window.FirebasePlugin.getToken(function(token) {
+            // save this server-side and use it to push notifications to this device
+            alert(token);
+            $('#token').val(token);
+        }, function(error) {
+            alert("error");
+            $('#token').val("ERROR TOKEN");
+        });
     });
+
+
 
 
 }
