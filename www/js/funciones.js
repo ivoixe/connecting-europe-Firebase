@@ -916,7 +916,16 @@ function ver_datos(){
     var token = localStorage.getItem('token') || '';
 
     $('#username').val(username);
-    $('#token').val(token);
+
+    window.FirebasePlugin.getToken(function(token) {
+        // save this server-side and use it to push notifications to this device
+        alert(token);
+        $('#token').val(token);
+    }, function(error) {
+        alert("error");
+        $('#token').val("ERROR TOKEN");
+    });
+
 
 }
 
