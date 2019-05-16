@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.connectingEurope.app" version="1.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="phonegap-version" value="cli-7.1.0" />
-    <preference name="pgb-builder-version" value="2" />
-    <engine name="android" spec="7.0.0" />
     <name>Connecting Europe TEST</name>
     <description>Sistema de localización y fichado</description>
     <author email="ivonne@prismacm.com" href="http://phonegap.com">IVONNE</author>
@@ -112,7 +110,7 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
-    <plugin name="cordova-plugin-firebase" spec="https://github.com/KingWebsites/pgb-plugin-firebase.git">
+    <plugin name="cordova-plugin-firebase" spec="2.0.0">
         <!-- This is the Android app's "API ID" in your Firebase Console. It should have 'android' in the middle -->
         <variable name="APP_GOOGLE_API_ID" value="connecting-app-9062e" />
         <!-- This is the long "Web API Key" in your Firebase Console -->
