@@ -2,6 +2,7 @@
 <widget id="com.connectingEuropeTEST.app" version="1.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name='phonegap-version' value='cli-7.0.1' />
     <preference name='pgb-builder-version' value='1' />
+    <preference name="android-targetSdkVersion" value="26" />
     <name>Connecting Europe TEST</name>
     <description>Sistema de localización y fichado</description>
     <author email="ivonne@prismacm.com" href="http://phonegap.com">IVONNE</author>
