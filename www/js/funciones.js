@@ -911,14 +911,19 @@ function recargarHorarios(){
 function ver_datos(){
 
     var token_id = document.getElementById("token");
+
+    document.addEventListener('deviceready', DeviceReadyToken, false);
+
+    function DeviceReadyToken(){
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
-            alert(token);
-            token_id.innerHTML = "the token is "+ token;
+            console.log(token);
+            token_id.val(token);
         }, function(error) {
-            alert('error');
-            token_id.innerHTML = "the token error  "+ error;
+            console.error(error);
+            token_id.val("error -- token");
         });
+    }
 
 
     var username = localStorage.getItem('username') || '';
@@ -927,7 +932,7 @@ function ver_datos(){
     //var token = localStorage.getItem('token') || '';
 
     $('#username').val(username);
-    //$('#token').val(token);
+
 
 }
 
