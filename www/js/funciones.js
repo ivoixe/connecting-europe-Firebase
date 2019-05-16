@@ -910,18 +910,16 @@ function recargarHorarios(){
 
 function ver_datos(){
 
-    var token_id = document.getElementById("token");
+    document.addEventListener('deviceready', DeviceReady, false);
 
-    document.addEventListener('deviceready', DeviceReadyToken, false);
-
-    function DeviceReadyToken(){
+    function DeviceReady(){
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
             console.log(token);
-            token_id.val(token);
+            $('#token').val(token);
         }, function(error) {
-            console.error(error);
-            token_id.val("error -- token");
+            console.log("error");
+            $('#token').val("error -- token");
         });
     }
 

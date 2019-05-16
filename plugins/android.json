@@ -7,6 +7,10 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-android-play-services-gradle-release": {
+      "PLAY_SERVICES_VERSION": "9.0.0",
+      "PACKAGE_NAME": "com.connectingEurope.app"
+    },
     "cordova-background-geolocation-lt": {
       "LICENSE": "YOUR_LICENSE_KEY",
       "GOOGLE_API_VERSION": "9.0.0",
