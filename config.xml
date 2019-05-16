@@ -111,7 +111,7 @@
     </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-local-notification" />
-    <plugin name="cordova-plugin-firebase">
+    <plugin name="cordova-plugin-inappbrowser" spec="2.0.5" />
         <!-- This is the Android app's "API ID" in your Firebase Console. It should have 'android' in the middle -->
         <variable name="APP_GOOGLE_API_ID" value="connecting-app-9062e" />
         <!-- This is the long "Web API Key" in your Firebase Console -->
