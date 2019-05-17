@@ -85,14 +85,6 @@ var app = {
 
         }
 
-
-        document.addEventListener("deviceready",deviceIsReady, false);
-                
-        function deviceIsReady() {
-            document.getElementById("ver_datas").addEventListener("click",ver_datos(), false);
-            alert("READY!");
-        }
-
     }
 
 };
