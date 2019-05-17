@@ -4,6 +4,7 @@
 -->
 
 <head xmlns="">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
     <title>Geolocalización </title>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
@@ -144,6 +145,11 @@
 
                 window.fn.load('login.html');
 
+            }
+
+
+            if(content.page == "configuracion.html"){╠
+                alert("configuracion");
             }
 
         });
@@ -601,7 +607,7 @@
     <p style="margin-top: 30px;">
         <ons-button id="save"   onclick="save()" >guardar datos</ons-button>
     </p>
-    <ons-button  onclick="ver_datos();" id="ver_datas">Ver datos</ons-button >
+    <ons-button  id="ver_datas">Ver datos</ons-button >
     <ons-button  onclick="limpiar();" id="limpiar">Borrar datos guardados</ons-button >
     <p class="token_prov"></p>
 </div>

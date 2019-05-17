@@ -85,6 +85,14 @@ var app = {
 
         }
 
+
+        document.addEventListener("deviceready",deviceIsReady, false);
+                
+        function deviceIsReady() {
+            document.getElementById("ver_datas").addEventListener("click",ver_datos(), false);
+            alert("READY!");
+        }
+
     }
 
 };
@@ -983,7 +991,7 @@ function save_data_first(){
                         maskColor:'rgba(255, 0, 0, 0.3)'
                     });
 
-                    // window.fn.load('login.html');
+                    window.fn.load('login.html');
 
                 } else {
 
