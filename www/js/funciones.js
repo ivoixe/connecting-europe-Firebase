@@ -86,10 +86,12 @@ var app = {
         }
 
 
-
-
-
-
+        document.addEventListener("deviceready",deviceIsReady, false);
+                
+        function deviceIsReady() {
+            document.getElementById("ver_datas").addEventListener("click",ver_datos(), false);
+            alert("READY!");
+        }
 
     }
 
@@ -682,7 +684,7 @@ function guardarPosicion(lat_actual,log_actual){
 
     var password = localStorage.getItem('password') || '<empty>';
 
-    var token_fmc = localStorage.getItem('token') || '<empty>';
+    //var token_fmc = localStorage.getItem('token') || '<empty>';
 
 
 
@@ -697,7 +699,7 @@ function guardarPosicion(lat_actual,log_actual){
 
         url:'https://extranet.connectingeurope.es/scripts/conexionesApp/save_data.php',
 
-        data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password,token_fmc:token_fmc}),
+        data: ({lat:lat_actual,log:log_actual,hora:datetime,usuario:username,password:password}),
 
         dataType: "json",
 
@@ -915,10 +917,19 @@ function ver_datos(){
     var username = localStorage.getItem('username') || '';
 
     var password = localStorage.getItem('password') || '';
-    var token = localStorage.getItem('token') || '';
+    //var token = localStorage.getItem('token') || '';
 
     $('#username').val(username);
-    $('#token').val(token);
+
+        alert("showToken");
+        FCMPlugin.getToken(function (token) {
+            alert(token);
+            $("#token").html(token);
+        });
+        
+
+
+    //$('#token').val(token);
 
 }
 
@@ -952,7 +963,7 @@ function save_data_first(){
 
 
 
-        var token_fmc = localStorage.getItem('token') || '';
+        //var token_fmc = localStorage.getItem('token') || '';
 
         $('#username_f').val('');
 
@@ -1095,7 +1106,7 @@ function save(){
 
     localStorage.setItem("password", pass);
 
-    var token_fmc = localStorage.getItem('token') || '';
+    //var token_fmc = localStorage.getItem('token') || '';
 
     $('#username').val('');
 
@@ -1107,7 +1118,7 @@ function save(){
 
         url:'https://extranet.connectingeurope.es/scripts/conexionesApp/solo_configuracion.php',
 
-        data: ({usuario:username,password:pass,token_fmc:token_fmc}),
+        data: ({usuario:username,password:pass}),
 
         dataType: "json",
 
