@@ -1008,7 +1008,13 @@ function save_data_first(){
 
                     localStorage.setItem('empresa', JSON.stringify(resp.empresa));
 
-                    localStorage.setItem('alojamientos', JSON.stringify(resp.alojamientos));
+                    console.log(resp.alojamientos);
+
+                    if (resp.alojamientos){
+                    
+                        localStorage.setItem('alojamientos', JSON.stringify(resp.alojamientos));
+                    }
+
 
                     localStorage.setItem('datos', JSON.stringify(resp.datos));
 
@@ -1640,15 +1646,8 @@ function cargar_info_alojamiento(){
             var currentAlojamientoId = "";
             var currentAlojamientoGpos = "";
 
-            /*alert(al);
-            if (!al) {
-                alert("error");
-            }*/
-
             $.each(al, function(i, item) {
                 $.each(item, function(p, dataAlojamiento) {
-
-                    //console.log(dataAlojamiento);
 
                     var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
                     var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
@@ -1711,13 +1710,9 @@ function cargar_info_alojamiento(){
                     }, function() {
 
                         //alert(dataAlojamiento.gmaps_pos);
-
                         handleLocationError(true, infoWindow, map.getCenter());
-
                     });
-
                 });
-
 
                 $( "#ver_en_maps" ).click(function() {
                     cordova.InAppBrowser.open(url, '_system','location=yes');
@@ -1725,13 +1720,9 @@ function cargar_info_alojamiento(){
 
                 });
             }else{
-                alert("Enter");
                 $(document).find('#maps-google-ver').css("display","none");
-
                 contenido +='<p>Alojamiento por cuenta del alumno</p>';
-
                 $(document).find('#alojamiento').append(contenido); 
-
             }
 
         },
