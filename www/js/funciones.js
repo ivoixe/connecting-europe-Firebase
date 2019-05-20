@@ -1008,8 +1008,6 @@ function save_data_first(){
 
                     localStorage.setItem('empresa', JSON.stringify(resp.empresa));
 
-                    console.log(resp.alojamientos);
-
                     if (resp.alojamientos){
                     
                         localStorage.setItem('alojamientos', JSON.stringify(resp.alojamientos));
