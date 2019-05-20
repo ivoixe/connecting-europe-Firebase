@@ -1422,7 +1422,7 @@ function cargar_info_estancia(){
         type:'GET',
 
         success: function(resp){
-
+            
             var al = JSON.parse(localStorage.getItem("alojamientos"));
 
             var destino = JSON.parse(localStorage.getItem("destino"));
@@ -1472,24 +1472,29 @@ function cargar_info_estancia(){
             $('#info-destino .vuelta_desde').text(datos.llegada_a_vuelta);
 
 
-            $.each(al, function(i, item) {
+            if (al) {
+                $.each(al, function(i, item) {
 
-                $.each(item, function(p, dataAlojamiento) {
-                    var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
-                    var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
-
-                    if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
-                        contenido += '<ul><li>'+dataAlojamiento.nombre+'</li><li><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </li><li><strong>Fecha salida: </strong>'+dataAlojamiento.fecha_out+'</li><li><div>'+dataAlojamiento.direccion+'</div></li></ul>';
-                    } else {
-                    }
+                    $.each(item, function(p, dataAlojamiento) {
+                        var fechaInicio = new Date(dataAlojamiento.fecha_in.replace(/-/g,"/"));
+                        var fechaSalida = new Date(dataAlojamiento.fecha_out.replace(/-/g,"/"));
+    
+                        if (fechaActual == fechaInicio  || (fechaActual > fechaInicio &&  fechaActual < fechaSalida)){
+                            contenido += '<ul><li>'+dataAlojamiento.nombre+'</li><li><strong>Fecha entrada: </strong>'+dataAlojamiento.fecha_in+' </li><li><strong>Fecha salida: </strong>'+dataAlojamiento.fecha_out+'</li><li><div>'+dataAlojamiento.direccion+'</div></li></ul>';
+                        } else {
+                        }
+                    });
+    
                 });
+            }
 
-            });
+
 
             if(contenido){
-
                 $(document).find('#info-destino #estancias').append(contenido);
-
+            } else  {
+                contenido +='<p>Alojamiento por cuenta del alumno</p>';
+                $(document).find('#info-destino #estancias').append(contenido);
             }
 
 
