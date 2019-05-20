@@ -1493,7 +1493,7 @@ function cargar_info_estancia(){
             if(contenido){
                 $(document).find('#info-destino #estancias').append(contenido);
             } else  {
-                contenido +='<ul><li>Alojamiento por cuenta del alumno</li></ul>';
+                contenido +='<ul><li>Alojamiento por cuenta del alumno.</li></ul>';
                 $(document).find('#info-destino #estancias').append(contenido);
             }
 
@@ -1726,7 +1726,7 @@ function cargar_info_alojamiento(){
                 });
             }else{
                 $(document).find('#maps-google-ver').css("display","none");
-                contenido +='<p style="text-transform:initial;">Alojamiento por cuenta del alumno</p>';
+                contenido +='<p style="text-transform:initial;">Alojamiento por cuenta del alumno.</p>';
                 $(document).find('#alojamiento').append(contenido); 
             }
 
