@@ -1640,7 +1640,6 @@ function cargar_info_alojamiento(){
             var currentAlojamientoId = "";
             var currentAlojamientoGpos = "";
 
-
             $.each(al, function(i, item) {
                 $.each(item, function(p, dataAlojamiento) {
 
@@ -1719,6 +1718,11 @@ function cargar_info_alojamiento(){
 
                 });
             }else{
+                $(document).find('#maps-google-ver').css("display","none");
+
+                contenido +='<p>Alojamiento por cuenta del alumno</p>';
+
+                $(document).find('#alojamiento').append(contenido); 
 
             }
 
